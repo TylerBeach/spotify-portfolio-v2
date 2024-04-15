@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
     font-family: 'SpotifyMedium';
-    src: url('../../public/fonts/CircularSpotifyText-Medium.otf') format('opentype');
+    src: url('../public/fonts/CircularSpotifyText-Medium.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
   }

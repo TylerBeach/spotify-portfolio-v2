@@ -12,6 +12,7 @@ interface Project {
   link: string;
   imageURL: string;
   demoImages: string[];
+  techStack: string[];
   date: string;
 }
 

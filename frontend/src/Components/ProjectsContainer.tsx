@@ -8,6 +8,7 @@ interface Project {
   link: string;
   imageURL: string;
   demoImages: string[];
+  techStacks: string[];
   date: string;
 }
 
@@ -22,7 +23,7 @@ const ProjectsContainer: React.FC<ProjectsProps> = ({ projects }) => {
       <div className='grid grid-cols-1 flex-wrap gap-4 lg:grid-cols-2 xl:grid-cols-3'>
         {projects.map((project, index) => (
           <Link key={project.id} href={`/projects/${project.id}`} passHref>
-            <div className='card_background flex flex-row rounded-md h-32 w-[100%] min-w-[300px] lg:w-[95%] xl:w-[90%]'>
+            <div className='card_background flex flex-row rounded-md h-24 w-[100%] min-w-[300px] lg:w-[95%] xl:w-[90%]'>
               <img className='rounded-md rounded-tr-none rounded-br-none' src={project.imageURL} alt={project.title}/>
               <h1 className='text-white text-2xl my-auto ml-3'>{project.title}</h1>
             </div>

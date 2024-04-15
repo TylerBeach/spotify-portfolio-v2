@@ -33,9 +33,9 @@ interface Project {
                     <p>{aParagraph.paragraphContent}</p>
                 </div>
             ))}
-            <div className='flex flex-row gap-3 flex-wrap'>
+            <div className='flex flex-row gap-3 flex-wrap gap-x-4 lg:justify-evenly'>
                 {project.demoImages.map((aDemoImage, index) => (
-                    <img className='w-[700px] h-auto' src={aDemoImage} alt="Demo Image" key={index} />
+                    <img className='h-auto w-[100%] md:min-w-[500px] lg:w-[40%] lg:min-w-[600px]' src={aDemoImage} alt="Demo Image" key={index} />
                 ))}
             </div>
             <a href={project.link}>Link</a>

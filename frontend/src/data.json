@@ -24,25 +24,48 @@
     },
     {
       "id": "FroggyJumper",
-      "title": "fuck u",
+      "title": "Froggy Jumper",
       "paragraphData": [
         {
-          "paragraphTitle": "What is FireSafe?",
-          "paragraphContent": "FireSafe is an application designed to keep individuals in high risk areas updated on fires. It also ensures that no individual gets left behind in the event of a forest fire eruption. FireSafe uses complex machine learning to locate secluded locations and homes, allowing responders to go down a checklist of locations and ensure individuals are all aware of fire threat and prepared to evacuate."
+          "paragraphTitle": "What is Froggy Jumper?",
+          "paragraphContent": "Froggy Jumper is a fast paced side scroller where your objective to survive as long as you can. The game is simple, jump over the snakes and collect the flies. The longer you survive the faster the game gets."
         },
         {
-          "paragraphTitle": "Some Features",
-          "paragraphContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar accumsan nisl, et finibus nunc accumsan rutrum. Aenean ligula ante, dapibus nec commodo quis, efficitur eget libero. Phasellus consequat dignissim lorem. Vestibulum at magna mauris. Integer in lorem ornare, molestie eros sed, eleifend augue. Curabitur porta massa magna, a consectetur arcu porta vel. Vestibulum consectetur quam eu consectetur luctus. In leo quam, bibendum sit amet est quis, mattis efficitur neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc aliquam enim at ante semper tempor. Nunc sit amet augue in elit tincidunt interdum at nec metus. Sed finibus turpis euismod elit viverra, id aliquam lorem ultrices. Proin mi sapien, elementum quis augue in, auctor semper elit. Nullam lacus metus, volutpat non nulla at, pharetra tincidunt erat. Maecenas nisl massa, efficitur vehicula feugiat nec, vehicula sed urna. Pellentesque vitae ipsum eget nunc feugiat euismod."
+          "paragraphTitle": "Why 'Froggy' Jumper?",
+          "paragraphContent": "To put it simple I love frogs! I think they are the coolest animals on the planet. I wanted to make a game that was fun and simple to play. I also wanted to make a game that was challenging and fun to play. I hope you enjoy playing Froggy Jumper as much as I enjoyed making it."
         }
       ],
-      "link": "https://github.com/TylerBeach/FireSafe",
-      "imageURL" : "/images/FireSafeLogo.png",
+      "link": "https://github.com/TylerBeach/Froggy-Jumper",
+      "imageURL" : "/images/FroggyJumperLogo.png",
       "demoImages": [
-        "/images/firesafe-three.png",
-        "/images/firesafe-two.png"
+        "/images/FroggyJumperGIF.gif",
+        "/images/FroggyJumperHomeScreen.png"
       ],
-      "techStack":["Python", "Javascript", "Typescript", "Typescript", "Typescript"],
-      "date": "Date"
+      "techStack":["Python"],
+      "date": "November 2022"
+    },
+    {
+      "id": "StoryTeller",
+      "title": "Story Teller",
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is it?",
+          "paragraphContent": "StoryTeller is a web application that allows users to create stories. Leveraging the power of ai, users can generate unique stories with the click of a button."
+        },
+        {
+          "paragraphTitle": "How does it work?",
+          "paragraphContent": "StoryTeller uses openAI's generative text model to generate stories. Users can input a prompt and the model will generate a story based on the prompt. It is also capable of generating images that go along with your story using Stable Diffusion! Not to mention the read along feature that allows you to listen to your story using Eleven Labs Text to Speech!"
+        }
+      ],
+      "link": "https://github.com/Active-Transport/story-time",
+      "imageURL" : "/images/StoryTellerIcon.png",
+      "demoImages": [
+        "/images/StoryTellerOne.png",
+        "/images/StoryTellerTwo.png",
+        "/images/StoryTellerThree.jpg"
+      ],
+      "techStack":["Javascript", "React", "Python"],
+      "date": "January 2024"
     }
   ]
 }

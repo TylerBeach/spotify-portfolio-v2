@@ -1,6 +1,29 @@
 {
   "projects": [
     {
+      "id": "StoryTeller",
+      "title": "Story Teller",
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is it?",
+          "paragraphContent": "StoryTeller is a web application that allows users to create stories. Leveraging the power of ai, users can generate unique stories with the click of a button. It was created during Hacked one of the biggest Hackathons in Alberta, Canada at the University of Alberta. Our five person team had a goal to implement as many AI tools as possible to create a unique and fun experience for users. "
+        },
+        {
+          "paragraphTitle": "How does it work?",
+          "paragraphContent": "StoryTeller uses openAI's generative text model to generate stories. Users can input a prompt and the model will generate a story based on the prompt. It is also capable of generating images that go along with your story using Stable Diffusion! Not to mention the read along feature that allows you to listen to your story using Eleven Labs Text to Speech!"
+        }
+      ],
+      "link": "https://github.com/Active-Transport/story-time",
+      "imageURL" : "/images/StoryTellerIcon.png",
+      "demoImages": [
+        "/images/StoryTellerOne.png",
+        "/images/StoryTellerTwo.png",
+        "/images/StoryTellerThree.jpg"
+      ],
+      "techStack":["Javascript", "React", "Python"],
+      "date": "January 2024"
+    },
+    {
       "id": "FireSafe",
       "title": "FireSafe",
       "paragraphData": [
@@ -43,29 +66,6 @@
       ],
       "techStack":["Python"],
       "date": "November 2022"
-    },
-    {
-      "id": "StoryTeller",
-      "title": "Story Teller",
-      "paragraphData": [
-        {
-          "paragraphTitle": "What is it?",
-          "paragraphContent": "StoryTeller is a web application that allows users to create stories. Leveraging the power of ai, users can generate unique stories with the click of a button."
-        },
-        {
-          "paragraphTitle": "How does it work?",
-          "paragraphContent": "StoryTeller uses openAI's generative text model to generate stories. Users can input a prompt and the model will generate a story based on the prompt. It is also capable of generating images that go along with your story using Stable Diffusion! Not to mention the read along feature that allows you to listen to your story using Eleven Labs Text to Speech!"
-        }
-      ],
-      "link": "https://github.com/Active-Transport/story-time",
-      "imageURL" : "/images/StoryTellerIcon.png",
-      "demoImages": [
-        "/images/StoryTellerOne.png",
-        "/images/StoryTellerTwo.png",
-        "/images/StoryTellerThree.jpg"
-      ],
-      "techStack":["Javascript", "React", "Python"],
-      "date": "January 2024"
     }
   ]
 }

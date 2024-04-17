@@ -8,7 +8,7 @@ interface Project {
   link: string;
   imageURL: string;
   demoImages: string[];
-  techStacks: string[];
+  techStack: string[];
   date: string;
 }
 

@@ -1,0 +1,45 @@
+{
+  "sectionOne": [
+    {
+      "Title": "Home",
+      "Icon": "/images/Home.svg"
+
+    },
+    {
+      "Title": "Search",
+      "Icon": "/images/Search.svg"
+    }
+  ],
+  "Contact Me": [
+    {
+      "Title": "LinkedIn",
+      "Icon": "/images/LinkedIn.png"
+    },
+    {
+      "Title": "Github",
+      "Icon": "/images/Github.png"
+    },
+    {
+      "Title": "Email",
+      "Icon": "/images/Email.png"
+    },
+    {
+      "Title": "Resume",
+      "Icon": "/images/Resume.png"
+    }
+  ],
+  "Spotify Playlists": [
+    {
+      "Title": "My Spotify",
+      "Icon": "/images/Spotify.png"
+    },
+    {
+      "Title": "Lofi",
+      "Icon": "/images/Lofi.png"
+    },
+    {
+      "Title": "Chilling",
+      "Icon": "/images/Chilling.png"
+    }
+  ]
+}

@@ -1,53 +1,10 @@
 import React from 'react'
-
+import navbarData from "../navbarData.json"
 
 
 
 function Navbar() {
-  const navbarInfo = {
-    "sectionOne": [
-        {
-          "Title": "Home",
-          "Icon": "https://placehold.co/400"
-        },
-        {
-          "Title": "Search",
-          "Icon": "https://placehold.co/400"
-        }
-      ],
-    "Contact Me": [
-            {
-                "Title": "LinkedIn",
-                "Icon": "https://placehold.co/400"
-              },
-              {
-                "Title": "Github",
-                "Icon": "https://placehold.co/400"
-              },
-              {
-                "Title": "Email",
-                "Icon": "https://placehold.co/400"
-              },
-              {
-                "Title": "Resume",
-                "Icon": "https://placehold.co/400"
-              }
-        ],
-    "Spotify Playlists": [ 
-            {
-            "Title": "My Spotify",
-            "Icon": "https://placehold.co/400"
-          },
-          {
-            "Title": "Lofi",
-            "Icon": "https://placehold.co/400"
-          },
-          {
-            "Title": "Chilling",
-            "Icon": "https://placehold.co/400"
-          }
-        ]
-      }
+  const navbarInfo = navbarData;
         
 
 

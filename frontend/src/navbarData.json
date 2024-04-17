@@ -2,44 +2,54 @@
   "sectionOne": [
     {
       "Title": "Home",
-      "Icon": "/images/Home.svg"
+      "Icon": "/images/Home.svg",
+      "Link": "https://www.linkedin.com/in/tylerbe/"
 
     },
     {
       "Title": "Search",
-      "Icon": "/images/Search.svg"
+      "Icon": "/images/Search.svg",
+      "Link": "https://www.linkedin.com/in/tylerbe/"
     }
   ],
   "Contact Me": [
     {
       "Title": "LinkedIn",
-      "Icon": "/images/LinkedIn.png"
+      "Icon": "/images/LinkedIn.png",
+      "Link": "https://www.linkedin.com/in/tylerbe/"
     },
     {
       "Title": "Github",
-      "Icon": "/images/Github.png"
+      "Icon": "/images/Github.png",
+      "Link": "https://www.linkedin.com/in/tylerbe/"
     },
     {
       "Title": "Email",
-      "Icon": "/images/Email.png"
+      "Icon": "/images/Email.png",
+      "Link": "https://www.linkedin.com/in/tylerbe/"
+
     },
     {
       "Title": "Resume",
-      "Icon": "/images/Resume.png"
+      "Icon": "/images/Resume.png",
+      "Link": "https://www.linkedin.com/in/tylerbe/"
     }
   ],
   "Spotify Playlists": [
     {
       "Title": "My Spotify",
-      "Icon": "/images/Spotify.png"
+      "Icon": "/images/Spotify.png",
+      "Link": "https://www.linkedin.com/in/tylerbe/"
     },
     {
       "Title": "Lofi",
-      "Icon": "/images/Lofi.png"
+      "Icon": "/images/Lofi.png",
+      "Link": "https://www.linkedin.com/in/tylerbe/"
     },
     {
       "Title": "Chilling",
-      "Icon": "/images/Chilling.png"
+      "Icon": "/images/Chilling.png",
+      "Link": "https://www.linkedin.com/in/tylerbe/"
     }
   ]
 }

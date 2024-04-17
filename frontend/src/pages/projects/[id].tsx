@@ -34,9 +34,11 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className='bg-black max-w-[100vw] max-h-[100vh] min-h-[100vh] overflow-y-scroll'>
-      {/* <Navbar/> */}
-      <ProjectComponent project={project} />
+    <div className='flex flex-row bg-black max-w-[100vw] max-h-[100vh] min-h-[100vh] overflow-y-scroll pr-4 pt-4'>
+      <Navbar/>
+      <div className='pl-4 md:pl-[300px]'>
+        <ProjectComponent project={project} />
+      </div>
     </div>
   );
 }

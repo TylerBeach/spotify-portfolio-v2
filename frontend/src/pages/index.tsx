@@ -14,10 +14,10 @@ export default function Home() {
   const ProjectData = portfolioData;  // all in json file 
 
   return (
-    <main id="style-1" className="flex flex-col justify-between font-SpotifyMedium bg-black h-[100vh] max-h-[100vh] w-[100vw] max-w-[100vw] overflow-x-hidden overflow-y-scroll" >
+    <main id="style-1" className="flex flex-col justify-between pt-4 font-SpotifyMedium bg-black h-[100vh] max-h-[100vh] w-[100vw] max-w-[100vw] overflow-x-hidden overflow-y-scroll" >
       <div className="flex flex-row ">
         <Navbar />
-        <div id="style-1" className="flex flex-col w-[100%] ml-4 mt-4 md:ml-[300px] ">
+        <div id="style-1" className="flex flex-col w-[100%] ml-4 md:ml-[300px] ">
           {/* <Projects {...ProjectData} /> */}
           < Banner />
           <ProjectsContainer {...ProjectData} />

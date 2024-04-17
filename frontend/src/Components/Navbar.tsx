@@ -9,8 +9,8 @@ function Navbar() {
 
 
   return (
-    <div className='hidden md:flex fixed h-[100vh] w-[300px] bg-black text-white flex-col p-2 overflow-auto hide-scrollbar'>
-        <div className='flex flex-col p-2 gap-y-4'>
+    <div className='hidden md:flex fixed h-[100vh] w-[300px] bg-black text-white flex-col overflow-auto hide-scrollbar'>
+        <div className='flex flex-col px-4 gap-y-4'>
             {Object.entries(navbarInfo).map(([sectionName, items], index) => (
             <div className='flex flex-col rounded-md bg-[#121212] p-2 gap-y-3 text-lg pl-3 pt-3 pb-3' key={sectionName}>
             {/* Conditionally render the section name, skip if it's the first section */}

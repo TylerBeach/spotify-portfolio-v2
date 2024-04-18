@@ -8,6 +8,7 @@ import Navbar from '@/Components/Navbar';
 interface Project {
   id: string;
   title: string;
+  cardDescription: string;
   paragraphData: { paragraphTitle: string, paragraphContent: string }[];
   link: string;
   imageURL: string;

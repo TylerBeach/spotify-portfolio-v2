@@ -3,6 +3,7 @@
     {
       "id": "StoryTeller",
       "title": "Story Teller",
+      "cardDescription": "An AI powered story generator that creates unique stories with the click of a button.",  
       "paragraphData": [
         {
           "paragraphTitle": "What is it?",
@@ -26,6 +27,7 @@
     {
       "id": "FireSafe",
       "title": "FireSafe",
+      "cardDescription": "An AI powered story generator that creates unique stories with the click of a button.",  
       "paragraphData": [
         {
           "paragraphTitle": "What is FireSafe?",
@@ -48,6 +50,7 @@
     {
       "id": "FroggyJumper",
       "title": "Froggy Jumper",
+      "cardDescription": "An AI powered story generator that creates unique stories with the click of a button.",  
       "paragraphData": [
         {
           "paragraphTitle": "What is Froggy Jumper?",

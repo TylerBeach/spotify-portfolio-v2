@@ -5,8 +5,8 @@
 @font-face {
     font-family: 'SpotifyMedium';
     src: url('../public/fonts/CircularSpotifyText-Medium.otf') format('opentype');
-    font-weight: bolder;
     font-style: normal;
+    font-weight: bolder;
   }
 
 
@@ -14,7 +14,7 @@
     font-family: 'SpotifyLight';
     src: url('../public/fonts/CircularSpotifyText-Light.otf') format('opentype');
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .SpotifyLightFont {
@@ -61,4 +61,50 @@ html {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #555;
+}
+
+.project_box img {
+  scale: 1.0;
+  transition: 0.3s ease-out;
+}
+
+.project_box h1 {
+  transition: visibility 0s 0.3s, opacity 0.3s linear;  /* Delay hiding text to be smooth */  
+  /* display: block; */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.project_box:hover img {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 6px;
+  filter: blur(1px);
+  filter:brightness(0.25);
+}
+
+.project_box:hover h1 {
+  display: none;
+  visibility: hidden;  /* Hide text on hover */
+    transition: visibility 1s 12s, opacity 0.3s linear;  /* Delay hiding text to be smooth */
+}
+
+.project_box:hover h3 {
+  display: block; 
+  position: absolute;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  width: 400px;
+}
+
+.project_box h3 {
+  padding: 6px;
+  opacity: 0;
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+
+.about-background-image {
+  background-image: url('../public/images/profileBanner.jpg');
 }

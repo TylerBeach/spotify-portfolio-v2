@@ -4,6 +4,7 @@ import ProjectsContainer from "../Components/ProjectsContainer";
 import portfolioData from '../data.json';
 import Footer from "@/Components/Footer";
 import AboutMeCard from "@/Components/AboutMeCard";
+import TopNavButtons from "@/Components/TopNavButtons";
 import { motion } from 'framer-motion';
 import Link from "next/link";
 export default function Home() {
@@ -27,16 +28,15 @@ export default function Home() {
             <Navbar />
           </motion.div>
           <div id="style-1" className="flex flex-col w-[100%] ml-4 md:ml-[300px] ">
-          <motion.div initial="hidden" animate="visible" variants={{
-            hidden: { opacity: 0, y: 100 },
-            visible: { opacity: 1, y: 0, 
-            transition: { delay: 1.1 } } }}>   
-            < Banner />
-          </motion.div>
+            <motion.div className="w-[100%]" initial="hidden" animate="visible" variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0, 
+              transition: { delay: 1.1 } } }}>  
+              < TopNavButtons /> 
+              < Banner />
+            </motion.div>
             <AboutMeCard />
-          <ProjectsContainer {...ProjectData} />
-          
-
+            <ProjectsContainer {...ProjectData} />
           </div>
           
 

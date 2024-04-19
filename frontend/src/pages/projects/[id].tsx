@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import projectsData from '../../data.json'; // Assuming this imports correctly
 import ProjectComponent from '../../Components/Project'; // Adjust the import path as needed
 import Navbar from '@/Components/Navbar';
+import TopNavButtons from '@/Components/TopNavButtons';
 
 interface Project {
   id: string;
@@ -38,6 +39,7 @@ const ProjectDetail = () => {
     <div className='flex flex-row bg-black max-w-[100vw] max-h-[100vh] min-h-[100vh] overflow-y-scroll pr-4 pt-4'>
       <Navbar/>
       <div className='pl-4 md:pl-[300px]'>
+        < TopNavButtons />
         <ProjectComponent project={project} />
       </div>
     </div>

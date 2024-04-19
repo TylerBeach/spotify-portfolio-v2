@@ -107,4 +107,21 @@ html {
 
 .about-background-image {
   background-image: url('../public/images/profileBanner.jpg');
+  transition: filter 0.3s ease; /* Smooth transition for filter changes */
+  filter: brightness(100%); /* Start with normal brightness */
 }
+
+.about-background-image-blur {
+  background-image: url('../public/images/profileBanner.jpg');
+  filter: brightness(0.3) blur(8px);
+}
+
+
+.background-blur-container {
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(6, 4, 31) 20%, rgb(18, 18, 18) 100%);
+
+
+}
+
+

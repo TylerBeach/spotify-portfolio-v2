@@ -22,19 +22,20 @@ interface Project {
 
   const ProjectCard: React.FC<ProjectsProps> = ({ projects }) => {
     return (
-        <div className='grid grid-cols-1 flex-wrap gap-4 lg:grid-cols-2 xl:grid-cols-3'>
+        <div className='w-full grid grid-cols-1 flex-wrap gap-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
+
         {projects.map((project, index) => (
-          <motion.div initial="hidden" animate="visible" variants={{
+          <motion.div className='w-full' key={project.id} initial="hidden" animate="visible" variants={{
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0, 
-              transition: { delay: (1.3 + index * 0.1) } } }}>
-              <Link key={project.id} href={`/projects/${project.id}`} passHref>
-            <div className='project_box card_background flex flex-row rounded-md h-24 w-[100%] min-w-[300px] lg:w-[95%] xl:w-[90%]'>
-              <img className='rounded-md rounded-tr-none rounded-br-none w-[100px] object-cover h-full ' src={project.imageURL} alt={project.title}/>
-              <h1 className='text-white text-2xl my-auto ml-3'>{project.title}</h1>
-              <h3 className='text-white'>{project.cardDescription}</h3>
-            </div>
-          </Link>
+            transition: { delay: (1.3 + index * 0.1) } } }}>
+
+            <Link className='project_box card_background_light flex flex-row rounded-md h-20 w-[100%] lg:w-[100%] lg:max-w-[400px] xl:w-[100%]' href={`/projects/${project.id}`} passHref>
+                <img className='rounded-md rounded-tr-none rounded-br-none w-[80px] object-cover h-full ' src={project.imageURL} alt={project.title}/>
+                <h1 className='text-white text-2xl my-auto ml-3'>{project.title}</h1>
+                {/* <h3 className='text-white'>{project.cardDescription}</h3> */}
+            </Link>
+
           </motion.div>
         ))}
       </div>

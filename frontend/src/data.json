@@ -69,6 +69,30 @@
       ],
       "techStack":["Python"],
       "date": "November 2022"
+    },
+    {
+      "id": "FroggyJumper",
+      "title": "Froggy Jumper",
+      "cardDescription": "An AI powered story generator that creates unique stories with the click of a button.",  
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is Froggy Jumper?",
+          "paragraphContent": "Froggy Jumper is a fast paced side scroller where your objective to survive as long as you can. The game is simple, jump over the snakes and collect the flies. The longer you survive the faster the game gets."
+        },
+        {
+          "paragraphTitle": "Why 'Froggy' Jumper?",
+          "paragraphContent": "To put it simple I love frogs! I think they are the coolest animals on the planet. I wanted to make a game that was fun and simple to play. I also wanted to make a game that was challenging and fun to play. I hope you enjoy playing Froggy Jumper as much as I enjoyed making it."
+        }
+      ],
+      "link": "https://github.com/TylerBeach/Froggy-Jumper",
+      "imageURL" : "/images/FroggyJumperLogo.png",
+      "demoImages": [
+        "/images/FroggyJumperGIF.gif",
+        "/images/FroggyJumperHomeScreen.png"
+      ],
+      "techStack":["Python"],
+      "date": "November 2022"
     }
+ 
   ]
 }

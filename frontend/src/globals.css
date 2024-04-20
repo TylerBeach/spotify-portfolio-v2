@@ -72,7 +72,6 @@ html {
   transition: visibility 0s 0.3s, opacity 0.3s linear;  /* Delay hiding text to be smooth */  
   /* display: block; */
   white-space: nowrap;
-  overflow: hidden;
 }
 
 
@@ -120,8 +119,9 @@ html {
 .background-blur-container {
   overflow: hidden;
   background: linear-gradient(to bottom, rgb(6, 4, 31) 20%, rgb(18, 18, 18) 100%);
-
-
 }
 
 
+.hover-effect:hover {
+  background-color: #272727;
+}

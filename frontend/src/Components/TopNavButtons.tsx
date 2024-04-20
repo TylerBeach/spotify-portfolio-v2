@@ -14,7 +14,7 @@ function TopNavButtons() {
   }
 
   return (
-    <div className='flex flex-row justify-between items-center w-[100%] h-auto text-white top-4 pl-[0px] pr-[16px] left-0 right-0 absolute z-10 bg-none md:pl-[300px]'>
+    <div className='flex flex-row justify-between items-center w-[100%] h-auto text-white top-4 pl-[0px] pr-[16px] z-10'>
         <div className='flex flex-row gap-x-4'>
             <button onClick={goBack} type="button">Back</button>
             <button onClick={goForward} type="button">Forward</button>

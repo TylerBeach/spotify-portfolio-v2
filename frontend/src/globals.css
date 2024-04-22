@@ -71,6 +71,7 @@ html {
 .project_box h1 {
   transition: visibility 0s 0.3s, opacity 0.3s linear;  /* Delay hiding text to be smooth */  
   /* display: block; */
+  width: 100%;
   white-space: nowrap;
 }
 
@@ -85,15 +86,16 @@ html {
 
 .project_box:hover h1 {
   display: none;
+  width: 0px;
   visibility: hidden;  /* Hide text on hover */
-    transition: visibility 1s 12s, opacity 0.3s linear;  /* Delay hiding text to be smooth */
+  transition: 2s ease-out;  /* Delay hiding text to be smooth */
 }
 
 .project_box:hover h3 {
   display: block; 
   position: absolute;
   opacity: 1;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
   width: 400px;
 }
 
@@ -121,7 +123,11 @@ html {
   background: linear-gradient(to bottom, rgb(6, 4, 31) 20%, rgb(18, 18, 18) 100%);
 }
 
+.hover-effect {
+  transition: 0.25s;
+}
 
 .hover-effect:hover {
-  background-color: #272727;
+  background-color: #212121;
+  transition: 0.25s;
 }

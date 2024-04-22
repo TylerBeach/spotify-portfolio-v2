@@ -13,13 +13,13 @@ function SquareCardContainer() {
                     hidden: { opacity: 0, y: 100 },
                     visible: { opacity: 1, y: 0, 
                     transition: { delay: (2.2 + index * 0.1) } } }}>
-                    <div key={index} className='card_background flex flex-col w-[160px] h-auto rounded-md text-white'>
                         <Link href={`/projects/${project.id}`} passHref>
-                            <img className='w-[160px] h-[160px] rounded-md' src={project.imageURL} alt={project.title} />
-                            <h1 className='p-1 text-xl SpotifyLightFont font-semibold'>{project.title}</h1>
-                            <p className='p-1 SpotifyLightFont text-sm brightness-75'>{project.cardDescription}</p>
-                        </Link>
+                    <div key={index} className='hover-effect card_background p-2.5 gap-y-1 flex flex-col w-[180px] h-auto rounded-md text-white'>
+                            <img className='w-[100%] h-[160px] rounded-md' src={project.imageURL} alt={project.title} />
+                            <h1 className='text-xl SpotifyLightFont font-semibold'>{project.title}</h1>
+                            <p className='SpotifyLightFont text-sm brightness-75'>{project.cardDescription}</p>
                     </div>
+                        </Link>
                 </motion.div>
             ))}
         </div>

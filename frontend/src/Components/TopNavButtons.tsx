@@ -10,7 +10,7 @@ function TopNavButtons() {
   };
 
   const goForward = () => {
-    router.forward();
+    window.history.forward(); 
   }
 
   return (

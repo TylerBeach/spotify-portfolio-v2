@@ -16,6 +16,7 @@
       ],
       "link": "https://github.com/Active-Transport/story-time",
       "imageURL" : "/images/projectImages/StoryTellerIcon.png",
+      "bannerURL" : "/images/projectImages/StoryTellerBanner.png",
       "demoImages": [
         "/images/projectImages/StoryTellerOne.png",
         "/images/projectImages/StoryTellerTwo.png",
@@ -40,6 +41,7 @@
       ],
       "link": "https://github.com/TylerBeach/FireSafe",
       "imageURL" : "/images/projectImages/FireSafeLogo.png",
+      "bannerURL" : "/images/projectImages/FroggyJumperBanner.png",
       "demoImages": [
         "/images/projectImages/firesafe-three.png",
         "/images/projectImages/firesafe-two.png"
@@ -63,6 +65,7 @@
       ],
       "link": "https://github.com/TylerBeach/Froggy-Jumper",
       "imageURL" : "/images/projectImages/FroggyJumperLogo.png",
+      "bannerURL" : "/images/projectImages/FroggyJumperBanner.png",
       "demoImages": [
         "/images/projectImages/FroggyJumperGIF.gif",
         "/images/projectImages/FroggyJumperHomeScreen.png"
@@ -86,6 +89,7 @@
       ],
       "link": "https://github.com/TylerBeach/Froggy-Jumper",
       "imageURL" : "/images/projectImages/FroggyJumperLogo.png",
+      "bannerURL" : "/images/projectImages/FroggyJumperBanner.png",
       "demoImages": [
         "/images/projectImages/FroggyJumperGIF.gif",
         "/images/projectImages/FroggyJumperHomeScreen.png"

@@ -13,6 +13,7 @@ interface Project {
   paragraphData: { paragraphTitle: string, paragraphContent: string }[];
   link: string;
   imageURL: string;
+  bannerURL: string;
   demoImages: string[];
   techStack: string[];
   date: string;
@@ -38,8 +39,7 @@ const ProjectDetail = () => {
   return (
     <div className='flex flex-row  bg-black max-w-[100vw] max-h-[100vh] min-h-[100vh] overflow-y-scroll pr-4 pt-4'>
       <Navbar/>
-      <div className='pt-2 pl-4 rounded-md md:pl-[300px] card_background'>
-        < TopNavButtons />
+      <div className='ml-4 rounded-md md:pl-[300px] md:ml-0 card_background'>
         <ProjectComponent project={project} />
       </div>
     </div>

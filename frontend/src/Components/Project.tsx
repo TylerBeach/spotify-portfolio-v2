@@ -23,18 +23,20 @@ interface Project {
 
   const ProjectComponent: React.FC<ProjectProps> = ({ project }) => {
     
-    const backGroundStyle = {
-        background: `/images/${project.imageURL}`
-    }
+   
 
     return (
         
-        <div style={backGroundStyle}  className='p-4 card_background text-white rounded-md font-SpotifyMedium max-w-[100vw]'>
-            <div className='flex flex-row gap-x-4 mb-4'>
-                <img className='w-[100px] sm:w-[150px] md:w-[250px] lg:w-[350px]' src={project.imageURL} alt="Project Image" />
-                <div className='flex flex-col justify-center'>
-                    <h1 className='text-3xl md:text-4xl lg:text-6xl font-SpotifyMedium'>{project.title}</h1>
-                    <p className='text-md'>{project.date}</p>
+        <div className='py-4 card_background text-white rounded-md font-SpotifyMedium max-w-[100vw]'>
+            <div  style={{ backgroundImage: `url(${project.imageURL})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top' }} 
+
+                className='w-full h-[400px]'>
+                <div className='flex flex-row gap-x-4 mb-4'>
+                    {/* <img className='w-[100px] sm:w-[150px] md:w-[250px] lg:w-[350px]' src={project.imageURL} alt="Project Image" /> */}
+                    <div className='flex flex-col justify-center'>
+                        <h1 className='text-3xl md:text-4xl lg:text-6xl font-SpotifyMedium'>{project.title}</h1>
+                        <p className='text-md'>{project.date}</p>
+                    </div>
                 </div>
             </div>
             {project.paragraphData.map((aParagraph, index) => (
@@ -53,7 +55,7 @@ interface Project {
           
                 {project.techStack.map((techStack, index) => (
                     <div className='flex flex-col p-4 card_background_lightest rounded-md justify-between min-w-[100px]'>
-                        <img className='w-[100px] rounded-lg' src={`/images/${techStack}.png`} alt="Tech Stack" />
+                        <img className='w-[100px] rounded-lg' src={`/images/techStack/${techStack}.png`} alt="Tech Stack" />
                         <h3 key={index} className='text-white text-center'>{techStack}</h3>
                     </div>
                 ))}

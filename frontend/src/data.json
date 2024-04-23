@@ -15,11 +15,11 @@
         }
       ],
       "link": "https://github.com/Active-Transport/story-time",
-      "imageURL" : "/images/StoryTellerIcon.png",
+      "imageURL" : "/images/projectImages/StoryTellerIcon.png",
       "demoImages": [
-        "/images/StoryTellerOne.png",
-        "/images/StoryTellerTwo.png",
-        "/images/StoryTellerThree.jpg"
+        "/images/projectImages/StoryTellerOne.png",
+        "/images/projectImages/StoryTellerTwo.png",
+        "/images/projectImages/StoryTellerThree.jpg"
       ],
       "techStack":["Javascript", "React", "Python"],
       "date": "January 2024"
@@ -39,10 +39,10 @@
         }
       ],
       "link": "https://github.com/TylerBeach/FireSafe",
-      "imageURL" : "/images/FireSafeLogo.png",
+      "imageURL" : "/images/projectImages/FireSafeLogo.png",
       "demoImages": [
-        "/images/firesafe-three.png",
-        "/images/firesafe-two.png"
+        "/images/projectImages/firesafe-three.png",
+        "/images/projectImages/firesafe-two.png"
       ],
       "techStack":["Python", "Javascript", "Typescript", "Typescript", "Typescript"],
       "date": " Created December 2022"
@@ -62,10 +62,10 @@
         }
       ],
       "link": "https://github.com/TylerBeach/Froggy-Jumper",
-      "imageURL" : "/images/FroggyJumperLogo.png",
+      "imageURL" : "/images/projectImages/FroggyJumperLogo.png",
       "demoImages": [
-        "/images/FroggyJumperGIF.gif",
-        "/images/FroggyJumperHomeScreen.png"
+        "/images/projectImages/FroggyJumperGIF.gif",
+        "/images/projectImages/FroggyJumperHomeScreen.png"
       ],
       "techStack":["Python"],
       "date": "November 2022"
@@ -85,14 +85,15 @@
         }
       ],
       "link": "https://github.com/TylerBeach/Froggy-Jumper",
-      "imageURL" : "/images/FroggyJumperLogo.png",
+      "imageURL" : "/images/projectImages/FroggyJumperLogo.png",
       "demoImages": [
-        "/images/FroggyJumperGIF.gif",
-        "/images/FroggyJumperHomeScreen.png"
+        "/images/projectImages/FroggyJumperGIF.gif",
+        "/images/projectImages/FroggyJumperHomeScreen.png"
       ],
       "techStack":["Python"],
       "date": "November 2022"
     }
+    
  
   ]
 }

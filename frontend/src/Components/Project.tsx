@@ -23,11 +23,13 @@ interface Project {
 
   const ProjectComponent: React.FC<ProjectProps> = ({ project }) => {
     
-    const [isPaused, setIsPaused] = useState(false);
-    
+    const backGroundStyle = {
+        background: `/images/${project.imageURL}`
+    }
+
     return (
         
-        <div className='p-4 card_background text-white rounded-md font-SpotifyMedium max-w-[100vw]'>
+        <div style={backGroundStyle}  className='p-4 card_background text-white rounded-md font-SpotifyMedium max-w-[100vw]'>
             <div className='flex flex-row gap-x-4 mb-4'>
                 <img className='w-[100px] sm:w-[150px] md:w-[250px] lg:w-[350px]' src={project.imageURL} alt="Project Image" />
                 <div className='flex flex-col justify-center'>

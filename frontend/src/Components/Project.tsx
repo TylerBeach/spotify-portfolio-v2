@@ -58,17 +58,27 @@ interface Project {
             >
             </div>
 
-            {/* project tech stack */}
-            <div className='px-4 flex flex-col my-4 mt-[-100px]'>
-                <h2 className='text-2xl'>Tech Stack</h2>
+            <div className='h-auto w-full flex flex-row flex-wrap justify-between px-4 my-4 mt-[-100px]'>
 
-                {project.techStack.map((techStack, index) => (
-                    <div key={index} className='hover-effect flex flex-row rounded-md w-[100%] h-auto min-w-[300px] gap-x-6 pl-6 items-center SpotifyLightFont'>
-                        <h2 className='text-gray-400 w-2'>{index}</h2>
-                        <img className='rounded-md w-[50px] h-[50px] object-contain m-2 ' src={`/images/techStack/${techStack}.png`} alt="Tech Stack"/>
-                        <h1 className='text-white font-semibold text-xl'>{techStack}</h1>
-                    </div>
-                ))}
+                {/* project tech stack */}
+                <div className='flex flex-col w-auto'>
+                    <h2 className='text-2xl'>Tech Stack</h2>
+
+                    {project.techStack.map((techStack, index) => (
+                        <div key={index} className='hover-effect2 flex flex-row rounded-md w-[100%] h-auto min-w-[350px] gap-x-6 pl-6 items-center SpotifyLightFont'>
+                            <h2 className='text-gray-400 w-2'>{index+1}</h2>
+                            <img className='rounded-md w-[35px] h-[35px] object-contain m-2 ' src={`/images/techStack/${techStack}.png`} alt="Tech Stack"/>
+                            <h1 className='text-white font-semibold text-xl'>{techStack}</h1>
+                        </div>
+                    ))}
+                </div>
+
+                {/* project github link */}
+                <div className='w-[600px]'>
+                    <a href={project.link} className=''>Link</a>
+
+                </div>
+
             </div>
 
             {/* project paragraphs */}
@@ -88,9 +98,7 @@ interface Project {
                 ))}
             </div>
 
-                
-            {/* project github link */}
-            <a href={project.link} className='px-4'>Link</a>
+
         </div>
     );
 }

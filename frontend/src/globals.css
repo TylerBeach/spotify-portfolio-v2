@@ -131,3 +131,12 @@ html {
   background-color: #212121;
   transition: 0.25s;
 }
+
+.hover-effect2 {
+  transition: 0.1s;
+}
+
+.hover-effect2:hover {
+  background-color: #464646ad;
+  transition: 0.1s;
+}

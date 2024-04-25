@@ -58,8 +58,21 @@ interface Project {
             >
             </div>
 
+            {/* project tech stack */}
+            <div className='px-4 flex flex-col my-4 mt-[-100px]'>
+                <h2 className='text-2xl'>Tech Stack</h2>
+
+                {project.techStack.map((techStack, index) => (
+                    <div key={index} className='hover-effect flex flex-row rounded-md w-[100%] h-auto min-w-[300px] gap-x-6 pl-6 items-center SpotifyLightFont'>
+                        <h2 className='text-gray-400 w-2'>{index}</h2>
+                        <img className='rounded-md w-[50px] h-[50px] object-contain m-2 ' src={`/images/techStack/${techStack}.png`} alt="Tech Stack"/>
+                        <h1 className='text-white font-semibold text-xl'>{techStack}</h1>
+                    </div>
+                ))}
+            </div>
+
             {/* project paragraphs */}
-            <div className='px-4 flex flex-col w-full mt-[-100px]'>
+            <div className='px-4 flex flex-col w-full '>
                 {project.paragraphData.map((aParagraph, index) => (
                     <div key={index} className='flex flex-col mb-4'>
                         <h2 className='text-2xl'>{aParagraph.paragraphTitle}</h2>
@@ -75,18 +88,6 @@ interface Project {
                 ))}
             </div>
 
-            {/* project tech stack */}
-            <div className='px-4 flex flex-col my-4'>
-                <h2 className='text-2xl'>Tech Stack</h2>
-
-                {project.techStack.map((techStack, index) => (
-                    <div key={index} className='hover-effect flex flex-row rounded-md w-[100%] h-auto min-w-[300px] gap-x-6 pl-6 items-center SpotifyLightFont'>
-                        <h2 className='text-gray-400 w-2'>{index}</h2>
-                        <img className='rounded-md w-[50px] h-[50px] object-contain m-2 ' src={`/images/techStack/${techStack}.png`} alt="Tech Stack"/>
-                        <h1 className='text-white font-semibold text-xl'>{techStack}</h1>
-                    </div>
-                ))}
-            </div>
                 
             {/* project github link */}
             <a href={project.link} className='px-4'>Link</a>

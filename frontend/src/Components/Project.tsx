@@ -35,12 +35,14 @@ interface Project {
 
 
     return (
-        <div className='card_background text-white rounded-md font-SpotifyMedium max-w-[100vw]'>
+        <div className='card_background text-white rounded-md font-SpotifyMedium max-w-[100vw] overflow-x-hidden pb-10' >
 
             {/* image banner + title and date */}
             <div  style={{ backgroundImage: `url(${project.bannerURL})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }} 
-                className='flex flex-col justify-between w-full h-[400px]'>
+                className='flex flex-col justify-between w-full h-[400px] rounded-t-md p-2'>
+                
                 < TopNavButtons />
+                
                 <div className='flex flex-row gap-x-4 mb-4'>
                     <div className='flex flex-col justify-center'>
                         <h3 className="text-white text-4xl pl-4 font-bold md:text-7xl"> {project.title} </h3>
@@ -58,14 +60,14 @@ interface Project {
             >
             </div>
 
-            <div className='h-auto w-full flex flex-row flex-wrap justify-between px-4 my-4 mt-[-100px]'>
+            <div className='h-auto w-full flex flex-row flex-wrap gap-y-4 justify-between px-4 my-4 mt-[-100px]'>
 
                 {/* project tech stack */}
-                <div className='flex flex-col w-auto'>
+                <div className='flex flex-col w-[50%]'>
                     <h2 className='text-2xl'>Tech Stack</h2>
 
                     {project.techStack.map((techStack, index) => (
-                        <div key={index} className='hover-effect2 flex flex-row rounded-md w-[100%] h-auto min-w-[350px] gap-x-6 pl-6 items-center SpotifyLightFont'>
+                        <div key={index} className='hover-effect2 flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-6 items-center SpotifyLightFont'>
                             <h2 className='text-gray-400 w-2'>{index+1}</h2>
                             <img className='rounded-md w-[35px] h-[35px] object-contain m-2 ' src={`/images/techStack/${techStack}.png`} alt="Tech Stack"/>
                             <h1 className='text-white font-semibold text-xl'>{techStack}</h1>
@@ -74,8 +76,11 @@ interface Project {
                 </div>
 
                 {/* project github link */}
-                <div className='w-[600px]'>
-                    <a href={project.link} className=''>Link</a>
+                <div className=' flex flex-col rounded-md w-[600px] h-auto items-top '>
+                    <a className='text-2xl'>Link to Repository</a>
+                    <a href={project.link}>
+                        <img className='rounded-full w-[75px] h-[75px] object-contain' src='/images/github.png' alt="Github"/>
+                    </a>
 
                 </div>
 

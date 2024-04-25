@@ -5,6 +5,7 @@ import projectsData from '../../data.json'; // Assuming this imports correctly
 import ProjectComponent from '../../Components/Project'; // Adjust the import path as needed
 import Navbar from '@/Components/Navbar';
 import TopNavButtons from '@/Components/TopNavButtons';
+import Footer from '@/Components/Footer';
 
 interface Project {
   id: string;
@@ -37,9 +38,9 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className='flex flex-row  bg-black max-w-[100vw] max-h-[100vh] min-h-[100vh] overflow-y-scroll pr-4 pt-4'>
+    <div className='flex flex-row  bg-black max-w-[100vw]  min-h-[100vh] pr-4 pt-4'>
       <Navbar/>
-      <div className='ml-4 rounded-md md:pl-[300px] md:ml-0 card_background'>
+      <div className='mb-14 ml-4 rounded-md md:ml-[300px] md:pl-0 card_background h-auto'>
         <ProjectComponent project={project} />
       </div>
     </div>

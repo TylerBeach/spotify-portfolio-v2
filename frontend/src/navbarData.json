@@ -2,13 +2,13 @@
   "sectionOne": [
     {
       "Title": "Home",
-      "Icon": "/images/Home.svg",
+      "Icon": "/images/Home.png",
       "Link": "/"
 
     },
     {
       "Title": "Search",
-      "Icon": "/images/Search.svg",
+      "Icon": "/images/Search.png",
       "Link": "https://www.linkedin.com/in/tylerbe/"
     }
   ],

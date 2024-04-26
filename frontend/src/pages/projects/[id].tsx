@@ -43,6 +43,7 @@ const ProjectDetail = () => {
       <div className='mb-14 ml-4 rounded-md md:ml-[300px] md:pl-0 card_background h-auto'>
         <ProjectComponent project={project} />
       </div>
+      
     </div>
   );
 }

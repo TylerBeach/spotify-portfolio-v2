@@ -9,7 +9,7 @@ function about() {
       <div className="card_background flex flex-row mr-0 mt-0 md:mt-4 md:mr-4 w-full">
         <Navbar />
         <div className="flex flex-col w-full pl-[4px] h-auto md:pl-[300px]">
-          <div className="flex flex-col justify-between about-background-image h-[400px] w-full">
+          <div className="flex flex-col justify-between p-2 about-background-image h-[400px] w-full">
             <TopNavButtons />
             <div className="flex flex-col justify-end">
               <div className="flex flex-row pb-4">
@@ -28,7 +28,7 @@ function about() {
             </div>
           </div>
           <div className="background-blur-container h-fit min-h-[300px] w-full z-[2]"></div>
-          <div className="mt-[-250px] flex flex-col h-[1000px] z-[2]">
+          <div className="mt-[-250px] flex flex-col h-[1000px] z-[2] pl-4">
             <div>
               <ProfileSongsContainer />
             </div>

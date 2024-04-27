@@ -28,7 +28,7 @@
     {
       "id": "FireSafe",
       "title": "FireSafe",
-      "cardDescription": "An AI powered story generator that creates unique stories with the click of a button.",  
+      "cardDescription": "Forest fire software that uses machine learning to locate secluded locations and homes",  
       "paragraphData": [
         {
           "paragraphTitle": "What is FireSafe?",
@@ -52,31 +52,7 @@
     {
       "id": "FroggyJumper",
       "title": "Froggy Jumper",
-      "cardDescription": "An AI powered story generator that creates unique stories with the click of a button.",  
-      "paragraphData": [
-        {
-          "paragraphTitle": "What is Froggy Jumper?",
-          "paragraphContent": "Froggy Jumper is a fast paced side scroller where your objective to survive as long as you can. The game is simple, jump over the snakes and collect the flies. The longer you survive the faster the game gets."
-        },
-        {
-          "paragraphTitle": "Why 'Froggy' Jumper?",
-          "paragraphContent": "To put it simple I love frogs! I think they are the coolest animals on the planet. I wanted to make a game that was fun and simple to play. I also wanted to make a game that was challenging and fun to play. I hope you enjoy playing Froggy Jumper as much as I enjoyed making it."
-        }
-      ],
-      "link": "https://github.com/TylerBeach/Froggy-Jumper",
-      "imageURL" : "/images/projectImages/FroggyJumperLogo.png",
-      "bannerURL" : "/images/projectImages/FroggyJumperBanner.png",
-      "demoImages": [
-        "/images/projectImages/FroggyJumperGIF.gif",
-        "/images/projectImages/FroggyJumperHomeScreen.png"
-      ],
-      "techStack":["Python"],
-      "date": "November 2022"
-    },
-    {
-      "id": "FroggyJumper",
-      "title": "Froggy Jumper",
-      "cardDescription": "An AI powered story generator that creates unique stories with the click of a button.",  
+      "cardDescription": "2D side scroller game where you play as a frog and jump over snakes to collect flies",  
       "paragraphData": [
         {
           "paragraphTitle": "What is Froggy Jumper?",
@@ -97,7 +73,30 @@
       "techStack":["Python"],
       "date": "November 2022"
     }
-    
- 
-  ]
+  ],
+  "about": {
+    "title": "About Me",
+    "paragraphs": [
+      {
+        "title": "Professional Summary",
+        "image": "https://placehold.co/400",
+        "paragraphContent": "I am a software developer with a passion for creating unique and fun applications. I have experience working with a variety of technologies and languages. I am always looking for new and exciting projects to work on. I am currently a student at the University of Alberta studying Computing Science."
+      },
+      {
+        "title": "Background",
+        "image": "https://placehold.co/400",
+        "paragraphContent": "Real of reals"
+      },
+      {
+        "title": "Technical Skills",
+        "image": "https://placehold.co/400",
+        "paragraphContent": "Real of reals"
+      },
+      {
+        "title": "Career Goals",
+        "image": "https://placehold.co/400",
+        "paragraphContent": "Real of reals"
+      }
+    ]
+  }
 }

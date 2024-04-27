@@ -40,7 +40,7 @@ export default function Home() {
         visible: { opacity: 1, y: 0, transition: { delay: 1 } },
       }}
     >
-      <div className="flex flex-col h-[1400px] w-[100%] gap-y-2 card_background rounded-md min-h-[100vh] overflow-x-hidden overflow-y-auto">
+      <div className="flex flex-col h-full w-[100%] p-2 gap-y-2 card_background rounded-md min-h-[100vh] overflow-x-hidden overflow-y-auto">
         <TopNavButtons />
         <Banner />
         <ProjectsContainer {...ProjectData} />
@@ -48,7 +48,6 @@ export default function Home() {
       </div>
     </motion.div>
   </div>
-
   <MusicPlayer />
 </main>
 

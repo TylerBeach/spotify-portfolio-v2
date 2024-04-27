@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
+
 function MusicPlayer() {
   const [currentSong, setCurrentSong] = useState("Personal Portfolio - Spotify Version");
   const [currentArtist, setCurrentArtist] = useState("Tyler Beach");
@@ -17,6 +19,16 @@ function MusicPlayer() {
   }
 
   return (
+    <motion.div
+      className='z-10'
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: { opacity: 0, },
+        visible: { opacity: 1,   transition: { delay: 1 } },
+      }}
+    >
+
     <div className='h-[100px] bg-black flex-row flex justify-between fixed bottom-0 z-10 gap-x-2 w-[100vw]'>
         <div className='flex flex-row text-white gap-x-3 pl-4 min-w-fit'>
             {/* Song + Artist + Image */}
@@ -41,6 +53,7 @@ function MusicPlayer() {
         {/* volume slider */}
         <div className='w-[100px] bg-white mx-3 h-1 my-auto'></div>
     </div>
+    </motion.div>
   )
 }
 

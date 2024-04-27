@@ -18,11 +18,11 @@ function about() {
                   alt="Tyler Beach"
                   className=" h-[30px] w-[30px]"
                 />
-                <h2 className="text-white SpotifyLightFont font-medium text-1xl my-auto">
+                <h2 className="text-white SpotifyLightFont font-medium text-1xl my-auto text-nowrap">
                   Verified Developer
                 </h2>
               </div>
-              <h3 className="text-white text-4xl pl-4 pb-4 font-bold md:text-7xl">
+              <h3 className="text-white text-4xl pl-4 pb-4 font-bold text-nowrap md:text-7xl">
                 TYLER BEACH
               </h3>
             </div>

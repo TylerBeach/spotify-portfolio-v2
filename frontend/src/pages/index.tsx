@@ -20,36 +20,35 @@ export default function Home() {
 
   return (
     <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] pt-4 overflow-x-hidden">
-  <div className="flex flex-row w-full z-10 overflow-x-hidden">
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={{
-        hidden: { opacity: 0, y: 200 },
-        visible: { opacity: 1, y: 0, transition: { delay: 1 } },
-      }}
-    >
-      <Navbar />
-    </motion.div>
-    <motion.div
-      className="ml-2 md:ml-[300px] mr-2 w-full"
-      initial="hidden"
-      animate="visible"
-      variants={{
-        hidden: { opacity: 0, y: 200 },
-        visible: { opacity: 1, y: 0, transition: { delay: 1 } },
-      }}
-    >
-      <div className="flex flex-col h-full w-[100%] p-2 gap-y-2 card_background rounded-md min-h-[100vh] overflow-x-hidden overflow-y-auto">
-        <TopNavButtons />
-        <Banner />
-        <ProjectsContainer {...ProjectData} />
-        <SquareCardContainer />
+      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 200 },
+            visible: { opacity: 1, y: 0, transition: { delay: 1 } },
+          }}
+        >
+          <Navbar />
+        </motion.div>
+        <motion.div
+          className="ml-2 md:ml-[300px] mr-2 w-full"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 200 },
+            visible: { opacity: 1, y: 0, transition: { delay: 1 } },
+          }}
+        >
+          <div className="flex flex-col h-fit w-[100%] p-2 pl-4 gap-y-2 card_background rounded-md min-h-[100vh]">
+            <TopNavButtons />
+            <Banner />
+            <ProjectsContainer {...ProjectData} />
+            <SquareCardContainer />
+          </div>
+        </motion.div>
       </div>
-    </motion.div>
-  </div>
-  <MusicPlayer />
-</main>
-
+      <MusicPlayer />
+    </main>
   );
 }

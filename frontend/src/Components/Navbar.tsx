@@ -8,7 +8,7 @@ function Navbar() {
         
   return (
     <div className='hidden md:flex fixed h-[100vh] w-[300px] bg-black text-white flex-col'>
-        <div className='flex flex-col px-2 gap-y-2 overflow-y-scroll mb-[104px] :'>
+        <div className='flex flex-col px-2 gap-y-2 overflow-y-scroll mb-[104px] scroll-hidden'>
             {Object.entries(navbarInfo).map(([sectionName, items], index) => (
             <div className='flex flex-col rounded-md bg-[#121212] p-2 gap-y-3 text-lg pt-3 ' key={sectionName}>
             {/* Conditionally render the section name, skip if it's the first section */}

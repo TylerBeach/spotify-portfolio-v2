@@ -140,3 +140,12 @@ html {
   background-color: #464646ad;
   transition: 0.1s;
 }
+
+
+.scroll-hidden {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scroll-hidden::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}

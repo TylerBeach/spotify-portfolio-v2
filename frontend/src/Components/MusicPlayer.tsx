@@ -41,11 +41,11 @@ function MusicPlayer() {
         <div className='flex flex-col py-4 gap-y-3 max-w-[800px]  justify-center align-middle content-center'>
             {/* Pause/play forward back */}
             <div className='flex flex-row gap-x-4 my-auto justify-center text-white mx-auto'>
-                <img  src="/images/Shuffle.svg" alt="play" className='w-[30px] h-[30px] p-1.5 mt-0.5  object-cover' />
-                <img  src="/images/Forward.svg" alt="play" className='w-[30px] h-[30px] p-1.5 mt-0.5 object-cover rotate-180' />
-                <img  src={playing} alt="play" onClick={playPause} className='w-[35px] h-[35px] p-1.5 bg-white rounded-full object-cover' />
-                <img  src="/images/Forward.svg" alt="play" className='w-[30px] h-[30px] p-1.5 mt-0.5 object-cover' />
-                <img  src="/images/Repeat.svg" alt="play" className='w-[30px] h-[30px] p-1.5 mt-0.5 object-cover' />
+                <img  src="/images/Shuffle.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5  object-cover hover:cursor-pointer' />
+                <img  src="/images/Forward.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover rotate-180 hover:cursor-pointer' />
+                <img  src={playing} alt="play" onClick={playPause} className='w-[31px] h-[31px] p-1.5 bg-white rounded-full object-cover hover:cursor-pointer' />
+                <img  src="/images/Forward.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer' />
+                <img  src="/images/Repeat.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer' />
             </div>
             {/* Song Slider */}
             <div className='w-full bg-white h-1 my-auto'></div>

@@ -19,7 +19,7 @@ export default function Home() {
   const ProjectData = portfolioData; // all in json file
 
   return (
-    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[100px] w-[100%] max-w-[100%] pt-4 overflow-x-hidden">
+    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] pt-4 overflow-x-hidden">
   <div className="flex flex-row w-full z-10 overflow-x-hidden">
     <motion.div
       initial="hidden"

@@ -7,12 +7,12 @@ function Navbar() {
   const navbarInfo = navbarData;
         
   return (
-    <div className='hidden md:flex fixed h-[100vh] w-[300px] bg-black text-white flex-col overflow-auto hide-scrollbar'>
-        <div className='flex flex-col px-2 gap-y-2'>
+    <div className='hidden md:flex fixed h-[100vh] w-[300px] bg-black text-white flex-col'>
+        <div className='flex flex-col px-2 gap-y-2 overflow-y-scroll mb-[104px] :'>
             {Object.entries(navbarInfo).map(([sectionName, items], index) => (
-            <div className='flex flex-col rounded-md bg-[#121212] p-2 gap-y-3 text-lg pt-3 pb-3' key={sectionName}>
+            <div className='flex flex-col rounded-md bg-[#121212] p-2 gap-y-3 text-lg pt-3 ' key={sectionName}>
             {/* Conditionally render the section name, skip if it's the first section */}
-            {index !== 0 && <h2 className='text-3xl mt-2'>{sectionName}</h2>}
+            {index !== 0 && <h2 className='text-3xl pt-2'>{sectionName}</h2>}
             <ul className='flex flex-col gap-y-5'>
                 {items.map(item => (
                 <a className="hover-effect flex flex-row gap-x-4 p-2 rounded-md items-center min-h-[50px]" key={item.Title} href={item.Link}>

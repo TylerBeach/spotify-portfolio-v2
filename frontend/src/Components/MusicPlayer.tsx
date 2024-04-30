@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link';
 
 function MusicPlayer() {
   const [currentSong, setCurrentSong] = useState("Personal Portfolio - Spotify Version");
@@ -35,7 +36,9 @@ function MusicPlayer() {
             <img src={currentAlbumImage} alt="Album Image" className='w-[50px] h-[50px] my-auto rounded-sm' />
             <div className='flex flex-col justify-center'>
                 <h1 className='SpotifyLightFont font-extrabold'>{currentSong}</h1>
-                <h2 className='SpotifyLightFont'>{currentArtist}</h2>
+                {/* <h2 className='SpotifyLightFont'>{currentArtist}</h2> */}
+                <Link href="/about" ><button type="button">{currentArtist}</button></Link>
+
             </div>
         </div>
         <div className='flex flex-col py-4 gap-y-3 max-w-[800px]  justify-center align-middle content-center'>
@@ -43,7 +46,9 @@ function MusicPlayer() {
             <div className='flex flex-row gap-x-4 my-auto justify-center text-white mx-auto'>
                 <img  src="/images/Shuffle.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5  object-cover hover:cursor-pointer' />
                 <img  src="/images/Forward.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover rotate-180 hover:cursor-pointer' />
-                <img  src={playing} alt="play" onClick={playPause} className='w-[31px] h-[31px] p-1.5 bg-white rounded-full object-cover hover:cursor-pointer' />
+                <a className='flex justify-center content-center w-[31px] h-[31px]  bg-white rounded-full '>
+                  <img  src={playing} alt="play" onClick={playPause} className='p-[7px] object-cover hover:cursor-pointer' />
+                </a>
                 <img  src="/images/Forward.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer' />
                 <img  src="/images/Repeat.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer' />
             </div>

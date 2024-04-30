@@ -3,12 +3,15 @@ import Link from "next/link";
 import Navbar from "@/Components/Navbar";
 import TopNavButtons from "@/Components/TopNavButtons";
 import ProfileSongsContainer from "@/Components/ProfileSongsContainer";
+import MusicPlayer from "@/Components/MusicPlayer";
+
+
 function about() {
   return (
     <div className="bg-black h-[100vh] w-[100vw] overflow-x-hidden overflow-y-auto">
-      <div className="card_background flex flex-row mr-0 mt-0 md:mt-4 md:mr-4 w-full">
+      <div className="flex flex-row mr-0 mt-0 md:mt-4 md:mr-4 w-full">
         <Navbar />
-        <div className="flex flex-col w-full pl-[4px] h-auto md:pl-[300px]">
+        <div className="card_background flex flex-col w-full h-fit mb-[90px] pl-[4px] md:pl-[300px]  pb-[80px]">
           <div className="flex flex-col justify-between p-2 about-background-image h-[400px] w-full">
             <TopNavButtons />
             <div className="flex flex-col justify-end">
@@ -35,8 +38,10 @@ function about() {
           </div>
         </div>
       </div>
+      < MusicPlayer />
     </div>
   );
 }
+// TODO: make the scroll bar not scroll over the music player 
 
 export default about;

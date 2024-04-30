@@ -47,6 +47,7 @@ export default function Home() {
             <SquareCardContainer />
           </div>
         </motion.div>
+        
       </div>
       <MusicPlayer />
     </main>

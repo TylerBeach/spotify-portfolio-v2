@@ -39,9 +39,8 @@ interface Project {
 
             {/* image banner + title and date */}
             <div  style={{ backgroundImage: `url(${project.bannerURL})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }} 
-                className='flex flex-col justify-between w-full h-[400px] rounded-t-md p-2'>
+                className='flex flex-col  align-baseline justify-end w-full h-[400px] rounded-t-md'>
                 
-                < TopNavButtons />
                 
                 <div className='flex flex-row gap-x-4 mb-4'>
                     <div className='flex flex-col justify-center'>

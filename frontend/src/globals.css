@@ -149,3 +149,22 @@ html {
 .scroll-hidden::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
 }
+
+.width-minus-navbar {
+  width: calc(100vw - 300px);
+}
+
+.top-buttons-width {
+  width: calc(100vw - 320px);
+}
+
+.top-buttons-width-full {
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  .top-buttons-width {
+    width: 100vw;
+    min-width: 400px;
+  }
+}

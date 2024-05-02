@@ -20,15 +20,7 @@ function MusicPlayer() {
   }
 
   return (
-    <motion.div
-      className='z-10'
-      initial="hidden"
-      animate="visible"
-      variants={{
-        hidden: { opacity: 0, },
-        visible: { opacity: 1,   transition: { delay: 1 } },
-      }}
-    >
+   
 
     <div className='h-[90px] bg-black grid grid-cols-3 justify-between fixed bottom-0 z-10 gap-x-2 w-[100vw]'>
         <div className='flex flex-row text-white gap-x-3 pl-4 min-w-fit'>
@@ -58,7 +50,7 @@ function MusicPlayer() {
         {/* volume slider */}
         <div className='w-[100px] bg-white h-1 my-auto justify-self-end mx-6'></div>
     </div>
-    </motion.div>
+   
   )
 }
 

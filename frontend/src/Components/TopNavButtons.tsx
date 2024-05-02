@@ -3,10 +3,9 @@ import React from 'react'
 import { useRouter } from 'next/router'
 
 function TopNavButtons() { 
-  const router = useRouter();
 
   const goBack = () => {
-    router.back();
+    window.history.back();
   };
 
   const goForward = () => {
@@ -14,14 +13,14 @@ function TopNavButtons() {
   }
 
   return (
-    <div className='sticky flex flex-row justify-between items-center w-[100%] h-auto card_background text-white rounded-md top-0 py-2 pl-[0px] pr-[16px] z-10'>
+    <div className='fixed flex flex-row justify-between items-center top-0 top-buttons-width pl-4 h-auto py-4 pr-6 card_background text-white rounded-none md:rounded-md rounded-b-none md:top-4 z-10'>
         <div className='flex flex-row gap-x-4'>
             <img src="/images/arrow.png" onClick={goBack} alt="Back" className='bg-black rounded-full px-[4px] pt-[5px] w-[30px] h-[30px] rotate-90 hover:cursor-pointer' />
             <img src="/images/arrow.png" onClick={goForward} alt="Forward" className='bg-black rounded-full px-[4px] pt-[5px] w-[30px] h-[30px] -rotate-90 hover:cursor-pointer'/>
         </div>
         <div className='flex flex-row gap-x-4'>
-            <Link href="/about" ><button type="button">Whats New</button></Link>
-            <Link href="/about" ><button type="button">Profile</button></Link>
+            {/* <Link href="/about" ><button type="button">Whats New</button></Link> */}
+            <Link href="/about" ><img src="/images/ProfileButtonImage.jpg" onClick={goForward} alt="Forward" className='rounded-full  w-[35px] h-[35px] outline-2 outline-black hover:cursor-pointer'/></Link>
         </div>
     </div>
   )

@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] pt-4 overflow-x-hidden">
-      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden">
+      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden pr-2">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -28,11 +28,12 @@ export default function Home() {
             hidden: { opacity: 0, y: 200 },
             visible: { opacity: 1, y: 0, transition: { delay: 1 } },
           }}
+          className="w-[300px]"
         >
           <Navbar />
         </motion.div>
         <motion.div
-          className="ml-2 md:ml-[300px] mr-2 w-full"
+          className="width-minus-navbar justify-end"
           initial="hidden"
           animate="visible"
           variants={{
@@ -40,7 +41,7 @@ export default function Home() {
             visible: { opacity: 1, y: 0, transition: { delay: 1 } },
           }}
         >
-          <div className="flex flex-col h-fit w-[100%] px-2 pl-4 gap-y-2 card_background rounded-md min-h-[100vh]">
+          <div className="flex flex-col h-fit width-minus-navbar px-2 pl-4 pt-16 gap-y-2 card_background rounded-md  min-h-[100vh]">
             <TopNavButtons />
             <Banner />
             <ProjectsContainer {...ProjectData} />
@@ -49,7 +50,17 @@ export default function Home() {
         </motion.div>
         
       </div>
+      <motion.div
+      className='z-10'
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: { opacity: 0, },
+        visible: { opacity: 1,   transition: { delay: 1 } },
+      }}
+    >
       <MusicPlayer />
+    </motion.div>
     </main>
   );
 }

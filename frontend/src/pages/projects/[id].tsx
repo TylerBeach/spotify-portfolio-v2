@@ -6,6 +6,7 @@ import ProjectComponent from '../../Components/Project'; // Adjust the import pa
 import Navbar from '@/Components/Navbar';
 import TopNavButtons from '@/Components/TopNavButtons';
 import Footer from '@/Components/Footer';
+import MusicPlayer from '@/Components/MusicPlayer';
 
 interface Project {
   id: string;
@@ -38,12 +39,13 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className='flex flex-row  bg-black max-w-[100vw]  min-h-[100vh] pr-4 pt-4'>
+    <div className='flex flex-row  bg-black max-w-[100vw] pb-[90px] min-h-[100vh] pr-0 md:pr-2 pt-4 overflow-hidden'>
       <Navbar/>
-      <div className='mb-14 ml-4 rounded-md md:ml-[300px] md:pl-0 card_background h-auto'>
+      <div className=' ml-0 rounded-md md:ml-[300px] md:pl-0 card_background h-auto overflow-hidden'>
+        <TopNavButtons/>
         <ProjectComponent project={project} />
       </div>
-      
+      <MusicPlayer />
     </div>
   );
 }

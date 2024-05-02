@@ -40,7 +40,7 @@ export default function Home() {
             visible: { opacity: 1, y: 0, transition: { delay: 1 } },
           }}
         >
-          <div className="flex flex-col h-fit w-[100%] p-2 pl-4 gap-y-2 card_background rounded-md min-h-[100vh]">
+          <div className="flex flex-col h-fit w-[100%] px-2 pl-4 gap-y-2 card_background rounded-md min-h-[100vh]">
             <TopNavButtons />
             <Banner />
             <ProjectsContainer {...ProjectData} />

@@ -14,7 +14,7 @@ function TopNavButtons() {
   }
 
   return (
-    <div className='flex flex-row justify-between items-center w-[100%] h-auto text-white top-4 pl-[0px] pr-[16px] z-10'>
+    <div className='sticky flex flex-row justify-between items-center w-[100%] h-auto card_background text-white rounded-md top-0 py-2 pl-[0px] pr-[16px] z-10'>
         <div className='flex flex-row gap-x-4'>
             <img src="/images/arrow.png" onClick={goBack} alt="Back" className='bg-black rounded-full px-[4px] pt-[5px] w-[30px] h-[30px] rotate-90 hover:cursor-pointer' />
             <img src="/images/arrow.png" onClick={goForward} alt="Forward" className='bg-black rounded-full px-[4px] pt-[5px] w-[30px] h-[30px] -rotate-90 hover:cursor-pointer'/>

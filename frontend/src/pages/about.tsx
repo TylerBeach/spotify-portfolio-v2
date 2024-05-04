@@ -4,44 +4,74 @@ import Navbar from "@/Components/Navbar";
 import TopNavButtons from "@/Components/TopNavButtons";
 import ProfileSongsContainer from "@/Components/ProfileSongsContainer";
 import MusicPlayer from "@/Components/MusicPlayer";
-
+import { motion } from "framer-motion";
 
 function about() {
   return (
-    <div className="bg-black h-[100vh] w-[100vw] overflow-x-hidden overflow-y-auto">
-      <div className="flex flex-row mr-0 mt-0 md:mt-4 md:mr-4 w-full">
-        <Navbar />
-        <div className="card_background flex flex-col w-full h-fit mb-[90px] pl-[4px] md:pl-[300px]  pb-[80px]">
-          <div className="flex flex-col justify-between p-2 about-background-image h-[400px] w-full">
+    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] pt-2 pl-2 overflow-x-hidden">
+      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 200 },
+            visible: { opacity: 1, y: 0, transition: { delay: 1 } },
+          }}
+          className="hidden md:flex w-[300px] md:max-w-[300px] md:min-w-[300px]"
+        >
+          <Navbar />
+        </motion.div>
+        <motion.div
+          className="h-fit bg-black w-full"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 200 },
+            visible: { opacity: 1, y: 0, transition: { delay: 1 } },
+          }}
+        >
+          <div className="flex flex-col h-fit w-full pt-16  card_background rounded-md  min-h-[100vh]">
             <TopNavButtons />
-            <div className="flex flex-col justify-end">
-              <div className="flex flex-row pb-4">
-                <img
-                  src="/images/Verified.png"
-                  alt="Tyler Beach"
-                  className=" h-[30px] w-[30px]"
-                />
-                <h2 className="text-white SpotifyLightFont font-medium text-1xl my-auto text-nowrap">
-                  Verified Developer
-                </h2>
+            <div className="flex flex-col justify-between p-2 about-background-image h-[400px] w-full">
+              <div className="flex flex-col justify-end">
+                <div className="flex flex-row pb-4">
+                  <img
+                    src="/images/Verified.png"
+                    alt="Tyler Beach"
+                    className=" h-[30px] w-[30px]"
+                  />
+                  <h2 className="text-white SpotifyLightFont font-medium text-1xl my-auto text-nowrap">
+                    Verified Developer
+                  </h2>
+                </div>
+                <h3 className="text-white text-4xl pl-4 pb-4 font-bold text-nowrap md:text-7xl">
+                  TYLER BEACH
+                </h3>
               </div>
-              <h3 className="text-white text-4xl pl-4 pb-4 font-bold text-nowrap md:text-7xl">
-                TYLER BEACH
-              </h3>
+            </div>
+            <div className="background-blur-container h-fit min-h-[300px] w-full z-[2]"></div>
+            <div className="mt-[-250px] flex flex-col h-fit z-[2] pl-4">
+              <div>
+                <ProfileSongsContainer />
+              </div>
             </div>
           </div>
-          <div className="background-blur-container h-fit min-h-[300px] w-full z-[2]"></div>
-          <div className="mt-[-250px] flex flex-col h-[1000px] z-[2] pl-4">
-            <div>
-              <ProfileSongsContainer />
-            </div>
-          </div>
-        </div>
+        </motion.div>
       </div>
-      < MusicPlayer />
-    </div>
+      <motion.div
+        className="z-10"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1, transition: { delay: 1 } },
+        }}
+      >
+        <MusicPlayer />
+      </motion.div>
+    </main>
   );
 }
-// TODO: make the scroll bar not scroll over the music player 
+// TODO: make the scroll bar not scroll over the music player
 
 export default about;

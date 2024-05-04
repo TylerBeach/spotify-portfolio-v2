@@ -19,8 +19,8 @@ export default function Home() {
   const ProjectData = portfolioData; // all in json file
 
   return (
-    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] pt-4 overflow-x-hidden">
-      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden pr-2">
+    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] pt-2 pl-2 overflow-x-hidden">
+      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -28,12 +28,12 @@ export default function Home() {
             hidden: { opacity: 0, y: 200 },
             visible: { opacity: 1, y: 0, transition: { delay: 1 } },
           }}
-          className="w-[300px]"
+          className="hidden md:flex w-[300px] md:max-w-[300px] md:min-w-[300px]"
         >
           <Navbar />
         </motion.div>
         <motion.div
-          className="width-minus-navbar justify-end"
+          className="h-fit bg-black w-full"
           initial="hidden"
           animate="visible"
           variants={{
@@ -41,11 +41,13 @@ export default function Home() {
             visible: { opacity: 1, y: 0, transition: { delay: 1 } },
           }}
         >
-          <div className="flex flex-col h-fit width-minus-navbar px-2 pl-4 pt-16 gap-y-2 card_background rounded-md  min-h-[100vh]">
+          <div className="flex flex-col h-fit w-full pt-16 gap-y-2 card_background rounded-md  min-h-[100vh]">
             <TopNavButtons />
-            <Banner />
-            <ProjectsContainer {...ProjectData} />
-            <SquareCardContainer />
+            <div className="px-2">
+              <Banner />
+              <ProjectsContainer {...ProjectData} />
+              <SquareCardContainer />
+            </div>
           </div>
         </motion.div>
         

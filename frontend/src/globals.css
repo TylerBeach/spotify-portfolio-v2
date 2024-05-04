@@ -155,7 +155,7 @@ html {
 }
 
 .top-buttons-width {
-  width: calc(100vw - 320px);
+  width: calc(100vw - 300px);
 }
 
 .top-buttons-width-full {
@@ -164,8 +164,10 @@ html {
 
 @media screen and (max-width: 768px) {
   .top-buttons-width {
-    width: 100vw;
-    min-width: 400px;
-    
+    width: 100vw; 
+  }
+  .width-minus-navbar {
+    width: 100vw; 
+      
   }
 }

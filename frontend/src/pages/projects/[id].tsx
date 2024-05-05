@@ -26,7 +26,6 @@ const ProjectDetail = () => {
   const router = useRouter();
   const { id } = router.query;
   const [project, setProject] = useState<Project | null>(null);
-
   useEffect(() => {
     if (typeof id === "string") {
       const foundProject = projectsData.projects.find((p) => p.id === id);
@@ -53,7 +52,7 @@ const ProjectDetail = () => {
       </motion.div>
       <div className="relative mt-2 h-fit height-minus-musicPlayer w-full  overflow-y-scroll">
         <div className="rounded-md card_background h-fit">
-          <TopNavButtons />
+          <TopNavButtons backgroundColor="bg-black" projectName={project.title}/>
           <ProjectComponent project={project} />
         </div>
       </div>

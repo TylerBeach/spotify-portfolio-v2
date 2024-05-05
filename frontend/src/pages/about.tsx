@@ -32,7 +32,7 @@ function about() {
           }}
         >
           <div className="flex flex-col h-fit w-full pt-16  card_background rounded-md  min-h-[100vh]">
-            <TopNavButtons />
+            <TopNavButtons backgroundColor="card_background" projectName=""/>
             <ProfileTopContainer />
             <div className="background-blur-container h-fit min-h-[300px] w-full z-[2]"></div>
             <div className="mt-[-250px] flex flex-col h-fit z-[2] pl-4">

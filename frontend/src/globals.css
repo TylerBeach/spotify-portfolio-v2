@@ -171,3 +171,7 @@ html {
       
   }
 }
+
+.height-minus-musicPlayer {
+  height: calc(100vh - 98px);
+}

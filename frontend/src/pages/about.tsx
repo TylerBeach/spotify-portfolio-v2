@@ -10,7 +10,7 @@ import ProfileTopContainer from "@/Components/ProfileTopContainer";
 function about() {
   return (
     <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] pt-2 pl-2 overflow-x-hidden">
-      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2">
+      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-0">
         <motion.div
           initial="hidden"
           animate="visible"

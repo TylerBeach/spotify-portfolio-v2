@@ -42,7 +42,7 @@ export default function Home() {
           }}
         >
           <div className="flex flex-col h-fit w-full pt-16 gap-y-2 card_background rounded-md  min-h-[100vh]">
-            <TopNavButtons />
+            <TopNavButtons backgroundColor="card_background" />
             <div className="px-2">
               <Banner />
               <ProjectsContainer {...ProjectData} />

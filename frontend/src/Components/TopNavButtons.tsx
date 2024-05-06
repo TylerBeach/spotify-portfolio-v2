@@ -20,23 +20,34 @@ interface TopNavButtonsProps {
 }
 
 const TopNavButtons: React.FC<TopNavButtonsProps> = ({ project, bannerColor }) => {
-  const [showColor, setShowColor] = useState(true);
+  const [showColor, setShowColor] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 20) {
+      const scrollingElement = document.querySelector('.height-minus-musicPlayer');
+      if (scrollingElement && scrollingElement.scrollTop >= 370) {
         setShowColor(true);
       } else {
         setShowColor(false);
       }
     };
-
-    window.addEventListener("scroll", handleScroll);
-
+  
+    // Attach scroll event listener to scrolling container
+    const scrollingElement = document.querySelector('.height-minus-musicPlayer');
+    if (scrollingElement) {
+      scrollingElement.addEventListener("scroll", handleScroll);
+    }
+  
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (scrollingElement) {
+        scrollingElement.removeEventListener("scroll", handleScroll);
+      }
     };
   }, []);
+
+  useEffect(() => {
+    console.log("showColor:", showColor); // Check if showColor changes
+  }, [showColor]);
 
   const goBack = () => {
     window.history.back();
@@ -48,12 +59,12 @@ const TopNavButtons: React.FC<TopNavButtonsProps> = ({ project, bannerColor }) =
 
   return (
     <div
-      className="fixed flex flex-row justify-between items-center top-0 top-buttons-width pl-4 h-auto py-4 pr-14 text-white rounded-none md:rounded-md md:top-2 z-10"
+      className="right-3 duration-700 fixed flex flex-row justify-between items-center top-0 top-buttons-width pl-4 h-auto py-4 pr-14 text-white rounded-none md:top-2 z-10"
       style={{
         backgroundColor: showColor ? `rgb(${bannerColor}, 1)` : "rgba(0, 0, 0, 0.0)",
       }}
     >
-      <div className="flex flex-row gap-x-4">
+      <div className="flex flex-row gap-x-4 pl-2 md:pl-0">
         <img
           src="/images/arrow.png"
           onClick={goBack}
@@ -66,7 +77,7 @@ const TopNavButtons: React.FC<TopNavButtonsProps> = ({ project, bannerColor }) =
           alt="Forward"
           className="bg-black rounded-full px-[4px] pt-[5px] w-[30px] h-[30px] -rotate-90 hover:cursor-pointer"
         />
-        {project && <h1>{`${project.title}`}</h1>}
+        {project && showColor && <h1 className="text-2xl pl-2 pt-0.5">{`${project.title}`}</h1>}
       </div>
       <div className="flex flex-row gap-x-4">
         <img

@@ -72,6 +72,30 @@
       ],
       "techStack":["Python"],
       "date": "November 2022"
+    },
+    {
+      "id": "EventManager",
+      "title": "Event Manager",
+      "cardDescription": "Android mobile app event manager that allows users to create and manage events",  
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is it?",
+          "paragraphContent": "Event Manager is an android mobile application that allows users to create and manage events. Users can create events, invite friends, and keep track of upcoming events. The app was created as a final project for CMPUT 301 - Software Engineering at the University of Alberta."
+        },
+        {
+          "paragraphTitle": "Title Two here",
+          "paragraphContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar accumsan nisl, et finibus nunc accumsan rutrum. Aenean ligula ante, dapibus nec commodo quis, efficitur eget libero. Phasellus consequat dignissim lorem. Vestibulum at magna mauris. Integer in lorem ornare, molestie eros sed, eleifend augue. Curabitur porta massa magna, a consectetur arcu porta vel. Vestibulum consectetur quam eu consectetur luctus. In leo quam, bibendum sit amet est quis, mattis efficitur neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc aliquam enim at ante semper tempor. Nunc sit amet augue in elit tincidunt interdum at nec metus. Sed finibus turpis euismod elit viverra, id aliquam lorem ultrices. Proin mi sapien, elementum quis augue in, auctor semper elit. Nullam lacus metus, volutpat non nulla at, pharetra tincidunt erat. Maecenas nisl massa, efficitur vehicula feugiat nec, vehicula sed urna. Pellentesque vitae ipsum eget nunc feugiat euismod."
+        }
+      ],
+      "link": "https://github.com/CMPUT301W24T09/fire-and-based",
+      "imageURL" : "/images/projectImages/EventOrganizer.png",
+      "bannerURL" : "/images/projectImages/FroggyJumperBanner.png",
+      "demoImages": [
+        "/images/projectImages/FroggyJumperGIF.gif",
+        "/images/projectImages/FroggyJumperHomeScreen.png"
+      ],
+      "techStack":["Python", "JavaScript", "React"],
+      "date": "November 2022"
     }
   ],
   "about": {

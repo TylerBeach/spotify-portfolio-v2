@@ -19,7 +19,7 @@ export default function Home() {
   const ProjectData = portfolioData; // all in json file
 
   return (
-    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] pt-2 pl-2 overflow-x-hidden">
+    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] md:pt-2 md:pl-2 overflow-x-hidden">
       <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2">
         <motion.div
           initial="hidden"
@@ -42,7 +42,7 @@ export default function Home() {
           }}
         >
           <div className="flex flex-col h-fit w-full pt-16 gap-y-2 card_background rounded-md  min-h-[100vh]">
-            <TopNavButtons backgroundColor="card_background" projectName="" />
+            <TopNavButtons bannerColor="18, 18, 18" project={null} />
             <div className="px-2">
               <Banner />
               <ProjectsContainer {...ProjectData} />

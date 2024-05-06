@@ -8,6 +8,7 @@ import TopNavButtons from "@/Components/TopNavButtons";
 import Footer from "@/Components/Footer";
 import MusicPlayer from "@/Components/MusicPlayer";
 import { motion } from "framer-motion";
+import getSecondDominantColor from "@/utils/getDominantColor";
 
 interface Project {
   id: string;
@@ -26,12 +27,23 @@ const ProjectDetail = () => {
   const router = useRouter();
   const { id } = router.query;
   const [project, setProject] = useState<Project | null>(null);
+  const [bannerColor, setBannerColor] = useState('');
+
   useEffect(() => {
     if (typeof id === "string") {
       const foundProject = projectsData.projects.find((p) => p.id === id);
       setProject(foundProject || null);
     }
   }, [id]);
+
+  useEffect(() => {
+    if (project) {
+      getSecondDominantColor(project.bannerURL, (averageColorHex: any) => {
+        console.log('Average Color in Hex:', averageColorHex);
+        setBannerColor(averageColorHex);
+      });
+    }
+  }, [project]);
 
   if (!project) {
     return <div>No project found or loading...</div>;
@@ -51,8 +63,8 @@ const ProjectDetail = () => {
         <Navbar />
       </motion.div>
       <div className="relative mt-2 h-fit height-minus-musicPlayer w-full  overflow-y-scroll">
-        <div className="rounded-md card_background h-fit">
-          <TopNavButtons backgroundColor="bg-black" projectName={project.title}/>
+        <TopNavButtons project={project} bannerColor={bannerColor} />
+        <div className="rounded-md card_background h-fit w-full">
           <ProjectComponent project={project} />
         </div>
       </div>

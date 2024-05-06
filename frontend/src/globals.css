@@ -155,7 +155,7 @@ html {
 }
 
 .top-buttons-width {
-  width: calc(100vw - 300px);
+  width: calc(100vw - 328px);
 }
 
 .top-buttons-width-full {
@@ -174,4 +174,5 @@ html {
 
 .height-minus-musicPlayer {
   height: calc(100vh - 98px);
+  background-color: rgb(6, 4, 31);
 }

@@ -22,7 +22,7 @@
         "/images/projectImages/StoryTellerTwo.png",
         "/images/projectImages/StoryTellerThree.jpg"
       ],
-      "techStack":["Javascript", "React", "Python"],
+      "techStack":["Javascript", "React", "CSS", "Python", "Flask"],
       "date": "January 2024"
     },
     {
@@ -74,8 +74,8 @@
       "date": "November 2022"
     },
     {
-      "id": "EventManager",
-      "title": "Event Manager",
+      "id": "EventHorizon",
+      "title": "Event Horizon",
       "cardDescription": "Android mobile app event manager that allows users to create and manage events",  
       "paragraphData": [
         {
@@ -88,14 +88,14 @@
         }
       ],
       "link": "https://github.com/CMPUT301W24T09/fire-and-based",
-      "imageURL" : "/images/projectImages/EventOrganizer.png",
-      "bannerURL" : "/images/projectImages/FroggyJumperBanner.png",
+      "imageURL" : "/images/projectImages/EventHorizonLogo.jpg",
+      "bannerURL" : "/images/projectImages/EventHorizonBanner.webp",
       "demoImages": [
-        "/images/projectImages/FroggyJumperGIF.gif",
-        "/images/projectImages/FroggyJumperHomeScreen.png"
+        "/images/projectImages/EventHorizon.png",
+        "/images/projectImages/EventHorizon2.png"
       ],
-      "techStack":["Python", "JavaScript", "React"],
-      "date": "November 2022"
+      "techStack":["Java", "Github"],
+      "date": "April 2024"
     }
   ],
   "about": {

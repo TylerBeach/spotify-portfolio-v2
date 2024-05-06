@@ -78,7 +78,7 @@ const TopNavButtons: React.FC<TopNavButtonsProps> = ({ project, bannerColor }) =
       alt="Forward"
       className="bg-black rounded-full px-[4px] pt-[5px] w-[30px] h-[30px] -rotate-90 hover:cursor-pointer"
     />
-    {project && showColor && <h1 className="text-2xl pl-2 pt-0.5">{`${project.title}`}</h1>}
+    {project && <h1 className={showColor ? "text-2xl pl-2 duration-500" : "text-2xl pl-2 duration-300 opacity-0"}>{`${project.title}`}</h1>}
   </div>
   <div className="flex flex-row gap-x-4 pr-2">
     <img

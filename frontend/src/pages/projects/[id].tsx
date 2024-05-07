@@ -9,19 +9,8 @@ import Footer from "@/Components/Footer";
 import MusicPlayer from "@/Components/MusicPlayer";
 import { motion } from "framer-motion";
 import getSecondDominantColor from "@/utils/getDominantColor";
+import { Project } from "../../interfaces/project";
 
-interface Project {
-  id: string;
-  title: string;
-  cardDescription: string;
-  paragraphData: { paragraphTitle: string; paragraphContent: string }[];
-  link: string;
-  imageURL: string;
-  bannerURL: string;
-  demoImages: string[];
-  techStack: string[];
-  date: string;
-}
 
 const ProjectDetail = () => {
   const router = useRouter();

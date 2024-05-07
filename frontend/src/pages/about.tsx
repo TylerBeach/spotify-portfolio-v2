@@ -9,10 +9,13 @@ import ProfileTopContainer from "@/Components/ProfileTopContainer";
 import { useState, useEffect } from "react"; 
 import getSecondDominantColor from "@/utils/getDominantColor";
 import data from "../data.json"
-
+import {Project } from "../interfaces/project";
 
 
 function about() {
+  const aboutMeProject: Project = {
+    id: "aboutMeProject",
+    title: "Tyler Beach", };
   const [bannerColor, setBannerColor] = useState("");
 
   useEffect(() => {
@@ -44,8 +47,8 @@ function about() {
             visible: { opacity: 1, y: 0, transition: { delay: 1 } },
           }}
         >
-          <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[300vh] overflow-x-hidden">
-            <TopNavButtons bannerColor="bannerColor" project={null}/>
+          <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
+            <TopNavButtons bannerColor={bannerColor} project={aboutMeProject}/>
             <div className="rounded-md card_background h-fit w-full">
               <ProfileTopContainer />
               <div style={{
@@ -54,7 +57,9 @@ function about() {
                   width: "100%"
               }}
               ></div>
-              <div className="mt-[-100px] flex flex-col h-fit z-[2] pl-4">
+              <div className="mt-[-100px] flex flex-col h-fit z-[2] pl-4 gap-y-4">
+                <ProfileSongsContainer />
+                <ProfileSongsContainer />
                 <ProfileSongsContainer />
               </div>
 

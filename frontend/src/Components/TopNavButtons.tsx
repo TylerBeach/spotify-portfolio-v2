@@ -1,19 +1,8 @@
 // TopNavButtons.tsx
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { Project } from "../interfaces/project";
 
-interface Project {
-  id: string;
-  title: string;
-  cardDescription: string;
-  paragraphData: { paragraphTitle: string; paragraphContent: string }[];
-  link: string;
-  imageURL: string;
-  bannerURL: string;
-  demoImages: string[];
-  techStack: string[];
-  date: string;
-}
 
 interface TopNavButtonsProps {
   project: Project | null;
@@ -27,9 +16,9 @@ const TopNavButtons: React.FC<TopNavButtonsProps> = ({
   const [showColor, setShowColor] = useState(false);
 
   useEffect(() => {
-    if (project === null) {
+    if (project === null && bannerColor === null) {
       setShowColor(true);
-    }
+    } 
 
     const handleScroll = () => {
       const scrollingElement = document.querySelector(

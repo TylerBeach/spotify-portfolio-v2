@@ -1,19 +1,7 @@
 import React from 'react'
 import {motion } from "framer-motion";
 import Link from 'next/link';
-
-
-interface Project {
-    id: string;
-    title: string;
-    cardDescription: string;
-    paragraphData: { paragraphTitle: string, paragraphContent: string }[];
-    link: string;
-    imageURL: string;
-    demoImages: string[];
-    techStack: string[];
-    date: string;
-  }
+import { Project } from '../interfaces/project';
   
   interface ProjectsProps {
     projects: Project[]; 

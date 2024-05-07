@@ -4,18 +4,7 @@ import { motion } from 'framer-motion';
 import TopNavButtons from '../Components/TopNavButtons';
 import getAverageColor from '../utils/getAverageColor';
 import getDominantColor from '../utils/getDominantColor';
-interface Project {
-    id: string;
-    title: string;
-    cardDescription: string;
-    paragraphData: { paragraphTitle: string, paragraphContent: string }[];
-    link: string;
-    imageURL: string;
-    bannerURL: string;
-    demoImages: string[];
-    techStack: string[];
-    date: string;
-  }
+import { Project } from "../interfaces/project";
   
   interface ProjectProps {
     project: Project;
@@ -65,7 +54,7 @@ interface Project {
                 <div className='flex flex-col w-[50%]'>
                     <h2 className='text-2xl'>Technologies Used</h2>
 
-                    {project.techStack.map((techStack, index) => (
+                    {project.techStack && project.techStack.map((techStack, index) => (
                         <div key={index} className='hover-effect2 flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-6 items-center SpotifyLightFont'>
                             <h2 className='text-gray-400 w-2'>{index+1}</h2>
                             <img className='rounded-md w-[35px] h-[35px] object-contain m-2 ' src={`/images/techStack/${techStack}.png`} alt="Tech Stack"/>
@@ -77,7 +66,7 @@ interface Project {
                 {/* project github link */}
                 <div className=' flex flex-col rounded-md w-[600px] h-auto items-top '>
                     <a className='text-2xl'>Link to Repository</a>
-                    <a href={project.link}>
+                    <a href={project.link ? project.link : "/"}>
                         <img className='rounded-full w-[75px] h-[75px] object-contain' src='/images/github.png' alt="Github"/>
                     </a>
 
@@ -87,7 +76,7 @@ interface Project {
 
             {/* project paragraphs */}
             <div className='px-4 flex flex-col w-full '>
-                {project.paragraphData.map((aParagraph, index) => (
+                {project.paragraphData && project.paragraphData.map((aParagraph, index) => (
                     <div key={index} className='flex flex-col mb-4'>
                         <h2 className='text-2xl'>{aParagraph.paragraphTitle}</h2>
                         <p className='SpotifyLightFont'>{aParagraph.paragraphContent}</p>
@@ -97,7 +86,7 @@ interface Project {
             
             {/* project images */}
             <div className='px-4 flex flex-row gap-3 flex-wrap gap-x-4 lg:justify-evenly'>
-                {project.demoImages.map((aDemoImage, index) => (
+                {project.demoImages && project.demoImages.map((aDemoImage, index) => (
                     <img className='h-auto w-[100%] md:min-w-[500px] lg:w-[40%] lg:min-w-[600px]' src={aDemoImage} alt="Demo Image" key={index} />
                 ))}
             </div>

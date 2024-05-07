@@ -6,55 +6,63 @@ import ProfileSongsContainer from "@/Components/ProfileSongsContainer";
 import MusicPlayer from "@/Components/MusicPlayer";
 import { motion } from "framer-motion";
 import ProfileTopContainer from "@/Components/ProfileTopContainer";
+import { useState, useEffect } from "react"; 
+import getSecondDominantColor from "@/utils/getDominantColor";
+import data from "../data.json"
+
+
 
 function about() {
+  const [bannerColor, setBannerColor] = useState("");
+
+  useEffect(() => {
+    getSecondDominantColor(data.about.bannerURL, (averageColorHex:any) => {
+        console.log('Average Color in Hex:', averageColorHex);
+        setBannerColor(averageColorHex);
+    });
+  }, []);
+
   return (
-    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] pt-2 pl-2 overflow-x-hidden">
-      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-0">
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 0, y: 200 },
-            visible: { opacity: 1, y: 0, transition: { delay: 1 } },
-          }}
-          className="hidden md:flex w-[300px] md:max-w-[300px] md:min-w-[300px]"
-        >
-          <Navbar />
-        </motion.div>
-        <motion.div
-          className="h-fit bg-black w-full"
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 0, y: 200 },
-            visible: { opacity: 1, y: 0, transition: { delay: 1 } },
-          }}
-        >
-          <div className="flex flex-col h-fit w-full pt-16  card_background rounded-md  min-h-[100vh]">
-            <TopNavButtons backgroundColor="card_background" projectName=""/>
-            <ProfileTopContainer />
-            <div className="background-blur-container h-fit min-h-[300px] w-full z-[2]"></div>
-            <div className="mt-[-250px] flex flex-col h-fit z-[2] pl-4">
-              <div>
-                <ProfileSongsContainer />
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </div>
+      <div className="flex flex-row gap-x-2 bg-black max-w-[100vw] pb-[90px] min-h-[100vh] max-h-[100vh] md:pl-2 overflow-hidden">
       <motion.div
-        className="z-10"
         initial="hidden"
         animate="visible"
         variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { delay: 1 } },
+          hidden: { opacity: 0, y: 200 },
+          visible: { opacity: 1, y: 0, transition: { delay: 1 } },
         }}
+        className="hidden md:flex w-[300px] md:max-w-[300px] md:min-w-[300px] mt-2"
       >
-        <MusicPlayer />
+        <Navbar />
       </motion.div>
-    </main>
+        <motion.div
+          className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full  overflow-y-scroll"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 200 },
+            visible: { opacity: 1, y: 0, transition: { delay: 1 } },
+          }}
+        >
+          <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[300vh] overflow-x-hidden">
+            <TopNavButtons bannerColor="bannerColor" project={null}/>
+            <div className="rounded-md card_background h-fit w-full">
+              <ProfileTopContainer />
+              <div style={{
+                  background: `linear-gradient(to bottom, rgb(${bannerColor}) 0%, rgb(18, 18, 18) 100%)`,
+                  height: "200px",
+                  width: "100%"
+              }}
+              ></div>
+              <div className="mt-[-100px] flex flex-col h-fit z-[2] pl-4">
+                <ProfileSongsContainer />
+              </div>
+
+            </div>
+          </div>
+        </motion.div>
+        <MusicPlayer />
+      </div>
   );
 }
 // TODO: make the scroll bar not scroll over the music player

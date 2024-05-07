@@ -63,13 +63,13 @@ interface Project {
 
                 {/* project tech stack */}
                 <div className='flex flex-col w-[50%]'>
-                    <h2 className='text-2xl'>Tech Stack</h2>
+                    <h2 className='text-2xl'>Technologies Used</h2>
 
                     {project.techStack.map((techStack, index) => (
                         <div key={index} className='hover-effect2 flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-6 items-center SpotifyLightFont'>
                             <h2 className='text-gray-400 w-2'>{index+1}</h2>
                             <img className='rounded-md w-[35px] h-[35px] object-contain m-2 ' src={`/images/techStack/${techStack}.png`} alt="Tech Stack"/>
-                            <h1 className='text-white font-semibold text-xl'>{techStack}</h1>
+                            <h1 className='text-white text-xl SpotifyLightFont'>{techStack}</h1>
                         </div>
                     ))}
                 </div>

@@ -94,11 +94,12 @@
         "/images/projectImages/EventHorizon.png",
         "/images/projectImages/EventHorizon2.png"
       ],
-      "techStack":["Java", "Github"],
+      "techStack":["Java", "Firebase", "Google Maps", "Github"],
       "date": "April 2024"
     }
   ],
   "about": {
+    "bannerURL": "/images/profileBanner.jpg",
     "title": "About Me",
     "paragraphs": [
       {

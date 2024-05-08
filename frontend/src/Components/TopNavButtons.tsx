@@ -6,7 +6,7 @@ import { Project } from "../interfaces/project";
 
 interface TopNavButtonsProps {
   project: Project | null;
-  bannerColor: string; // Pass banner color as prop
+  bannerColor: string; 
 }
 
 const TopNavButtons: React.FC<TopNavButtonsProps> = ({
@@ -24,14 +24,13 @@ const TopNavButtons: React.FC<TopNavButtonsProps> = ({
       const scrollingElement = document.querySelector(
         ".height-minus-musicPlayer"
       );
-      if (scrollingElement && scrollingElement.scrollTop >= 370) {
+      if (scrollingElement && scrollingElement.scrollTop >= 350) {
         setShowColor(true);
       } else {
         setShowColor(false);
       }
     };
 
-    // Attach scroll event listener to scrolling container
     const scrollingElement = document.querySelector(
       ".height-minus-musicPlayer"
     );
@@ -60,8 +59,8 @@ const TopNavButtons: React.FC<TopNavButtonsProps> = ({
       style={{
         backgroundColor: showColor
           ? `rgb(${bannerColor}, 1)`
-          : "rgba(0, 0, 0, 0.0)",
-        transition: "background-color 0.3s ease", // Only transition the background-color property
+          : `rgb(${bannerColor}, 0)`,
+        transition: "background-color 0.3s ease", 
       }}
     >
       <div className="flex flex-row gap-x-4">

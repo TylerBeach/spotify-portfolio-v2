@@ -10,7 +10,7 @@ import MusicPlayer from "@/Components/MusicPlayer";
 import { motion } from "framer-motion";
 import getSecondDominantColor from "@/utils/getDominantColor";
 import { Project } from "../../interfaces/project";
-
+import PageNotFound from "@/Components/PageNotFound";
 
 const ProjectDetail = () => {
   const router = useRouter();
@@ -35,7 +35,9 @@ const ProjectDetail = () => {
   }, [project]);
 
   if (!project) {
-    return <div>No project found or loading...</div>;
+    return (
+      <PageNotFound/>
+    )
   }
 
   return (

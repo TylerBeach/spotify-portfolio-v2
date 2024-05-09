@@ -6,7 +6,7 @@ import { Project } from "../interfaces/project";
 
 interface TopNavButtonsProps {
   project: Project | null;
-  bannerColor: string; 
+  bannerColor: string | null; 
 }
 
 const TopNavButtons: React.FC<TopNavButtonsProps> = ({
@@ -55,7 +55,7 @@ const TopNavButtons: React.FC<TopNavButtonsProps> = ({
 
   return (
     <div
-      className="right-0 duration-700 fixed flex flex-row justify-between items-center top-0 top-buttons-width pl-4 h-auto py-4 pr-4 md:pr-14 text-white md:rounded-tl-md md:top-2 z-10"
+      className="right-0 duration-700 fixed flex flex-row justify-between items-center top-0 top-buttons-width pl-4 h-auto py-4 pr-4 md:pr-6 text-white md:rounded-tl-md md:top-2 z-10"
       style={{
         backgroundColor: showColor
           ? `rgb(${bannerColor}, 1)`

@@ -29,7 +29,7 @@ import SquareCardGeneric from './SquareCardGeneric';
         <div className='card_background text-white rounded-md font-SpotifyMedium max-w-[100vw] overflow-x-hidden pb-10' >
 
             {/* image banner + title and date */}
-            <div  style={{ backgroundImage: `url(${project.bannerURL})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }} 
+            <div  style={{ backgroundImage: `url(${project.bannerURL})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} 
                 className='flex flex-col  align-baseline justify-end w-full h-[400px] rounded-t-md'>
                 
                 <div className='flex flex-row gap-x-4 mb-4'>
@@ -90,7 +90,7 @@ import SquareCardGeneric from './SquareCardGeneric';
                 <h2 className='text-2xl'>Demo Images</h2>
                 <div className='flex flex-row'>
                     {project.demoImages && project.demoImages.map((aDemoImage, index) => (
-                        <div className='h-[200px] w-[200px]'>
+                        <div key={index} className='h-[200px] w-[200px]'>
                             {/* <img className='h-auto w-[100%] md:min-w-[500px] lg:w-[40%] lg:min-w-[600px]' src={aDemoImage} alt="Demo Image" key={index} /> */}
                             {/* <ModalImage small={aDemoImage} medium={aDemoImage} large={aDemoImage} alt="" hideDownload={true} hideZoom={true}/> */}
                             <SquareCardGeneric caption={aDemoImage.caption} imageURL={aDemoImage.image} link=''/>

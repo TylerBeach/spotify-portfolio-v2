@@ -70,7 +70,7 @@
         "/images/projectImages/FroggyJumperGIF.gif",
         "/images/projectImages/FroggyJumperHomeScreen.png"
       ],
-      "techStack":["Python"],
+      "techStack":["Python", "Pygame"],
       "date": "November 2022"
     },
     {

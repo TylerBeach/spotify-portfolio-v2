@@ -5,7 +5,9 @@ import TopNavButtons from '../Components/TopNavButtons';
 import getAverageColor from '../utils/getAverageColor';
 import getDominantColor from '../utils/getDominantColor';
 import { Project } from "../interfaces/project";
-  
+import ModalImage from "react-modal-image";
+
+
   interface ProjectProps {
     project: Project;
   }
@@ -22,14 +24,12 @@ import { Project } from "../interfaces/project";
     }, []);
 
 
-
     return (
         <div className='card_background text-white rounded-md font-SpotifyMedium max-w-[100vw] overflow-x-hidden pb-10' >
 
             {/* image banner + title and date */}
             <div  style={{ backgroundImage: `url(${project.bannerURL})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }} 
                 className='flex flex-col  align-baseline justify-end w-full h-[400px] rounded-t-md'>
-                
                 
                 <div className='flex flex-row gap-x-4 mb-4'>
                     <div className='flex flex-col justify-center'>
@@ -85,10 +85,16 @@ import { Project } from "../interfaces/project";
             </div>
             
             {/* project images */}
-            <div className='px-4 flex flex-row gap-3 flex-wrap gap-x-4 lg:justify-evenly'>
-                {project.demoImages && project.demoImages.map((aDemoImage, index) => (
-                    <img className='h-auto w-[100%] md:min-w-[500px] lg:w-[40%] lg:min-w-[600px]' src={aDemoImage} alt="Demo Image" key={index} />
+            <div className='px-4 flex flex-col gap-3 flex-wrap gap-x-4 lg:justify-evenly'>
+                <h2 className=''>Demo Images</h2>
+                <div className='flex flex-row gap-2'>
+                    {project.demoImages && project.demoImages.map((aDemoImage, index) => (
+                        <div className='h-[200px] w-[200px]'>
+                            {/* <img className='h-auto w-[100%] md:min-w-[500px] lg:w-[40%] lg:min-w-[600px]' src={aDemoImage} alt="Demo Image" key={index} /> */}
+                            <ModalImage small={aDemoImage} medium={aDemoImage} large={aDemoImage} alt="" hideDownload={true} hideZoom={true}/>
+                        </div>
                 ))}
+                </div>
             </div>
 
 

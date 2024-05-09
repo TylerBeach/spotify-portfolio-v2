@@ -31,11 +31,9 @@ function SquareCardGeneric({ caption, imageURL, link}: { caption: string; imageU
             </div>
         ) : (
             <Link href={link}>
-                <ModalImage
+                <img
                     className="w-[100%] h-[160px] rounded-md"
-                    small={imageURL}
-                    medium={imageURL}
-                    large={imageURL}
+                    src={imageURL}
                     alt=""
                 />
                 {caption && (

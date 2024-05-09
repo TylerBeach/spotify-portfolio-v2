@@ -6,6 +6,7 @@ import getAverageColor from '../utils/getAverageColor';
 import getDominantColor from '../utils/getDominantColor';
 import { Project } from "../interfaces/project";
 import ModalImage from "react-modal-image";
+import SquareCardGeneric from './SquareCardGeneric';
 
 
   interface ProjectProps {
@@ -85,13 +86,14 @@ import ModalImage from "react-modal-image";
             </div>
             
             {/* project images */}
-            <div className='px-4 flex flex-col gap-3 flex-wrap gap-x-4 lg:justify-evenly'>
-                <h2 className=''>Demo Images</h2>
-                <div className='flex flex-row gap-2'>
+            <div className='px-4 flex flex-col flex-wrap lg:justify-evenly'>
+                <h2 className='text-2xl'>Demo Images</h2>
+                <div className='flex flex-row'>
                     {project.demoImages && project.demoImages.map((aDemoImage, index) => (
                         <div className='h-[200px] w-[200px]'>
                             {/* <img className='h-auto w-[100%] md:min-w-[500px] lg:w-[40%] lg:min-w-[600px]' src={aDemoImage} alt="Demo Image" key={index} /> */}
-                            <ModalImage small={aDemoImage} medium={aDemoImage} large={aDemoImage} alt="" hideDownload={true} hideZoom={true}/>
+                            {/* <ModalImage small={aDemoImage} medium={aDemoImage} large={aDemoImage} alt="" hideDownload={true} hideZoom={true}/> */}
+                            <SquareCardGeneric caption={aDemoImage.caption} imageURL={aDemoImage.image} link=''/>
                         </div>
                 ))}
                 </div>

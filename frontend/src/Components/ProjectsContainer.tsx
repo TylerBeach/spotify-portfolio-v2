@@ -2,17 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
-interface Project {
-  id: string;
-  title: string;
-  cardDescription: string;
-  paragraphData: { paragraphTitle: string, paragraphContent: string }[];
-  link: string;
-  imageURL: string;
-  demoImages: string[];
-  techStack: string[];
-  date: string;
-}
+import { Project } from '../interfaces/project';
+
 
 interface ProjectsProps {
   projects: Project[]; // This indicates that `projects` is an array of `Project`

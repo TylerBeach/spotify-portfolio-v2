@@ -6,7 +6,7 @@ export interface Project {
     link?: string | null;
     imageURL?: string | undefined;
     bannerURL?: string | undefined;
-    demoImages?: string[] | null;
+    demoImages?: { image: string; caption: string;}[] | null;
     techStack?: string[] | null;
     date?: string | null;
  }

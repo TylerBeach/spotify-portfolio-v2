@@ -18,9 +18,9 @@
       "imageURL" : "/images/projectImages/StoryTellerIcon.png",
       "bannerURL" : "/images/projectImages/StoryTellerBanner.png",
       "demoImages": [
-        "/images/projectImages/StoryTellerOne.png",
-        "/images/projectImages/StoryTellerTwo.png",
-        "/images/projectImages/StoryTellerThree.jpg"
+        {"image": "/images/projectImages/StoryTellerOne.png", "caption": "StoryTeller Home Page" },
+        {"image": "/images/projectImages/StoryTellerTwo.png", "caption": "StoryTeller Home Page" },
+        {"image": "/images/projectImages/StoryTellerThree.jpg", "caption": "StoryTeller Home Page" }
       ],
       "techStack":["Javascript", "React", "CSS", "Python", "Flask"],
       "date": "January 2024"
@@ -43,8 +43,8 @@
       "imageURL" : "/images/projectImages/FireSafeLogo.png",
       "bannerURL" : "/images/projectImages/FireSafeBanner.png",
       "demoImages": [
-        "/images/projectImages/firesafe-three.png",
-        "/images/projectImages/firesafe-two.png"
+        {"image": "/images/projectImages/firesafe-three.png", "caption": "test"},
+        {"image": "/images/projectImages/firesafe-two.png", "caption": "test"}
       ],
       "techStack":["Python", "Javascript", "Typescript", "Typescript", "Typescript"],
       "date": " Created December 2022"
@@ -67,8 +67,8 @@
       "imageURL" : "/images/projectImages/FroggyJumperLogo.png",
       "bannerURL" : "/images/projectImages/FroggyJumperBanner.png",
       "demoImages": [
-        "/images/projectImages/FroggyJumperGIF.gif",
-        "/images/projectImages/FroggyJumperHomeScreen.png"
+        {"image": "/images/projectImages/FroggyJumperGIF.gif", "caption" : "test" },
+        {"image": "/images/projectImages/FroggyJumperHomeScreen.png", "caption" : "test" }
       ],
       "techStack":["Python", "Pygame"],
       "date": "November 2022"
@@ -91,8 +91,8 @@
       "imageURL" : "/images/projectImages/EventHorizonLogo.jpg",
       "bannerURL" : "/images/projectImages/EventHorizonBanner.webp",
       "demoImages": [
-        "/images/projectImages/EventHorizon.png",
-        "/images/projectImages/EventHorizon2.png"
+        {"image": "/images/projectImages/EventHorizon.png", "caption" : "test" },
+        {"image": "/images/projectImages/EventHorizon2.png", "caption" : "test" }
       ],
       "techStack":["Java", "Firebase", "Google Maps", "Github"],
       "date": "April 2024"

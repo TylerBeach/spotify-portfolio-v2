@@ -46,7 +46,7 @@
         {"image": "/images/projectImages/firesafe-three.png", "caption": "test"},
         {"image": "/images/projectImages/firesafe-two.png", "caption": "test"}
       ],
-      "techStack":["Python", "Javascript", "Typescript", "Typescript", "Typescript"],
+      "techStack":["Python", "Javascript", "Typescript"],
       "date": " Created December 2022"
     },
     {

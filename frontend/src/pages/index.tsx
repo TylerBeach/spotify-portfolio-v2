@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import SquareCardContainer from "@/Components/SquareCardContainer";
 import MusicPlayer from "@/Components/MusicPlayer";
+import SquareCardGeneric from "@/Components/SquareCardGeneric";
 export default function Home() {
   // left nav  |  banner
   // left nav  |  about me tabs
@@ -41,7 +42,7 @@ export default function Home() {
             visible: { opacity: 1, y: 0, transition: { delay: 1 } },
           }}
         >
-          <div className="flex flex-col h-fit w-full pt-16 gap-y-2 card_background rounded-md  min-h-[100vh]">
+          <div className="flex flex-col h-fit w-full pt-16 gap-y-2 px-2 card_background rounded-md  min-h-[100vh]">
             <TopNavButtons bannerColor="18, 18, 18" project={null} />
             <div className="px-2">
               <Banner />

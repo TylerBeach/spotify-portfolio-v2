@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import ModalImage from "react-modal-image";
 
-function SquareCardGeneric({ caption, imageURL, link}: { caption: string; imageURL: string; link: string; }) {
+function SquareCardGeneric({title, caption, imageURL, link, modalEnabled}: { title: string; caption: string; imageURL: string; link: string; modalEnabled: boolean;}) {
 
     const imageStyle = {
         width: "100%",
@@ -12,7 +12,7 @@ function SquareCardGeneric({ caption, imageURL, link}: { caption: string; imageU
         
     return (
         <div className="hover-effect card_background p-2.5 gap-y-1 flex flex-col w-[180px] h-auto rounded-md text-white">
-        {link === "" ? (
+        {modalEnabled ? (
             <div>
                 <ModalImage
                     className="w-[100%] h-[160px] rounded-md"
@@ -23,10 +23,15 @@ function SquareCardGeneric({ caption, imageURL, link}: { caption: string; imageU
                     hideDownload={true}
                     hideZoom={true}
                 />
+                 {title && (
+                    <h1 className="text-xl SpotifyLightFont font-semibold">
+                    {title}
+                    </h1>
+                )}
                 {caption && (
-                    <h2 className="SpotifyLightFont text-sm brightness-75">
+                    <p className="SpotifyLightFont text-sm brightness-75">
                     {caption}
-                    </h2>
+                    </p>
                 )}
             </div>
         ) : (
@@ -36,6 +41,11 @@ function SquareCardGeneric({ caption, imageURL, link}: { caption: string; imageU
                     src={imageURL}
                     alt=""
                 />
+                {title && (
+                    <h1 className="text-xl SpotifyLightFont font-semibold">
+                    {title}
+                    </h1>
+                )}
                 {caption && (
                     <h2 className="SpotifyLightFont text-sm brightness-75">
                     {caption}

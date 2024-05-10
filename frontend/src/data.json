@@ -94,7 +94,7 @@
         {"image": "/images/projectImages/EventHorizon.png", "caption" : "test" },
         {"image": "/images/projectImages/EventHorizon2.png", "caption" : "test" }
       ],
-      "techStack":["Java", "Firebase", "Google Maps", "Github"],
+      "techStack":["Java", "Firebase", "Google Maps", "Github", "Figma"],
       "date": "April 2024"
     }
   ],

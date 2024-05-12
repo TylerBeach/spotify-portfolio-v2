@@ -47,7 +47,7 @@
         {"image": "/images/projectImages/firesafe-two.png", "caption": "test"}
       ],
       "techStack":["Python", "Javascript", "Typescript"],
-      "date": " Created December 2022"
+      "date": "December 2022"
     },
     {
       "id": "FroggyJumper",

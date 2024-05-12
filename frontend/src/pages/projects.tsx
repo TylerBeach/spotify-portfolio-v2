@@ -6,6 +6,7 @@ import ProfileSongsContainer from "@/Components/ProfileSongsContainer";
 import MusicPlayer from "@/Components/MusicPlayer";
 import { motion } from "framer-motion";
 import ProfileTopContainer from "@/Components/ProfileTopContainer";
+import ProjectListView from "@/Components/ProjectListView";
 
 function about() {
   return (
@@ -23,7 +24,7 @@ function about() {
           <Navbar />
         </motion.div>
         <motion.div
-          className="h-fit bg-black w-full"
+          className="h-fit bg-black w-full px-2"
           initial="hidden"
           animate="visible"
           variants={{
@@ -31,14 +32,10 @@ function about() {
             visible: { opacity: 1, y: 0, transition: { delay: 1 } },
           }}
         >
-          <div className="flex flex-col h-fit w-full pt-16  card_background rounded-md  min-h-[100vh]">
+          <div className="flex flex-col h-fit w-full pt-16 card_background rounded-lg  min-h-[100vh] overflow-hidden">
             <TopNavButtons bannerColor="card_background" project={null}/>
-            <ProfileTopContainer />
-            <div className="background-blur-container h-fit min-h-[300px] w-full z-[2]"></div>
-            <div className="mt-[-250px] flex flex-col h-fit z-[2] pl-4">
-              <div>
-                <ProfileSongsContainer />
-              </div>
+            <div>
+             <ProjectListView />
             </div>
           </div>
         </motion.div>

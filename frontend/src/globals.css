@@ -181,3 +181,12 @@ html {
   transition: 1s;
 }
 
+.filter-button {
+  background-color: #272727;
+  transition: 0.2s;
+}
+
+.filter-button:hover {
+  background-color: #464646;
+  
+}

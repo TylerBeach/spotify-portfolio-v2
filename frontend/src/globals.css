@@ -188,5 +188,12 @@ html {
 
 .filter-button:hover {
   background-color: #464646;
-  
+}
+
+.filter-button-selected {
+  background-color: #464646;
+}
+
+.divider {
+  border-top: 1px solid #272727;
 }

@@ -10,7 +10,7 @@ import ProjectListView from "@/Components/ProjectListView";
 
 function about() {
   return (
-    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] pt-2 pl-2 overflow-x-hidden">
+    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] md:pt-2 md:pl-2 overflow-x-hidden">
       <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-0">
         <motion.div
           initial="hidden"
@@ -24,7 +24,7 @@ function about() {
           <Navbar />
         </motion.div>
         <motion.div
-          className="h-fit bg-black w-full px-2"
+          className="h-fit bg-black w-full md:px-2"
           initial="hidden"
           animate="visible"
           variants={{

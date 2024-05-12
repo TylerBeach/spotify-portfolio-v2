@@ -1,5 +1,7 @@
 import React from "react";
+import NavListSection from "./NavListSection";
 import navbarData from "../navbarData.json";
+
 
 function Navbar() {
   const navbarInfo = navbarData;
@@ -13,32 +15,32 @@ function Navbar() {
             key={sectionName}
           >
             {/* conditionally render the section name, skip if it's the first section legit just for formatting to look better*/}
-            {index !== 0 && <h2 className="text-3xl pt-2">{sectionName}</h2>}
-            <ul className="flex flex-col gap-y-5">
+            {index !== 0 && <h2 className="text-3xl pl-1 SpotifyLightFont font-bold pt-2">{sectionName}</h2>}
+            <ul className="flex flex-col gap-y-0">
               {items.map((item) => (
-                <a
-                  className="hover-effect flex flex-row gap-x-4 p-2 rounded-md items-center min-h-[50px]"
-                  key={item.Title}
-                  href={item.Link}
-                >
-                  <img
-                    style={
-                      index === 0
-                        ? { borderRadius: "5px", height: "30px", width: "30px" }
-                        : {}
-                    }
-                    className="w-[50px] h-[50px] object-cover rounded-3xl"
-                    src={item.Icon}
-                    alt={item.Title}
-                  />
-                  <span className="text-2xl pt-1">{item.Title}</span>
-                </a>
+                <NavListSection imageURL={item.Icon} title={item.Title} link={item.Link} />
               ))}
             </ul>
           </div>
         ))}
+        <div className="flex flex-col rounded-md bg-[#121212] p-2 gap-y-3 text-lg pt-2 " >
+          {/* Show previously clicked links
+          <h2 className="text-3xl pl-1 SpotifyLightFont font-bold pt-2">History</h2>
+          <ul className="flex flex-col gap-y-0">
+            
+          </ul> 
+          
+          TODO
+          
+          */}
+        </div>
       </div>
+
+
+        
     </div>
+    
+
   );
 }
 

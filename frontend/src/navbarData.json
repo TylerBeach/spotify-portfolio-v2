@@ -12,7 +12,24 @@
       "Link": "https://www.linkedin.com/in/tylerbe/"
     }
   ],
-  "Contact Me": [
+  "Quick Browse":[
+    {
+      "Title": "Projects",
+      "Icon": "/images/Projects.png",
+      "Link": "/projects"
+    },
+    {
+      "Title": "About Me",
+      "Icon": "/images/ProfileButtonImage.jpg",
+      "Link": "/about"
+    },
+    {
+      "Title": "Contact Me",
+      "Icon": "/images/ContactMe.png",
+      "Link": "/contact"
+    }
+  ],
+  "My Links": [
     {
       "Title": "LinkedIn",
       "Icon": "/images/LinkedIn.png",
@@ -21,35 +38,35 @@
     {
       "Title": "Github",
       "Icon": "/images/Github.png",
-      "Link": "https://www.linkedin.com/in/tylerbe/"
+      "Link": "https://www.github.com/TylerBeach"
     },
     {
       "Title": "Email",
       "Icon": "/images/Email.png",
-      "Link": "https://www.linkedin.com/in/tylerbe/"
+      "Link": "mailto:tabeach@ualberta.ca"
 
     },
     {
       "Title": "Resume",
       "Icon": "/images/Resume.png",
-      "Link": "https://www.linkedin.com/in/tylerbe/"
+      "Link": "/"
     }
   ],
-  "Spotify Playlists": [
+  "Spotify Links": [
     {
       "Title": "My Spotify",
       "Icon": "/images/Spotify.png",
-      "Link": "https://www.linkedin.com/in/tylerbe/"
+      "Link": ""
     },
     {
       "Title": "Lofi",
       "Icon": "/images/Lofi.png",
-      "Link": "https://www.linkedin.com/in/tylerbe/"
+      "Link": ""
     },
     {
       "Title": "Chilling",
       "Icon": "/images/Chilling.png",
-      "Link": "https://www.linkedin.com/in/tylerbe/"
+      "Link": ""
     }
   ]
 }

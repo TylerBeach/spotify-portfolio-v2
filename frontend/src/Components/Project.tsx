@@ -68,7 +68,7 @@ import SquareCardGeneric from './SquareCardGeneric';
                 <div className=' flex flex-col rounded-md w-[600px] h-auto items-top '>
                     <a className='text-2xl'>Link to Repository</a>
                     <a href={project.link ? project.link : "/"}>
-                        <img className='rounded-full w-[75px] h-[75px] object-contain' src='/images/github.png' alt="Github"/>
+                        <img className='rounded-sm w-[75px] h-[75px] object-contain' src='/images/github.png' alt="Github"/>
                     </a>
 
                 </div>

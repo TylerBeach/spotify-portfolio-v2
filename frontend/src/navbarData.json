@@ -4,12 +4,11 @@
       "Title": "Home",
       "Icon": "/images/Home.png",
       "Link": "/"
-
     },
     {
       "Title": "Search",
       "Icon": "/images/Search.png",
-      "Link": "https://www.linkedin.com/in/tylerbe/"
+      "Link": "/"
     }
   ],
   "Quick Browse":[

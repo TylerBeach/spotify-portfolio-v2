@@ -36,11 +36,11 @@ function ProjectListView() {
 
         <div>
         {/* Table Explanation */}
-        <div className='hover-effect2 flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-4 items-center SpotifyLightFont'>
+        <div className=' flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-4 items-center SpotifyLightFont'>
             <h2 className='text-white brightness-50 w-2 text-xs'>#</h2>
             <div className='flex flex-row flex-1 items-center'>
                 <h2 className='text-white brightness-50 w-[35px] m-2 text-xvs'> </h2>
-                <h1 className='flex-1 text-white brightness-50 text-sm SpotifyLightFont '>Title</h1>
+                <h1 className='flex-1 text-white brightness-50 text-sm pl-1 SpotifyLightFont '>Title</h1>
             </div>
             <h3 className='flex-1 text-white brightness-50 text-sm SpotifyLightFont'>Date Created</h3>
         </div>
@@ -52,7 +52,7 @@ function ProjectListView() {
         
         {/* Project List */}
         {filteredProjects.map((project, index) => (
-          <Link href={`/projects/${project.id}`} key={index} className='hover-effect2 flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-4 items-center SpotifyLightFont'>
+          <Link href={`/projects/${project.id}`} key={index} className='hover-effect flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-4 items-center SpotifyLightFont'>
             <h2 className='text-white brightness-50 w-2'>{index + 1}</h2>
             <div className='flex flex-row flex-1 items-center gap-x-1'>
                 <img className=' rounded-sm w-[35px] h-[35px] object-cover m-2' src={project.imageURL} alt="Tech Stack" />

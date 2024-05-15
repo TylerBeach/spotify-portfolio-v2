@@ -17,8 +17,10 @@ const TopNavButtons: React.FC<TopNavButtonsProps> = ({
 
   useEffect(() => {
     if (project === null && bannerColor === null) {
+      setShowColor(false);
+    } else if (project === null && bannerColor !== null) {
       setShowColor(true);
-    } 
+    }
 
     const handleScroll = () => {
       const scrollingElement = document.querySelector(

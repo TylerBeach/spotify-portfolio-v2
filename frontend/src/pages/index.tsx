@@ -48,6 +48,8 @@ export default function Home() {
               <Banner />
               <ProjectsContainer {...ProjectData} />
               <SquareCardContainer />
+              <SquareCardContainer />
+              <SquareCardContainer />
             </div>
           </div>
         </motion.div>

@@ -21,6 +21,7 @@ function about() {
           }}
           className="hidden md:flex w-[300px] md:max-w-[300px] md:min-w-[300px]"
         >
+          
           <Navbar />
         </motion.div>
         <motion.div

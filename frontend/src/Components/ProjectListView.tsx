@@ -19,17 +19,15 @@ function ProjectListView() {
 
   return (
     <div className='flex flex-col gap-y-4 px-2 md:px-4'>
-      <h1 className='text-white text-3xl'>Projects</h1>
       <div className='flex flex-col gap-y-4'>
-        
         {/* Filtering Buttons and Logic */}
         <div className='flex flex-row text-white gap-x-2'>
             <button onClick={() => handleFilterChange('')} className='rounded-xl w-fit pt-0.5 px-4 h-7 filter-button text-sm SpotifyLightFont '>All</button>
-            {technologies.map((tech) =>
+            {technologies.map((tech, index) =>
                 selectedTech === tech ?
-                <button onClick={() => handleFilterChange(tech)} className='rounded-xl w-fit pt-0.5 px-4 h-7 filter-button-selected text-sm SpotifyLightFont '>{tech}</button>
+                <button key={index} onClick={() => handleFilterChange(tech)} className='rounded-xl w-fit pt-0.5 px-4 h-7 filter-button-selected text-sm SpotifyLightFont '>{tech}</button>
                 :
-                <button onClick={() => handleFilterChange(tech)} className='rounded-xl w-fit pt-0.5 px-4 h-7 filter-button text-sm SpotifyLightFont '>{tech}</button>
+                <button key={index} onClick={() => handleFilterChange(tech)} className='rounded-xl w-fit pt-0.5 px-4 h-7 filter-button text-sm SpotifyLightFont '>{tech}</button>
                 )}    
         </div>
 

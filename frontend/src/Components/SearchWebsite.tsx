@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react'
 import Data from '../data.json'
 import { Project } from '../interfaces/project'
 import { About } from '../interfaces/about'
+import { Navbar } from '../interfaces/navbar'
+import { NavbarItem } from '../interfaces/navbarItem'
 import Link from 'next/link';
 
 
 interface SearchResult {
-    type: 'project' | 'about';
-    data: Project | About;
+    type: 'project' | 'about' | 'navbar';
+    data: Project | About | Navbar;
     matchingSentences: string[];
   }
   
@@ -29,8 +31,10 @@ interface SearchResult {
           if (typeof value === 'string') {
             const sentences = value.split(/(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s/)
             sentences.forEach(sentence => {
+                const excludedTerms = ["/images", "http", "mailto", "/"]
               if (sentence.toLowerCase().includes(search)) {
-                if (!sentence.includes("/images") && !sentence.includes("http")) {
+                if (excludedTerms.some(term => sentence.toLowerCase().includes(term))) return
+                else {
                     matches.push(sentence)
                 }
               }
@@ -68,57 +72,78 @@ interface SearchResult {
           }
         }).filter(result => result.matchingSentences.length > 0)
   
-        setResultsData([...projectResults, ...aboutResults])
+        const navbarSections = ['sectionOne', 'Quick Browse', 'My Links', 'Spotify Links']
+        const navbarResults: SearchResult[] = navbarSections.flatMap(section => {
+          return Data.navbar[section].map((item: NavbarItem) => {
+            const matchingSentences = findMatchingSentences(item)
+            return {
+              type: 'navbar',
+              data: item,
+              matchingSentences
+            }
+          }).filter((result:any) => result.matchingSentences.length > 0)
+        })
+  
+        setResultsData([...projectResults, ...aboutResults, ...navbarResults])
       }
   
       filterData()
     }, [searchData])
   
     return (
-      <div>
+      <div className='mx-4 md:ml-0'>
         <input 
           type="search" 
           onChange={handleChange} 
           value={searchData}
           placeholder="Search for something in this website" 
-          className="w-full h-10 p-2 rounded-md bg-[#121212] text-white"
+          className="md:ml-32 w-full md:w-[300px] h-10 p-2 rounded-md bg-[#272727] text-white"
         />
         <div className="mt-4">
-          {searchData.length > 0 ? 
-          <div>
-          
+        {searchData.length > 0 ? 
+          (<div>
             {resultsData.length > 0 ? (
-                resultsData.map((result, index) => (
-                <div key={index} className="p-2 bg-[#1a1a1a] rounded-md mb-2">
-                    {result.type === 'project' ? (
-                    <Link href={`/projects/${result.data.id}`}>
-                        <h2 className="text-white">{(result.data as Project).title}</h2>
-                        <p className="text-gray-400">{(result.data as Project).cardDescription}</p>
-                        <div className="text-gray-400 mt-2">
-                        {result.matchingSentences.map((sentence, idx) => (
-                            <p key={idx}>{sentence}</p>
-                        ))}
-                        </div>
-                    </Link>
-                    ) : (
-                    <Link href={`/about`}>
-                        <h2 className="text-white">{(result.data as About).title}</h2>
+              resultsData.map((result, index) => (
+                  <div key={index} className="p-2 bg-[#1a1a1a] rounded-md mb-2">
+                  {result.type === 'project' ? (
+                      <Link href={`/projects/${(result.data as Project).id}`}>
+                      <h2 className="text-white">Project: {(result.data as Project).title}</h2>
+                      <p className="text-gray-400">{(result.data as Project).cardDescription}</p>
+                    <div className="text-gray-400 mt-2">
+                    {result.matchingSentences.map((sentence, idx) => (
+                        <p key={idx}>{sentence}</p>
+                    ))}
+                    </div>
+                      </Link>
+                    ) : result.type === 'about' ? (
+                        <Link href={`/about`}>
+                        <h2 className="text-white">About: {(result.data as About).title}</h2>
                         <p className="text-gray-400">{(result.data as About).firstName} {(result.data as About).lastName}</p>
                         <div className="text-gray-400 mt-2">
-                        {result.matchingSentences.map((sentence, idx) => (
-                            <p key={idx}>{sentence}</p>
-                        ))}
-                        </div>
-                    </Link>
+                    {result.matchingSentences.map((sentence, idx) => (
+                        <p key={idx}>{sentence}</p>
+                    ))}
+                    </div>
+                        </Link>
+                    ) : (
+                        <Link href={`${(result.data as NavbarItem).link}`}>
+                        <h2 className="text-white">{(result.data as NavbarItem).title}</h2>
+                        <div className="text-gray-400 mt-2">
+                    {result.matchingSentences.map((sentence, idx) => (
+                        <p key={idx}>{sentence}</p>
+                    ))}
+                    </div>
+                        </Link>
                     )}
-                </div>
+                    </div>
                 ))
             ) : (
                 <p className="text-gray-400">No results found</p>
             )}
-            </div> : (
-            <p className="text-gray-400"></p>
-            )}
+            </div>)
+        : (
+            <p className="text-gray-400">Start typing to search</p>
+        )}
         </div>
       </div>
     )

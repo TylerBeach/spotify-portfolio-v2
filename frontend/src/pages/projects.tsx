@@ -12,7 +12,7 @@ import { Project } from "../interfaces/project";
 import getSecondDominantColor from "@/utils/getDominantColor";
 
 function about() {
-  const aboutMeProject: Project = {
+  const projects: Project = {
     id: "projects",
     title: "Projects",
   };
@@ -53,7 +53,7 @@ function about() {
         }}
       >
         <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
-          <TopNavButtons bannerColor={bannerColor} project={aboutMeProject} />
+          <TopNavButtons bannerColor={bannerColor} project={projects} />
             <ProjectsPageHeader />
           <div className="mt-[-150px]">
             <ProjectListView />

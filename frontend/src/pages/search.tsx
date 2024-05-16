@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import Navbar from '@/Components/Navbar'
 import MusicPlayer from '@/Components/MusicPlayer'
 import TopNavButtons from '@/Components/TopNavButtons'
+import SearchWebsite from '@/Components/SearchWebsite'
 
 export default function search() {
   return (
@@ -31,7 +32,9 @@ export default function search() {
     >
       <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
         <TopNavButtons bannerColor={null} project={null} />
-          
+        <div className='pt-20'>
+            <SearchWebsite />
+        </div>
       </div>
     </motion.div>
     <MusicPlayer />

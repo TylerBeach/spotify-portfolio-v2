@@ -1,4 +1,75 @@
 {
+  "navbarData": {
+    "sectionOne": [
+      {
+        "Title": "Home",
+        "Icon": "/images/Home.png",
+        "Link": "/"
+      },
+      {
+        "Title": "Search",
+        "Icon": "/images/Search.png",
+        "Link": "/search"
+      }
+    ],
+    "Quick Browse":[
+      {
+        "Title": "Projects",
+        "Icon": "/images/Projects.png",
+        "Link": "/projects"
+      },
+      {
+        "Title": "About Me",
+        "Icon": "/images/ProfileButtonImage.jpg",
+        "Link": "/about"
+      },
+      {
+        "Title": "Contact Me",
+        "Icon": "/images/ContactMe.png",
+        "Link": "/contact"
+      }
+    ],
+    "My Links": [
+      {
+        "Title": "LinkedIn",
+        "Icon": "/images/LinkedIn.png",
+        "Link": "https://www.linkedin.com/in/tylerbe/"
+      },
+      {
+        "Title": "Github",
+        "Icon": "/images/Github.png",
+        "Link": "https://www.github.com/TylerBeach"
+      },
+      {
+        "Title": "Email",
+        "Icon": "/images/Email.png",
+        "Link": "mailto:tabeach@ualberta.ca"
+  
+      },
+      {
+        "Title": "Resume",
+        "Icon": "/images/Resume.png",
+        "Link": "/"
+      }
+    ],
+    "Spotify Links": [
+      {
+        "Title": "My Spotify",
+        "Icon": "/images/Spotify.png",
+        "Link": ""
+      },
+      {
+        "Title": "Lofi",
+        "Icon": "/images/Lofi.png",
+        "Link": ""
+      },
+      {
+        "Title": "Chilling",
+        "Icon": "/images/Chilling.png",
+        "Link": ""
+      }
+    ]
+}, 
   "projects": [
     {
       "id": "StoryTeller",
@@ -99,6 +170,9 @@
     }
   ],
   "about": {
+    "id": "about",
+    "firstName": "Tyler",
+    "lastName": "Beach",
     "bannerURL": "/images/profileBanner2.jpg",
     "title": "About Me",
     "paragraphs": [
@@ -122,6 +196,7 @@
         "image": "https://placehold.co/400",
         "paragraphContent": "Real of reals"
       }
-    ]
+    ],
+    "link": "/about"
   }
 }

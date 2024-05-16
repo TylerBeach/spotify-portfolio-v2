@@ -18,7 +18,7 @@ function Navbar() {
             {index !== 0 && <h2 className="text-3xl pl-1 SpotifyLightFont font-bold pt-2">{sectionName}</h2>}
             <ul className="flex flex-col gap-y-0">
               {items.map((item, index) => (
-                <NavListSection key={index} imageURL={item.Icon} title={item.Title} link={item.Link} />
+                <NavListSection key={index} imageURL={item.icon} title={item.title} link={item.link} />
               ))}
             </ul>
           </div>

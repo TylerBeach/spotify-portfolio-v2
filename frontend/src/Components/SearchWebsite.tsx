@@ -97,7 +97,7 @@ interface SearchResult {
           onChange={handleChange} 
           value={searchData}
           placeholder="Search for something in this website" 
-          className="md:ml-32 w-full md:w-[300px] h-10 p-2 rounded-md bg-[#272727] text-white"
+          className="search SpotifyLightFont md:ml-32 w-full md:w-[300px] h-10 p-2 rounded-md bg-[#272727] text-white"
         />
         <div className="mt-4">
         {searchData.length > 0 ? 
@@ -109,7 +109,7 @@ interface SearchResult {
                       <Link href={`/projects/${(result.data as Project).id}`}>
                       <h2 className="text-white">Project: {(result.data as Project).title}</h2>
                       <p className="text-gray-400">{(result.data as Project).cardDescription}</p>
-                    <div className="text-gray-400 mt-2">
+                    <div className="text-gray-400 mt-2 SpotifyLightFont">
                     {result.matchingSentences.map((sentence, idx) => (
                         <p key={idx}>{sentence}</p>
                     ))}
@@ -119,7 +119,7 @@ interface SearchResult {
                         <Link href={`/about`}>
                         <h2 className="text-white">About: {(result.data as About).title}</h2>
                         <p className="text-gray-400">{(result.data as About).firstName} {(result.data as About).lastName}</p>
-                        <div className="text-gray-400 mt-2">
+                        <div className="text-gray-400 mt-2 SpotifyLightFont">
                     {result.matchingSentences.map((sentence, idx) => (
                         <p key={idx}>{sentence}</p>
                     ))}
@@ -128,7 +128,7 @@ interface SearchResult {
                     ) : (
                         <Link href={`${(result.data as NavbarItem).link}`}>
                         <h2 className="text-white">{(result.data as NavbarItem).title}</h2>
-                        <div className="text-gray-400 mt-2">
+                        <div className="text-gray-400 mt-2 SpotifyLightFont">
                     {result.matchingSentences.map((sentence, idx) => (
                         <p key={idx}>{sentence}</p>
                     ))}
@@ -142,7 +142,7 @@ interface SearchResult {
             )}
             </div>)
         : (
-            <p className="text-gray-400">Start typing to search</p>
+            <p className="text-gray-400 md:px-4">Search for keywords, technologies or anything you hope to find about me!</p>
         )}
         </div>
       </div>

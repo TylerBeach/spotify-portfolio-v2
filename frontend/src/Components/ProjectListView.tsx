@@ -37,10 +37,10 @@ function ProjectListView() {
         <div className=' flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-4 items-center SpotifyLightFont'>
             <h2 className='text-white brightness-50 w-2 text-xs'>#</h2>
             <div className='flex flex-row flex-1 items-center'>
-                <h2 className='text-white brightness-50 w-[35px] m-2 text-xvs'> </h2>
+                <h2 className='text-white brightness-50 w-[35px] m-2 text-xs'> </h2>
                 <h1 className='flex-1 text-white brightness-50 text-sm pl-1 SpotifyLightFont '>Title</h1>
             </div>
-            <h3 className='flex-1 text-white brightness-50 text-sm SpotifyLightFont'>Date Created</h3>
+            <h3 className='hidden sm:flex  flex-1 text-white brightness-50 text-sm SpotifyLightFont'>Date Created</h3>
         </div>
 
 
@@ -54,9 +54,9 @@ function ProjectListView() {
             <h2 className='text-white brightness-50 w-2'>{index + 1}</h2>
             <div className='flex flex-row flex-1 items-center gap-x-1'>
                 <img className=' rounded-sm w-[35px] h-[35px] object-cover m-2' src={project.imageURL} alt="Tech Stack" />
-                <h1 className='flex-1 text-white text-xl SpotifyLightFont'>{project.title}</h1>
+                <h1 className='flex-1 text-white text-xl SpotifyLightFont text-nowrap'>{project.title}</h1>
             </div>
-            <h3 className='flex-1 text-white text-lg brightness-50 SpotifyLightFont'>{project.date}</h3>
+            <h3 className='hidden sm:flex flex-1 text-white text-md brightness-50 SpotifyLightFont'>{project.date}</h3>
           </Link>
         ))}
         </div>        

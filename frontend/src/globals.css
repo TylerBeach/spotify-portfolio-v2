@@ -175,6 +175,7 @@ html {
 
 .height-minus-musicPlayer {
   height: calc(100vh - 98px);
+  min-height: calc(100vh - 98px);
 }
 
 .test-container {

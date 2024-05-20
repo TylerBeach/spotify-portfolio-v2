@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import getSecondDominantColor from "@/utils/getDominantColor";
 import data from "../data.json";
 import { Project } from "../interfaces/project";
+import PersonalPopUp from "@/Components/PersonalPopUp";
 
 function about() {
   const aboutMeProject: Project = {
@@ -62,7 +63,12 @@ function about() {
               }}
             ></div>
             <div className="mt-[-100px] flex flex-col h-fit z-[2] pl-4 gap-y-4">
-              <ProfileSongsContainer />
+              <h2>Real as fuck bro</h2>
+              <div className="w-auto h-auto flex flex-col gap-y-2">
+                {data.about.paragraphs.map((section, index) => (
+                  < PersonalPopUp title={section.title} paragraphContent={section.paragraphContent} index={index}/>
+                ))}              
+              </div>
             </div>
           </div>
         </div>

@@ -3,14 +3,10 @@ import data from "../data.json";
 
 function ProfileTopContainer() {
     
-  const aboutBannerBackgroundStyle = {
-    backgroundImage: `url(${data.about.bannerURL});`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  }
 
   return (
-    <div style={aboutBannerBackgroundStyle} className=" flex flex-col justify-end p-2 h-[400px] w-full">
+    <div  style={{ backgroundImage: `url(${data.about.bannerURL})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} 
+    className=" flex flex-col justify-end p-2 h-[400px] w-full">
       <div className="flex flex-col">
         <div className="flex flex-row pb-4">
           <img

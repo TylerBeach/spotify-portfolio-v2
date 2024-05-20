@@ -7,7 +7,12 @@ import SquareCardGeneric from "./SquareCardGeneric";
 function SquareCardContainer() {
   return (
     <div>
-      <h1 className="text-white text-4xl my-3">Projects</h1>
+      <div className='flex flex-row pr-1 w-full justify-between'>
+        <h1 className='text-white text-4xl font-SpotifyBold'>Projects</h1>
+        <Link href="/projects">
+          <h3 className="text-white text-lg SpotifyLightFont"> Show all </h3>
+        </Link>
+      </div>
       <div className="flex flex-row flex-wrap gap-x-6 w-[100%] h-min overflow-y-hidden">
         {ProjectData.projects.map((project, index) => (
           <motion.div

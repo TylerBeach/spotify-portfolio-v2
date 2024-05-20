@@ -66,7 +66,7 @@ function about() {
               <h2>Real as fuck bro</h2>
               <div className="w-auto h-auto flex flex-col gap-y-2">
                 {data.about.paragraphs.map((section, index) => (
-                  < PersonalPopUp title={section.title} paragraphContent={section.paragraphContent} index={index}/>
+                  < PersonalPopUp title={section.title} paragraphContent={section.paragraphContent} image={section.image} index={index}/>
                 ))}              
               </div>
             </div>

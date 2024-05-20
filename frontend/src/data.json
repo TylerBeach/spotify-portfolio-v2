@@ -177,24 +177,24 @@
     "title": "About Me",
     "paragraphs": [
       {
-        "title": "Professional Summary",
-        "image": "https://placehold.co/400",
-        "paragraphContent": "I am a software developer with a passion for creating unique and fun applications. I have experience working with a variety of technologies and languages. I am always looking for new and exciting projects to work on. I am currently a student at the University of Alberta studying Computing Science."
+        "title": "Education",
+        "image": "/images/Education.png",
+        "paragraphContent": "Real"
       },
       {
-        "title": "Background",
-        "image": "https://placehold.co/400",
+        "title": "Technologies",
+        "image": "/images/Technology.png",
         "paragraphContent": "Real of reals"
       },
       {
-        "title": "Technical Skills",
-        "image": "https://placehold.co/400",
+        "title": "Experience",
+        "image": "/images/Briefcase.png",
         "paragraphContent": "Real of reals"
       },
       {
         "title": "Career Goals",
-        "image": "https://placehold.co/400",
-        "paragraphContent": "Real of reals"
+        "image": "/images/Goals.png",
+        "paragraphContent": "Have sex with your mom"
       }
     ],
     "link": "/about"

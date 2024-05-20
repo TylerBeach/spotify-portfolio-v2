@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function PersonalPopUp({title, paragraphContent, index}:{title: string, paragraphContent: string, index: number}) {
+export default function PersonalPopUp({title, paragraphContent, image, index}:{title: string, paragraphContent: string, image: string, index: number}) {
     
   
   
@@ -12,7 +12,7 @@ export default function PersonalPopUp({title, paragraphContent, index}:{title: s
     <div className="max-h-[43px] overflow-hidden">
         <div onClick={() => { setShowPopUp(true); }} className='hover-effect2 flex flex-row rounded-md w-full h-max min-w-[350px] max-w-[600px] gap-x-2 pl-2 md:pl-6 items-center SpotifyLightFont'>
                             <h2 className='text-gray-400 w-2'>{index+1}</h2>
-                            <img className='rounded-md w-[35px] h-[35px] object-contain m-1 ' src={"https://placehold.co/400"} alt="Title"/>
+                            <img className='rounded-md w-[35px] h-[35px] object-cover m-1 ' src={image} alt="Title"/>
                             <h1 className='text-white text-xl SpotifyLightFont'>{title}</h1>
                         </div>
 
@@ -42,7 +42,7 @@ export default function PersonalPopUp({title, paragraphContent, index}:{title: s
                 hidden: { opacity: 0, y: 150, scale: 0.6 },
                 visible: { opacity: 1, y: 0, scale: 1, transition: { delay: 0.2 } },
                 }}
-                className="fixed top-0 left-0 right-0 bottom-0 w-[50%] h-[70%] m-auto card_background z-30 rounded-md p-4"
+                className="fixed top-0 left-0 right-0 bottom-0 w-[50%] h-[70%] min-w-[350px] m-auto card_background z-30 rounded-md p-4"
             >
 
                 {/* Exit Button for the Pop Up  */}
@@ -50,8 +50,13 @@ export default function PersonalPopUp({title, paragraphContent, index}:{title: s
 
                 {/* Actual Content Here */}
                 {/* <h2 className="text-white z-30">Showing pop up</h2> */}
-                <h1 className="text-white z-30">{title}</h1>
-                <p className="text-white z-30 SpotifyLightFont">{paragraphContent}</p>
+                <div className="flex flex-col gap-y-2">
+                  <div className="flex flex-row gap-x-6 h-fit w-full">
+                    <img src={image} className="size-[20%] md:size-[30%] rounded-md object-cover z-30" alt="Title"/> 
+                    <h1 className="text-white text-3xl sm:text-3xl md:text-4xl lg:text-6xl z-30 self-end h-full">{title}</h1>
+                  </div>
+                  <p className="text-white z-30 SpotifyLightFont">{paragraphContent}</p>
+                </div>
 
 
             </motion.div>

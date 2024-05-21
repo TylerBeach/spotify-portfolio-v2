@@ -10,7 +10,7 @@ export default function PersonalPopUp({title, paragraphContent, image, index}:{t
 
   return (
     <div className="max-h-[43px] overflow-hidden">
-        <div onClick={() => { setShowPopUp(true); }} className='hover-effect2 flex flex-row rounded-md w-full h-max min-w-[350px] max-w-[600px] gap-x-2 pl-2 md:pl-6 items-center SpotifyLightFont'>
+        <div onClick={() => { setShowPopUp(true); }} className='cursor-pointer hover-effect2 flex flex-row rounded-md w-full h-max min-w-[350px] max-w-[600px] gap-x-2 pl-2 md:pl-6 items-center SpotifyLightFont'>
                             <h2 className='text-gray-400 w-2'>{index+1}</h2>
                             <img className='rounded-md w-[35px] h-[35px] object-cover m-1 ' src={image} alt="Title"/>
                             <h1 className='text-white text-xl SpotifyLightFont'>{title}</h1>
@@ -52,10 +52,18 @@ export default function PersonalPopUp({title, paragraphContent, image, index}:{t
                 {/* <h2 className="text-white z-30">Showing pop up</h2> */}
                 <div className="flex flex-col gap-y-2">
                   <div className="flex flex-row gap-x-6 h-fit w-full">
-                    <img src={image} className="size-[20%] md:size-[30%] rounded-md object-cover z-30" alt="Title"/> 
-                    <h1 className="text-white text-3xl sm:text-3xl md:text-4xl lg:text-6xl z-30 self-end h-full">{title}</h1>
+                    <img src={image} className="flex-1 size-[20%] md:size-[30%] rounded-md object-cover z-30" alt="Title"/> 
+                    <h1 className="flex-[2] text-white text-3xl sm:text-3xl md:text-4xl lg:text-6xl z-30 self-end h-full">{title}</h1>
                   </div>
-                  <p className="text-white z-30 SpotifyLightFont">{paragraphContent}</p>
+                  <div className="flex flex-row gap-x-6">
+                    <div className="flex flex-cool flex-1 text-white SpotifyLightFont">
+                      <div>
+                        <h2 className="text-xl SpotifyMediumFont font-extrabold">17</h2>
+                        <p>Repositories</p>
+                      </div>
+                    </div>
+                    <p className="flex-[2] text-white z-30 SpotifyLightFont">{paragraphContent}</p>
+                  </div>
                 </div>
 
 

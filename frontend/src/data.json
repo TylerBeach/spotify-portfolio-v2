@@ -175,6 +175,19 @@
     "lastName": "Beach",
     "bannerURL": "/images/profileBanner2.jpg",
     "title": "About Me",
+    "courseWork": [
+      {"CMPUT 174": "Foundations of Computation"},
+      {"CMPUT 175": "Foundations of Computation II"},
+      {"CMPUT 201":  "Practical Programming Methodology"},
+      {"CMPUT 204":  "Algorithms and Data Structures"},
+      {"CMPUT 206":  "Digital Image Processing"},
+      {"CMPUT 267":  "Machine Learning"},
+      {"CMPUT 272":  "Formal Systems and Logic"},
+      {"CMPUT 291":  "File and Database Management"},
+      {"CMPUT 301":  "Software Engineering"},
+      {"CMPUT 365":  "Reinforcement Learning"}
+    ],
+    
     "paragraphs": [
       {
         "title": "Education",
@@ -194,7 +207,7 @@
       {
         "title": "Career Goals",
         "image": "/images/Goals.png",
-        "paragraphContent": "Have sex with your mom"
+        "paragraphContent": "Real of reals"
       }
     ],
     "link": "/about"

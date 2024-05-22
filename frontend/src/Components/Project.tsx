@@ -7,7 +7,7 @@ import getDominantColor from '../utils/getDominantColor';
 import { Project } from "../interfaces/project";
 import ModalImage from "react-modal-image";
 import SquareCardGeneric from './SquareCardGeneric';
-
+import ImageModal from './ImageModal';
 
   interface ProjectProps {
     project: Project;
@@ -93,7 +93,8 @@ import SquareCardGeneric from './SquareCardGeneric';
                         <div key={index} className='h-[200px] w-[200px]'>
                             {/* <img className='h-auto w-[100%] md:min-w-[500px] lg:w-[40%] lg:min-w-[600px]' src={aDemoImage} alt="Demo Image" key={index} /> */}
                             {/* <ModalImage small={aDemoImage} medium={aDemoImage} large={aDemoImage} alt="" hideDownload={true} hideZoom={true}/> */}
-                            <SquareCardGeneric title='' caption={aDemoImage.caption} imageURL={aDemoImage.image} link='' modalEnabled={true}/>
+                            <ImageModal imageURL={aDemoImage.image} caption={aDemoImage.caption}/>                            
+                            {/* <SquareCardGeneric title='' caption={aDemoImage.caption} imageURL={aDemoImage.image} link='' modalEnabled={true}/> */}
                         </div>
                 ))}
                 </div>

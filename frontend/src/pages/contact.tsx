@@ -40,7 +40,7 @@ function About() {
   };
 
   return (
-    <main className="flex flex-row gap-x-2 bg-black max-w-[100vw] pb-[90px] max-h-[100vh] md:pl-2 overflow-hidden">
+    <main className="flex flex-row gap-x-2 bg-black max-w-[100vw] pb-[90px] max-h-[100vh] md:pl-2 overflow-hidden scroll-hidden">
       {/* Navbar Container */}
       <motion.div
         initial="hidden"
@@ -56,7 +56,7 @@ function About() {
     
       {/* Page Content Container */}
       <motion.div
-        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full overflow-y-scroll"
+        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full scroll-hidden"
         initial="hidden"
         animate="visible"
         variants={{
@@ -64,14 +64,15 @@ function About() {
           visible: { opacity: 1, y: 0, transition: { delay: 1 } },
         }}
       >
-       <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
+       <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md height-minus-musicPlayer overflow-x-hidden scroll-hidden">
           <TopNavButtons bannerColor="18, 18, 18" title="Contact Me" />
           <GeneralPageHeader title="Contact Me" subHeading="Send me an email!" imageURL="/images/ContactMe.png" />
-          <div className="pt-[100px] flex flex-col justify-center content-center">
+          <div className="mt-[-170px] flex flex-col pb-[50px]">
 
             {/* EmailJS Form */}
+            <div className="flex flex-row flex-wrap">
             <form
-              className="flex flex-col w-full mx-auto md:w-[50%] min-w-[400px] h-auto p-4 gap-y-2 justify-center"
+              className="flex flex-col w-full min-w-[300px] lg:w-[50%] lg:min-w-[700px] h-auto p-4 gap-y-2"
               onSubmit={sendEmail}
               autoComplete="off"
             >
@@ -94,13 +95,15 @@ function About() {
               <textarea
                 name="message"
                 autoComplete="off"
-                className="text-white text-2xl font-SpotifyRegular bg-black w-full min-h-[200px] h-[300px] p-2 rounded-md"
+                className="text-white text-2xl font-SpotifyRegular bg-black w-full min-h-[200px] h-[250px] p-2 rounded-md"
                 placeholder="Message"
                 required
               />
               <button type="submit" className="text-white text-2xl font-SpotifyRegular bg-black w-[25%] min-w-[150px] p-2 rounded-md">Send</button>
               {isSent && <p className="text-green-500 mt-2">Message sent successfully!</p>}
             </form>
+            <h2 className="text-white text-4xl SpotifyLightFont font-SpotifyBold min-w-[100px] w-[500px] pt-4 pl-4">Send me an email directly at <a href="mailto:tabeach@ualberta.ca" className="text-blue-500 hover:underline"> tabeach@ualberta.ca </a></h2>
+            </div>
           </div>
         </div>
       </motion.div>

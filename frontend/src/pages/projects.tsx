@@ -13,17 +13,6 @@ import getSecondDominantColor from "@/utils/getDominantColor";
 
 function about() {
 
-  const [bannerColor, setBannerColor] = useState("");
-  useEffect(() => {
-    getSecondDominantColor(
-      `${"/images/ProjectPage.png"}`,
-      (averageColorHex: any) => {
-        console.log("Average Color in Hex:", averageColorHex);
-        setBannerColor(averageColorHex);
-      }
-    );
-  }, []);
-
   return (
     <main className="flex flex-row gap-x-2 bg-black max-w-[100vw] pb-[90px] min-h-[100vh] max-h-[100vh] md:pl-2 overflow-hidden">
       {/* Navbar Container */}
@@ -49,7 +38,7 @@ function about() {
         }}
       >
         <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
-          <TopNavButtons bannerColor={bannerColor} title="Projects" />
+          <TopNavButtons imageURL={"/images/ProjectPage.png"} title="Projects" />
             <ProjectsPageHeader />
           <div className="mt-[-150px]">
             <ProjectListView />
@@ -60,6 +49,5 @@ function about() {
     </main>
   );
 }
-// TODO: make the scroll bar not scroll over the music player
 
 export default about;

@@ -49,7 +49,7 @@ function about() {
         }}
       >
         <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
-          <TopNavButtons bannerColor={bannerColor} title="Tyler Beach" />
+          <TopNavButtons imageURL={data.about.bannerURL} title="Tyler Beach" />
           <div className="rounded-md card_background h-fit w-full">
             <ProfileTopContainer />
             <div

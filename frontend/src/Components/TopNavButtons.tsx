@@ -2,20 +2,27 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Project } from "../interfaces/project";
+import getDominantColor from "../utils/getDominantColor";
 
 
-interface TopNavButtonsProps {
-  project: Project | null;
-  bannerColor: string | null; 
-}
 
-function TopNavButtons({title, bannerColor}:{title: string | null, bannerColor: string | null}) {
+function TopNavButtons({title, imageURL}:{title: string | null, imageURL: string | undefined | null}) {
+  const [bannerColour, setBannerColour] = useState('');
+    useEffect(() => {
+        getDominantColor(`${imageURL}`, (averageColorHex:any) => {
+            console.log('Average Color in Hex:', averageColorHex);
+            setBannerColour(averageColorHex);
+        });
+    }, []);
+
+
   const [showColor, setShowColor] = useState(false);
 
   useEffect(() => {
-    if (title === null && bannerColor === null) {
-      setShowColor(false);
-    } else if (title === null && bannerColor !== null) {
+    if (title === null && imageURL === null) {
+      setShowColor(true);
+      setBannerColour('18, 18, 18');
+    } else if (title === null && imageURL !== null) {
       setShowColor(true);
     }
 
@@ -57,8 +64,8 @@ function TopNavButtons({title, bannerColor}:{title: string | null, bannerColor: 
       className="right-0 duration-700 fixed flex flex-row justify-between items-center top-0 top-buttons-width pl-4 h-auto py-4 pr-4 md:pr-6 text-white md:rounded-tl-md md:top-2 z-10"
       style={{
         backgroundColor: showColor
-          ? `rgb(${bannerColor}, 1)`
-          : `rgb(${bannerColor}, 0)`,
+          ? `rgb(${bannerColour}, 1)`
+          : `rgb(${bannerColour}, 0)`,
         transition: "background-color 0.3s ease", 
       }}
     >

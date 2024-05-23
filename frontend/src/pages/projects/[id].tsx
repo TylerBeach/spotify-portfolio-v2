@@ -54,7 +54,7 @@ const ProjectDetail = () => {
         <Navbar />
       </motion.div>
       <div className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full rounded-lg overflow-y-scroll">
-        <TopNavButtons title={project.title} bannerColor={bannerColor} />
+        <TopNavButtons title={project.title} imageURL={project.bannerURL} />
         <div className="rounded-md card_background h-fit w-full">
           <ProjectComponent project={project} />
         </div>

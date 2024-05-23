@@ -12,10 +12,6 @@ import { Project } from "../interfaces/project";
 import getSecondDominantColor from "@/utils/getDominantColor";
 
 function about() {
-  const projects: Project = {
-    id: "projects",
-    title: "Projects",
-  };
 
   const [bannerColor, setBannerColor] = useState("");
   useEffect(() => {
@@ -53,7 +49,7 @@ function about() {
         }}
       >
         <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
-          <TopNavButtons bannerColor={bannerColor} project={projects} />
+          <TopNavButtons bannerColor={bannerColor} title="Projects" />
             <ProjectsPageHeader />
           <div className="mt-[-150px]">
             <ProjectListView />

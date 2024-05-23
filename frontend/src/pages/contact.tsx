@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 import Navbar from "@/Components/Navbar";
 import TopNavButtons from "@/Components/TopNavButtons";
 import MusicPlayer from "@/Components/MusicPlayer";
-
+import GeneralPageHeader from "@/Components/GeneralPageHeader";
 
 function About() {
     const [isSent, setIsSent] = useState(false);
@@ -64,8 +64,9 @@ function About() {
           visible: { opacity: 1, y: 0, transition: { delay: 1 } },
         }}
       >
-        <div className="flex flex-col h-full w-full pt-0 card_background rounded-md  overflow-x-hidden">
-          <TopNavButtons bannerColor="18, 18, 18" project={null} />
+       <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
+          <TopNavButtons bannerColor="18, 18, 18" title="Contact Me" />
+          <GeneralPageHeader title="Contact Me" subHeading="Send me an email!" imageURL="/images/ContactMe.png" />
           <div className="pt-[100px] flex flex-col justify-center content-center">
 
             {/* EmailJS Form */}
@@ -74,7 +75,6 @@ function About() {
               onSubmit={sendEmail}
               autoComplete="off"
             >
-              <h2 className="text-white text-4xl font-SpotifyBold">Contact Me</h2>
               <input
                 type="text"
                 name="name"

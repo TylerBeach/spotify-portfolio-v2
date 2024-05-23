@@ -44,7 +44,7 @@ export default function Home() {
           }}
         >
           <div className="flex flex-col h-fit w-full pt-16 gap-y-2 px-2 card_background rounded-lg min-h-[94vh]">
-            <TopNavButtons bannerColor="18, 18, 18" project={null} />
+            <TopNavButtons bannerColor="18, 18, 18" title="" />
             <div className="flex flex-col px-2 rounded-lg gap-y-5">
               <Banner />
               

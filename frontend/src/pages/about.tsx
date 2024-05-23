@@ -13,10 +13,7 @@ import { Project } from "../interfaces/project";
 import PersonalPopUp from "@/Components/PersonalPopUp";
 
 function about() {
-  const aboutMeProject: Project = {
-    id: "aboutMeProject",
-    title: "Tyler Beach",
-  };
+ 
   const [bannerColor, setBannerColor] = useState("");
 
   useEffect(() => {
@@ -52,7 +49,7 @@ function about() {
         }}
       >
         <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
-          <TopNavButtons bannerColor={bannerColor} project={aboutMeProject} />
+          <TopNavButtons bannerColor={bannerColor} title="Tyler Beach" />
           <div className="rounded-md card_background h-fit w-full">
             <ProfileTopContainer />
             <div

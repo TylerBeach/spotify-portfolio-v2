@@ -28,7 +28,7 @@ export default function Home() {
           animate="visible"
           variants={{
             hidden: { opacity: 0, y: 200 },
-            visible: { opacity: 1, y: 0, transition: { delay: 1 } },
+            visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
           }}
           className="hidden md:flex w-[300px] md:max-w-[300px] md:min-w-[300px]"
         >
@@ -40,14 +40,13 @@ export default function Home() {
           animate="visible"
           variants={{
             hidden: { opacity: 0, y: 200 },
-            visible: { opacity: 1, y: 0, transition: { delay: 1 } },
+            visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
           }}
         >
           <div className="flex flex-col h-fit w-full pt-24 gap-y-2 px-2 card_background rounded-lg min-h-[94vh]">
             <TopNavButtons imageURL={null} title={null}/>
             <div className="flex flex-col px-2 rounded-lg gap-y-5">
               <Banner />
-              
 
               <h2 className="text-white text-4xl font-SpotifyBold">Welcome</h2>
               <div className="w-full grid grid-cols-1 flex-wrap gap-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4">
@@ -55,8 +54,6 @@ export default function Home() {
                 < HomePageWideCard imageURL={"images/Projects.png"} title={"Projects"} link={"about"} />
                 < HomePageWideCard imageURL={"images/ContactMe.png"} title={"Contact Me"} link={"contact"} />
               </div>
-
-              {/* <ProjectsContainer {...ProjectData} /> */}
               
               <SquareCardContainer />
             </div>

@@ -10,6 +10,7 @@ import Link from "next/link";
 import SquareCardContainer from "@/Components/SquareCardContainer";
 import MusicPlayer from "@/Components/MusicPlayer";
 import SquareCardGeneric from "@/Components/SquareCardGeneric";
+import HomePageWideCard from "@/Components/HomePageWideCard";
 export default function Home() {
   // left nav  |  banner
   // left nav  |  about me tabs
@@ -46,7 +47,17 @@ export default function Home() {
             <TopNavButtons bannerColor="18, 18, 18" project={null} />
             <div className="flex flex-col px-2 rounded-lg gap-y-5">
               <Banner />
-              <ProjectsContainer {...ProjectData} />
+              
+
+              <h2 className="text-white text-4xl font-SpotifyBold">Welcome</h2>
+              <div className="w-full grid grid-cols-1 flex-wrap gap-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4">
+                < HomePageWideCard imageURL={"images/ProfileButtonimage.jpg"} title={"About Me"} link={"about"} />
+                < HomePageWideCard imageURL={"images/Projects.png"} title={"Projects"} link={"about"} />
+                < HomePageWideCard imageURL={"images/ContactMe.png"} title={"Contact Me"} link={"contact"} />
+              </div>
+
+              {/* <ProjectsContainer {...ProjectData} /> */}
+              
               <SquareCardContainer />
             </div>
           </div>

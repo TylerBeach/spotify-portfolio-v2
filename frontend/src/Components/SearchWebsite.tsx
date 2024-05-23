@@ -51,7 +51,7 @@ export default function SearchWebsite() {
         return matches
       }
 
-      const projectResults: SearchResult[] = Data.projects.map((project: Project) => {
+      const projectResults: any[] = Data.projects.map((project: Project) => {
         const matchingSentences = findMatchingSentences(project)
         return {
           type: 'project',
@@ -60,7 +60,7 @@ export default function SearchWebsite() {
         }
       }).filter(result => result.matchingSentences.length > 0)
 
-      const aboutResults: SearchResult[] = [
+      const aboutResults: any[] = [
         ...Data.about.paragraphs.map(paragraph => {
           const matchingSentences = findMatchingSentences(paragraph)
           return {

@@ -190,6 +190,11 @@
     
     "paragraphs": [
       {
+        "title": "Background",
+        "image": "/images/Goals.png",
+        "paragraphContent": "Tyler Beach is a dedicated and passionate 23-year-old computing science student residing in Edmonton, Canada. Currently in his fourth year at the University of Alberta, Tyler has cultivated a deep interest in software development, with a particular focus on front-end technologies like React. His technical versatility extends to multiple programming languages, including Python, Java, and C, as well as a growing expertise in backend technologies such as Express. Tyler's commitment to continuous learning and personal growth is evident through his proactive involvement in various personal and academic projects. Outside of his academic pursuits, Tyler is known for his love of frogs, which reflects his appreciation for nature and the environment. As he looks forward to starting his professional career, Tyler is eager to leverage his skills and knowledge in a dynamic and challenging work environment."
+      },
+      {
         "title": "Education",
         "image": "/images/Education.png",
         "paragraphContent": "Tyler is a fourth year student at the University of Alberta studying Computing Science. He has a passion for software development and is always looking for new ways to improve his skills. Tyler is currently looking for a summer internship in software development to further his skills and gain experience in the field."
@@ -197,17 +202,12 @@
       {
         "title": "Technologies",
         "image": "/images/Technology.png",
-        "paragraphContent": "Real of reals"
+        "paragraphContent": "Tyler has developed a strong proficiency in front-end development, particularly with React. In addition to his expertise in JavaScript, he is skilled in Python, Java, and C, which enables him to approach problems from multiple technical perspectives. He is continuously expanding his knowledge and is currently delving into backend technologies such as Express to evolve into a comprehensive full-stack developer. Tyler's project portfolio includes <a href='/projects/EventHorizon'>Event Horizon</a>, an Android application developed with Java and Firebase; <a href='/projects/StoryTeller'>Story Teller</a>, a React and Flask-based web application for generating and narrating children's stories; and <a href='/projects/FireSafe'>FireSafe</a>, a real-time forest fire alert system built with Python, TypeScript, and TensorFlow. For a detailed overview of his skills and experience, please refer to his <a href='/resume'>resume</a>."
       },
       {
         "title": "Experience",
         "image": "/images/Briefcase.png",
-        "paragraphContent": "Real of reals"
-      },
-      {
-        "title": "Career Goals",
-        "image": "/images/Goals.png",
-        "paragraphContent": "Real of reals"
+        "paragraphContent": "While Tyler is in the early stages of his career and has yet to gain professional experience in software development, he has been proactive in building a strong foundation through a variety of personal and academic projects. These projects have allowed him to develop practical skills and demonstrate his ability to work with different technologies. For example, he created <a href='/projects/EventHorizon'>Event Horizon</a>, an Android application for event check-ins, leveraging Java and Firebase. He also developed <a href='/projects/StoryTeller'>Story Teller</a>, a web app using React and Flask to generate and narrate children's stories. Tyler is enthusiastic about applying his skills in a professional environment and is actively seeking opportunities to gain industry experience."
       }
     ],
     "link": "/about"

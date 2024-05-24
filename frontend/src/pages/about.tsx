@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Navbar from "@/Components/Navbar";
 import TopNavButtons from "@/Components/TopNavButtons";
@@ -6,16 +6,37 @@ import ProfileSongsContainer from "@/Components/ProfileSongsContainer";
 import MusicPlayer from "@/Components/MusicPlayer";
 import { motion } from "framer-motion";
 import ProfileTopContainer from "@/Components/ProfileTopContainer";
-import { useState, useEffect } from "react";
 import getSecondDominantColor from "@/utils/getDominantColor";
 import data from "../data.json";
-import { Project } from "../interfaces/project";
 import PersonalPopUp from "@/Components/PersonalPopUp";
 
-function about() {
- 
-  const [bannerColor, setBannerColor] = useState("");
+function About() {
+  // fetch profile data from github to display some stats :D
+  const [githubData, setGithubData] = useState(null);
+  const url = 'https://api.github.com/users/TylerBeach';
+  const fetchData = () => {
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Error getting data');
+        }
+        return response.json();
+      })
+      .then(newData => {
+        setGithubData(newData);
+        console.log(newData);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
 
+
+  // gets the banner color for the fade effect on the page 
+  const [bannerColor, setBannerColor] = useState("");
   useEffect(() => {
     getSecondDominantColor(data.about.bannerURL, (averageColorHex: any) => {
       console.log("Average Color in Hex:", averageColorHex);
@@ -25,13 +46,14 @@ function about() {
 
   return (
     <div className="flex flex-row gap-x-2 bg-black max-w-[100vw] pb-[90px] min-h-[100vh] max-h-[100vh] md:pl-2 overflow-hidden">
+      
       {/* Navbar Container */}
       <motion.div
         initial="hidden"
         animate="visible"
         variants={{
           hidden: { opacity: 0, y: 200 },
-          visible: { opacity: 1, y: 0, transition: { delay: 1 } },
+          visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
         }}
         className="hidden md:flex w-[300px] md:max-w-[300px] md:min-w-[300px] mt-2"
       >
@@ -40,15 +62,15 @@ function about() {
 
       {/* Page Content Container */}
       <motion.div
-        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full  overflow-y-scroll"
+        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full overflow-y-scroll"
         initial="hidden"
         animate="visible"
         variants={{
           hidden: { opacity: 0, y: 200 },
-          visible: { opacity: 1, y: 0, transition: { delay: 1 } },
+          visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
         }}
       >
-        <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
+        <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md min-h-[100vh] overflow-x-hidden">
           <TopNavButtons imageURL={data.about.bannerURL} title="Tyler Beach" />
           <div className="rounded-md card_background h-fit w-full">
             <ProfileTopContainer />
@@ -60,21 +82,29 @@ function about() {
               }}
             ></div>
             <div className="mt-[-100px] flex flex-col h-fit z-[2] pl-4 gap-y-4">
-              <h2>Real as fuck bro</h2>
+              <h2 className="text-white text-3xl font-SpotifyBold">About</h2>
               <div className="w-auto h-auto flex flex-col gap-y-2">
                 {data.about.paragraphs.map((section, index) => (
-                  < PersonalPopUp title={section.title} paragraphContent={section.paragraphContent} image={section.image} index={index}/>
-                ))}              
+                  <PersonalPopUp
+                    key={index}
+                    title={section.title}
+                    paragraphContent={section.paragraphContent}
+                    image={section.image}
+                    index={index}
+                    githubData={githubData}
+                  />
+                ))}
               </div>
+              <ProfileSongsContainer />
             </div>
           </div>
         </div>
       </motion.div>
-      
+
       {/* Music player at bottom of screen */}
       <MusicPlayer />
     </div>
   );
 }
 
-export default about;
+export default About;

@@ -1,19 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Coursework from "./Coursework";
 import data from "../data.json";
 
-export default function PersonalPopUp({
-  title,
-  paragraphContent,
-  image,
-  index,
-}: {
-  title: string;
-  paragraphContent: string;
-  image: string;
-  index: number;
-}) {
+export default function PersonalPopUp({ title, paragraphContent, image, index, githubData }: { title: string; paragraphContent: string; image: string; index: number; githubData: any}) {
+
+  // const url = 'https://api.github.com/users/TylerBeach';
+  // 
+  // // GET request data from GitHub API at url
+  // const fetchData = () => {
+  //   fetch(url)
+  //     .then(response => {
+  //       if (!response.ok) {
+  //         throw new Error('Error getting data');
+  //       }
+  //       return response.json();
+  //     })
+  //     .then(data => {
+  //       console.log(data);
+  //     })
+  //     .catch(error => {
+  //       console.log(error);
+  //     });
+  // };
+  const wordsPerMinute = 238;
+  const words = paragraphContent.split("").length;
+  const totalSeconds = (words / wordsPerMinute) * 60;
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = Math.round(totalSeconds % 60);
+  
   const [showPopUp, setShowPopUp] = useState(false);
 
   return (
@@ -22,7 +37,7 @@ export default function PersonalPopUp({
         onClick={() => {
           setShowPopUp(true);
         }}
-        className="cursor-pointer hover-effect2 flex flex-row rounded-md w-full h-max min-w-[350px] max-w-[600px] gap-x-2 pl-2 md:pl-6 items-center SpotifyLightFont"
+        className="cursor-pointer hover-effect2 flex flex-row rounded-md w-full h-max min-w-[350px] max-w-[600px] gap-x-2 pl-2 md:pl-4 items-center SpotifyLightFont"
       >
         <h2 className="text-gray-400 w-2">{index + 1}</h2>
         <img
@@ -30,7 +45,9 @@ export default function PersonalPopUp({
           src={image}
           alt="Title"
         />
-        <h1 className="text-white text-xl SpotifyLightFont">{title}</h1>
+        <h1 className="flex-[2] text-white text-xl SpotifyLightFont">{title}</h1>
+        <h2 className="flex-[1] text-white brightness-75 text-xs SpotifyLightFont">{paragraphContent.split("").length} </h2>
+        <h2 className="flex-[1] text-white brightness-75 text-xs SpotifyLightFont">{minutes}:{seconds} </h2>
       </div>
 
       <AnimatePresence>
@@ -95,13 +112,7 @@ export default function PersonalPopUp({
                   </h1>
                 </div>
                 <div className="flex flex-row gap-x-6">
-                  <div className="hidden md:flex flex-col gap-y-6 pt-3 flex-1 text-white SpotifyLightFont">
-                    <div>
-                      <h2 className="text-xl SpotifyMediumFont font-extrabold">
-                        17
-                      </h2>
-                      <p className="text-sm brightness-75">Repositories</p>
-                    </div>
+                  <div className="hidden md:flex flex-col gap-y-4 pt-3 flex-1 text-white SpotifyLightFont">
                     <div>
                       <h2 className="text-xl SpotifyMediumFont font-extrabold">
                         {data.projects.length}
@@ -110,9 +121,15 @@ export default function PersonalPopUp({
                     </div>
                     <div>
                       <h2 className="text-xl SpotifyMediumFont font-extrabold">
-                        17
+                        {githubData.public_repos}
                       </h2>
-                      <p className="text-sm brightness-75">Repositories</p>
+                      <p className="text-sm brightness-75">Github Repositories</p>
+                    </div>
+                    <div>
+                      <h2 className="text-xl SpotifyMediumFont font-extrabold">
+                      {githubData.followers}
+                      </h2>
+                      <p className="text-sm brightness-75">Github Followers</p>
                     </div>
                     <div className="w-full flex flex-col gap-y-2">
                       <a
@@ -161,9 +178,10 @@ export default function PersonalPopUp({
                     </div>
                   </div>
                   <div className="flex-[3] flex flex-col">
-                    <p className="text-white SpotifyLightFont">
-                      {paragraphContent}
-                    </p>
+                  <p
+                      className="text-white SpotifyLightFont"
+                      dangerouslySetInnerHTML={{ __html: paragraphContent }}
+                    ></p>
                     {title === "Education" ? (
                       <div className="flex flex-col">
                         <h2 className="pt-2 SpotifyLightFont text-lg text-white">

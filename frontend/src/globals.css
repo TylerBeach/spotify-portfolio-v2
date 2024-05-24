@@ -178,6 +178,11 @@ html {
   min-height: calc(100vh - 98px);
 }
 
+.height-minus-musicPlayer-full {
+  height: calc(100vh - 98px);
+  min-height: calc(100vh - 98px);
+}
+
 .test-container {
   transition: 1s;
 }

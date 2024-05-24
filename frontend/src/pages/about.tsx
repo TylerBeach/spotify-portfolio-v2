@@ -96,14 +96,14 @@ function About() {
                 ))}
               </div>
               <div className="flex-[2] flex flex-row gap-x-6">
-                <div className="flex-1 flex flex-col gap-y-1">
+                <a href="https://www.linkedin.com/in/tylerbe/" className="flex-1 flex flex-col gap-y-1">
                   <h2 className="text-white text-2xl">LinkedIn</h2>
                   <img className="w-[75px] h-[75px] object-cover rounded-full" src={"/images/LinkedIn.png"} alt="Tyler Beach" />
-                </div>
-                <div className="flex-1 flex flex-col gap-y-1">
+                </a>
+                <Link href="/resume" className="flex-1 flex flex-col gap-y-1">
                   <h2 className="text-white text-2xl">Resume</h2>
                   <img className="w-[75px] h-[75px] object-cover rounded-full" src={"/images/Resume.png"} alt="Tyler Beach" />
-                </div>
+                </Link>
               </div>
             </div>
           </div>

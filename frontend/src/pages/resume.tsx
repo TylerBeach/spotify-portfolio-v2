@@ -32,7 +32,7 @@ function resume() {
           visible: { opacity: 1, y: 0, transition: { delay: 1 } },
         }}
       >
-        <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-fit overflow-x-hidden">
+        <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  height-minus-musicPlayer-full overflow-x-hidden">
           <TopNavButtons imageURL="/images/Resume.png" title="Resume" />
           <GeneralPageHeader title="Resume" subHeading="Tyler Beach Resume" imageURL="/images/Resume.png" />
           {/* Content here  */}

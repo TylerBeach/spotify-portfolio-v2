@@ -81,9 +81,9 @@ function About() {
                 width: "100%",
               }}
             ></div>
-            <div className="mt-[-100px] flex flex-col h-fit z-[2] pl-4 gap-y-4">
-              <h2 className="text-white text-3xl font-SpotifyBold">About</h2>
-              <div className="w-auto h-auto flex flex-col gap-y-2">
+            <div className="mt-[-100px] flex flex-col md:flex-row flex-wrap h-fit z-[2] pl-4 gap-y-4 gap-x-4">
+              <div className="flex-[4] w-full h-auto flex flex-col gap-y-2 min-w-[425px]">
+                <h2 className="text-white text-3xl font-SpotifyBold">About</h2>
                 {data.about.paragraphs.map((section, index) => (
                   <PersonalPopUp
                     key={index}
@@ -95,7 +95,16 @@ function About() {
                   />
                 ))}
               </div>
-              <ProfileSongsContainer />
+              <div className="flex-[2] flex flex-row gap-x-6">
+                <div className="flex-1 flex flex-col gap-y-1">
+                  <h2 className="text-white text-2xl">LinkedIn</h2>
+                  <img className="w-[75px] h-[75px] object-cover rounded-full" src={"/images/LinkedIn.png"} alt="Tyler Beach" />
+                </div>
+                <div className="flex-1 flex flex-col gap-y-1">
+                  <h2 className="text-white text-2xl">Resume</h2>
+                  <img className="w-[75px] h-[75px] object-cover rounded-full" src={"/images/Resume.png"} alt="Tyler Beach" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

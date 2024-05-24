@@ -5,6 +5,7 @@ import TopNavButtons from '@/Components/TopNavButtons'
 import MusicPlayer from '@/Components/MusicPlayer'
 import ResumeDisplay from '@/Components/ResumeDisplay'
 import PDFViewer from '@/Components/ResumeDisplay'
+import GeneralPageHeader from '@/Components/GeneralPageHeader'
 
 function resume() {
   return (
@@ -32,11 +33,12 @@ function resume() {
         }}
       >
         <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-fit overflow-x-hidden">
-          <TopNavButtons bannerColor="18, 18, 18" project={null} />
+          <TopNavButtons imageURL="/images/Resume.png" title="Resume" />
+          <GeneralPageHeader title="Resume" subHeading="Tyler Beach Resume" imageURL="/images/Resume.png" />
           {/* Content here  */}
-          <div className='w-full content-center h-fit pt-32 pb-16 flex flex-col gap-y-2'>
-            <a href="/TylerBeachResume.pdf" download={true}>
-              <h2 className='text-white text-center text-2xl hover:underline'>Download Resume</h2>
+          <div className='w-full content-center h-fit mt-[-140px] pb-16 flex flex-col gap-y-2'>
+            <a href="/TylerBeachResume.pdf" download={true} className='mx-auto w-fit'>
+              <h2 className='text-white w-fit text-2xl hover:underline'>Download Resume</h2>
             </a>
             <ResumeDisplay pdfUrl='/TylerBeachResume.pdf'  />
           </div>

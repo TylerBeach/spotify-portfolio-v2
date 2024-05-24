@@ -62,7 +62,7 @@ function About() {
 
       {/* Page Content Container */}
       <motion.div
-        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full overflow-y-scroll"
+        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full"
         initial="hidden"
         animate="visible"
         variants={{
@@ -70,7 +70,7 @@ function About() {
           visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
         }}
       >
-        <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md min-h-[100vh] overflow-x-hidden">
+        <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md height-minus-musicPlayer overflow-y-auto overflow-x-hidden">
           <TopNavButtons imageURL={data.about.bannerURL} title="Tyler Beach" />
           <div className="rounded-md card_background h-fit w-full">
             <ProfileTopContainer />

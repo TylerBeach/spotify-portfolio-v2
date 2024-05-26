@@ -167,6 +167,28 @@
       ],
       "techStack":["Java", "Firebase", "Google Maps", "Github", "Figma"],
       "date": "April 2024"
+    },
+    {
+      "id": "TwitterBackend",
+      "title": "Twitter Backend",
+      "cardDescription": "Twitter backend clone that allows users to create tweets, follow users, and like tweets using SQL",  
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is it?",
+          "paragraphContent": "Twitter Backend is a backend clone of Twitter that allows users to create tweets, follow users, and like tweets. This was a project for CMPUT 291 - File and Database Management at the University of Alberta with a team of four people working together Our group had to design the database schema given the requirements and then implement it to make a functioning backend."},
+        {
+          "paragraphTitle": "What I learned",
+          "paragraphContent": "I learned about developing a database schema for a project and how to implement it to make a functioning backend. I also learned how relational databases work and how to use SQL to interact with the database. This project was a great learning experience and I am excited to continue learning more about databases and backend development throughout my future career in software developement."
+        }
+      ],
+      "link": "https://github.com/TylerBeach/Twitter-Backend-Clone",
+      "imageURL" : "/images/Twitter.png",
+      "bannerURL" : "/images/projectImages/TwitterCloneBanner.webp",
+      "demoImages": [
+       
+      ],
+      "techStack":["Python", "SQL"],
+      "date": "December 2023"
     }
   ],
   "about": {

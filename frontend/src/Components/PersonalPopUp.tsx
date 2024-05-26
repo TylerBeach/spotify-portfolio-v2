@@ -37,7 +37,7 @@ export default function PersonalPopUp({ title, paragraphContent, image, index, g
         onClick={() => {
           setShowPopUp(true);
         }}
-        className="cursor-pointer hover-effect2 flex flex-row max-w-[100vw] rounded-md w-[100%] h-max min-w-0 sm:min-w-[100px] gap-x-2 pl-2 pr-12 md:pl-4 items-center SpotifyLightFont"
+        className="cursor-pointer hover-effect2 flex flex-row max-w-[100vw] rounded-md w-[100%] h-max min-w-[320px] gap-x-2 pl-2 pr-8 md:pl-4 items-center SpotifyLightFont"
       >
         <h2 className="text-gray-400 w-2">{index + 1}</h2>
         <img

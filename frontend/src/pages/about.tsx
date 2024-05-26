@@ -72,8 +72,8 @@ function About() {
                 width: "100%",
               }}
             ></div>
-            <div className="mt-[-100px] flex flex-col md:flex-row flex-wrap h-fit z-[2] pl-4 gap-y-4 gap-x-4 pb-12">
-              <div className="flex-[1] w-full h-auto flex flex-col gap-y-2 min-w-[400px]">
+            <div className="mt-[-120px] flex flex-col md:flex-row flex-wrap h-fit z-[2] pl-4 gap-y-4 gap-x-4 pb-12">
+              <div className="flex-[1] w-full h-auto flex flex-col gap-y-2 min-w-[300px] pr-2">
                 <h2 className="text-white text-2xl">About</h2>
                 {data.about.paragraphs.map((section, index) => (
                   <PersonalPopUp
@@ -86,7 +86,7 @@ function About() {
                   />
                 ))}
               </div>
-              <div className="flex-[1] flex flex-wrap md:flex-nowrap flex-row gap-y-6 gap-x-4">
+              <div className="flex-[1] flex flex-wrap md:flex-nowrap flex-row gap-y-6 gap-x-4 min-w-fit">
                 
                 {/* Important Links */}
                 <div className="flex-1 flex flex-col gap-y-4 min-w-[250px]">
@@ -114,7 +114,7 @@ function About() {
                 </div>
 
                 {/* Tyler's Pick */}
-                <div className="flex-1 flex flex-col gap-y-4 min-w-fit">
+                <div className="flex-1 flex flex-col gap-y-4 min-w-fit w-fit">
                   <h2 className="text-white text-2xl">Tyler's Pick</h2>
                   <a href="https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk?si=39keDNFUQfSvOt0EV-O08Q" className="flex flex-col w-fit">
                     <div className="flex flex-row gap-x-2">

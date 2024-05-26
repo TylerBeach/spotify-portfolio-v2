@@ -8,7 +8,7 @@ function ProfileTopContainer() {
     <div  style={{ backgroundImage: `url(${data.about.bannerURL})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} 
     className=" flex flex-col justify-end p-2 h-[400px] w-full">
       <div className="flex flex-col">
-        <div className="flex flex-row pb-4">
+        <div className="flex flex-row pb-4 pl-3 gap-x-1">
           <img
             src="/images/Verified.png"
             alt="Tyler Beach"

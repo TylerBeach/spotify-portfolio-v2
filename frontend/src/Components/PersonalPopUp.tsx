@@ -85,7 +85,7 @@ export default function PersonalPopUp({ title, paragraphContent, image, index, g
                   transition: { delay: 0.2 },
                 },
               }}
-              className="fixed top-0 left-0 right-0 bottom-0 w-[50%] h-[70%] min-w-[90%] md:min-w-[550px] m-auto card_background z-30 rounded-md p-4"
+              className="fixed top-0 left-0 right-0 bottom-0 w-[50%] h-fit min-w-[90%] md:min-w-[550px] min-h-[60%] m-auto card_background z-30 rounded-md p-4"
             >
               {/* Exit Button for the Pop Up  */}
               <img

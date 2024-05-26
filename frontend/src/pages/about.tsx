@@ -86,7 +86,7 @@ function About() {
                   />
                 ))}
               </div>
-              <div className="flex-[1] flex flex-wrap md:flex-nowrap flex-row gap-y-6 gap-x-4 min-w-fit">
+              <div className="flex-[1] flex flex-wrap md:flex-nowrap flex-row gap-y-6 gap-x-4">
                 
                 {/* Important Links */}
                 <div className="flex-1 flex flex-col gap-y-4 min-w-[250px]">
@@ -114,7 +114,7 @@ function About() {
                 </div>
 
                 {/* Tyler's Pick */}
-                <div className="flex-1 flex flex-col gap-y-4 min-w-fit w-fit">
+                <div className="flex-1 flex flex-col gap-y-4 min-w-[170px]">
                   <h2 className="text-white text-2xl">Tyler's Pick</h2>
                   <a href="https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk?si=39keDNFUQfSvOt0EV-O08Q" className="flex flex-col w-fit">
                     <div className="flex flex-row gap-x-2">

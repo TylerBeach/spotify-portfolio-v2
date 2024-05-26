@@ -67,7 +67,7 @@ export default function Home() {
       animate="visible"
       variants={{
         hidden: { opacity: 0, },
-        visible: { opacity: 1,   transition: { delay: 1 } },
+        visible: { opacity: 1,   transition: { delay: 0.55 } },
       }}
     >
       <MusicPlayer />

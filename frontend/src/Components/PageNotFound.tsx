@@ -15,7 +15,7 @@ function PageNotFound() {
       <h2>Page not found</h2>
       <h3 className='pb-12'>Oops! The page you are looking for does not exist. </h3>
       <Link href="/">
-        <button  className='bg-white rounded-md w-[300px] h-[100px] text-black'>Back To Home</button>
+        <button  className='bg-white rounded-md w-[200px] h-[80px] text-black'>Back To Home</button>
       </Link>
     </div>
   )

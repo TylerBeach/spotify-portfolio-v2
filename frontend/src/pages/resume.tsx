@@ -24,7 +24,7 @@ function resume() {
       </motion.div>
 
       <motion.div
-        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full  overflow-y-scroll"
+        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full "
         initial="hidden"
         animate="visible"
         variants={{

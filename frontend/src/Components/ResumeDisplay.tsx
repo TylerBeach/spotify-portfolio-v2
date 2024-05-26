@@ -9,7 +9,9 @@ const ResumeDisplay: React.FC<{ pdfUrl: string }> = ({ pdfUrl }) => {
 
   useEffect(() => {
     const updateWidth = () => {
-      setWidth(window.innerWidth > 1000 ? 700 : window.innerWidth * 0.8);
+      if (window.innerWidth < 768) setWidth(window.innerWidth * 0.9);
+      else if (window.innerWidth < 1100) setWidth(window.innerWidth * 0.55);
+      else setWidth(window.innerWidth * 0.4);
     };
 
     // Set initial width

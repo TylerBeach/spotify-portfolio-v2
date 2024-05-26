@@ -46,8 +46,8 @@ export default function PersonalPopUp({ title, paragraphContent, image, index, g
           alt="Title"
         />
         <h1 className="flex-[2] text-white text-xl SpotifyLightFont min-w-[125px]">{title}</h1>
-        <h2 className="flex-[1] text-white brightness-75 text-xs SpotifyLightFont md:text-center sm:text-right">{paragraphContent.split("").length} </h2>
-        <h2 className="flex-[1] text-white brightness-75 text-xs SpotifyLightFont text-right">{minutes}:{seconds} </h2>
+        <h2 className="flex-[1] text-white brightness-75 text-xs SpotifyLightFont text-center">{paragraphContent.split("").length} </h2>
+        <h2 className="flex-[1] text-white brightness-75 text-xs SpotifyLightFont text-center md:text-right">{minutes}:{seconds} </h2>
       </div>
 
       <AnimatePresence>

@@ -37,7 +37,7 @@ function About() {
   // gets the banner color for the fade effect on the page 
   const [bannerColor, setBannerColor] = useState("");
   useEffect(() => {
-    getSecondDominantColor(data.about.bannerURL, (averageColorHex) => {
+    getSecondDominantColor(data.about.bannerURL, (averageColorHex:any) => {
       console.log("Average Color in Hex:", averageColorHex);
       setBannerColor(averageColorHex);
     });

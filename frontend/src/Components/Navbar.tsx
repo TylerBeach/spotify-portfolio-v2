@@ -23,7 +23,7 @@ function Navbar() {
             </ul>
           </div>
         ))}
-        <div className="flex flex-col rounded-md bg-[#121212] p-2 gap-y-3 text-lg pt-2 " >
+        {/* <div className="flex flex-col rounded-md bg-[#121212] p-2 gap-y-3 text-lg pt-2 " > */}
           {/* Show previously clicked links
           <h2 className="text-3xl pl-1 SpotifyLightFont font-bold pt-2">History</h2>
           <ul className="flex flex-col gap-y-0">
@@ -33,7 +33,7 @@ function Navbar() {
           TODO
           
           */}
-        </div>
+        {/* </div> */}
       </div>
 
 

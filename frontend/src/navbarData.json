@@ -66,6 +66,11 @@
       "title": "Chilling",
       "icon": "/images/Chilling.png",
       "link": ""
+    },
+    {
+      "title": "EDM",
+      "icon": "/images/House.png",
+      "link": "https://open.spotify.com/playlist/6AgKp1uhxAubwcz4hgvFpN?si=d649093ab68b484d"
     }
   ]
 }

@@ -34,11 +34,10 @@ function About() {
     fetchData();
   }, []);
 
-
   // gets the banner color for the fade effect on the page 
   const [bannerColor, setBannerColor] = useState("");
   useEffect(() => {
-    getSecondDominantColor(data.about.bannerURL, (averageColorHex: any) => {
+    getSecondDominantColor(data.about.bannerURL, (averageColorHex) => {
       console.log("Average Color in Hex:", averageColorHex);
       setBannerColor(averageColorHex);
     });
@@ -61,17 +60,9 @@ function About() {
       </motion.div>
 
       {/* Page Content Container */}
-      <motion.div
-        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full"
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: { opacity: 0, y: 200 },
-          visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
-        }}
-      >
-        <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md height-minus-musicPlayer overflow-y-auto overflow-x-hidden">
-          <TopNavButtons imageURL={data.about.bannerURL} title="Tyler Beach" />
+      <div className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full rounded-lg overflow-y-scroll">
+        <TopNavButtons imageURL={"/images/profileBanner2.jpg"} title="Tyler Beach" />
+        <div className="flex flex-col h-fit w-full pt-0 card_background md:rounded-md overflow-y-auto overflow-x-hidden">
           <div className="rounded-md card_background h-fit w-full">
             <ProfileTopContainer />
             <div
@@ -83,7 +74,7 @@ function About() {
             ></div>
             <div className="mt-[-100px] flex flex-col md:flex-row flex-wrap h-fit z-[2] pl-4 gap-y-4 gap-x-4 pb-12">
               <div className="flex-[1] w-full h-auto flex flex-col gap-y-2 min-w-[400px]">
-              <h2 className="text-white text-2xl">About</h2>
+                <h2 className="text-white text-2xl">About</h2>
                 {data.about.paragraphs.map((section, index) => (
                   <PersonalPopUp
                     key={index}
@@ -97,24 +88,23 @@ function About() {
               </div>
               <div className="flex-[1] flex flex-wrap md:flex-nowrap flex-row gap-y-6 gap-x-4">
                 
-                {/* important links */}
+                {/* Important Links */}
                 <div className="flex-1 flex flex-col gap-y-4 min-w-[250px]">
                   <h2 className="text-white text-2xl">Important Links</h2>
                   <div className="flex flex-col">
-                    
                     <div className="flex flex-row gap-x-2">
                       <a href="https://www.linkedin.com/in/tylerbe/" className="">
-                        <img className="w-[75px] h-[75px] object-cover rounded-full" src={"/images/LinkedIn.png"} alt="Tyler Beach" />
+                        <img className="w-[75px] h-[75px] object-cover min-w-[75px] rounded-full" src={"/images/LinkedIn.png"} alt="Tyler Beach" />
                       </a>
-                      <div className="my-auto">
-                        <h2 className="text-white text-lg font-extrabold SpotifyLightFont">Connect with me</h2>
+                      <div className="my-auto pr-12">
+                        <h2 className="text-white text-lg font-extrabold SpotifyLightFont text-nowrap">Connect with me</h2>
                         <h2 className="text-white text-sm brightness-75 SpotifyLightFont">Message me if you think I fit a role you need!</h2>
                       </div>
                     </div>
                   </div>
                   <Link href="/resume" className="flex flex-col ">
                     <div className="flex flex-row gap-x-2">
-                      <img className="w-[75px] h-[75px] object-cover rounded-full" src={"/images/Resume.png"} alt="Tyler Beach" />
+                      <img className="w-[75px] h-[75px] object-cover min-w-[75px] rounded-full" src={"/images/Resume.png"} alt="Tyler Beach" />
                       <div className="my-auto">
                         <h2 className="text-white text-lg font-extrabold SpotifyLightFont">Check out my resume</h2>
                         <h2 className="text-white text-sm brightness-75 SpotifyLightFont">Looking for developer roles</h2>
@@ -123,7 +113,7 @@ function About() {
                   </Link>
                 </div>
 
-                {/* artist pick */}
+                {/* Tyler's Pick */}
                 <div className="flex-1 flex flex-col gap-y-4 min-w-fit">
                   <h2 className="text-white text-2xl">Tyler's Pick</h2>
                   <a href="https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk?si=39keDNFUQfSvOt0EV-O08Q" className="flex flex-col w-fit">
@@ -134,7 +124,6 @@ function About() {
                 </div>
 
               </div>
-
             </div>
             <footer className="px-4 flex flex-col pb-12">
               <h2 className="text-white text-2xl">Thanks for visiting!</h2>
@@ -142,7 +131,7 @@ function About() {
             </footer>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Music player at bottom of screen */}
       <MusicPlayer />

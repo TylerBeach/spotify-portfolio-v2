@@ -107,7 +107,11 @@
         },
         {
           "paragraphTitle": "Some Features",
-          "paragraphContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar accumsan nisl, et finibus nunc accumsan rutrum. Aenean ligula ante, dapibus nec commodo quis, efficitur eget libero. Phasellus consequat dignissim lorem. Vestibulum at magna mauris. Integer in lorem ornare, molestie eros sed, eleifend augue. Curabitur porta massa magna, a consectetur arcu porta vel. Vestibulum consectetur quam eu consectetur luctus. In leo quam, bibendum sit amet est quis, mattis efficitur neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc aliquam enim at ante semper tempor. Nunc sit amet augue in elit tincidunt interdum at nec metus. Sed finibus turpis euismod elit viverra, id aliquam lorem ultrices. Proin mi sapien, elementum quis augue in, auctor semper elit. Nullam lacus metus, volutpat non nulla at, pharetra tincidunt erat. Maecenas nisl massa, efficitur vehicula feugiat nec, vehicula sed urna. Pellentesque vitae ipsum eget nunc feugiat euismod."
+          "paragraphContent": "FireSafe uses machine learning to locate secluded locations and homes. It also ensures that no individual gets left behind in the event of a forest fire eruption. FireSafe uses machine learning to locate secluded locations and homes. It also shows the potential risk of a fire and the radius in which it will potentially reach."
+        },
+        {
+          "paragraphTitle": "Video presentation",
+          "paragraphContent": "<a href='https://youtu.be/G8i-fJkVXjM'>Check out our video presentation here</a>"
         }
       ],
       "link": "https://github.com/TylerBeach/FireSafe",
@@ -117,7 +121,7 @@
         {"image": "/images/projectImages/firesafe-three.png", "caption": "test"},
         {"image": "/images/projectImages/firesafe-two.png", "caption": "test"}
       ],
-      "techStack":["Python", "Javascript", "Typescript"],
+      "techStack":["Python", "Javascript", "Typescript", "HTML", "CSS", "TensorFlow"],
       "date": "December 2022"
     },
     {

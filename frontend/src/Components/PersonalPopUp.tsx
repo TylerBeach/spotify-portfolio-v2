@@ -37,7 +37,7 @@ export default function PersonalPopUp({ title, paragraphContent, image, index, g
         onClick={() => {
           setShowPopUp(true);
         }}
-        className="cursor-pointer hover-effect2 flex flex-row rounded-md w-full h-max min-w-0 sm:min-w-[100] gap-x-2 pl-2 pr-12 md:pl-4 items-center SpotifyLightFont"
+        className="cursor-pointer hover-effect2 flex flex-row max-w-[100vw] rounded-md w-[100%] h-max min-w-0 sm:min-w-[100px] gap-x-2 pl-2 pr-12 md:pl-4 items-center SpotifyLightFont"
       >
         <h2 className="text-gray-400 w-2">{index + 1}</h2>
         <img
@@ -45,7 +45,7 @@ export default function PersonalPopUp({ title, paragraphContent, image, index, g
           src={image}
           alt="Title"
         />
-        <h1 className="flex-[2] text-white text-xl SpotifyLightFont">{title}</h1>
+        <h1 className="flex-[2] text-white text-xl SpotifyLightFont min-w-[125px]">{title}</h1>
         <h2 className="flex-[1] text-white brightness-75 text-xs SpotifyLightFont md:text-center sm:text-right">{paragraphContent.split("").length} </h2>
         <h2 className="flex-[1] text-white brightness-75 text-xs SpotifyLightFont text-right">{minutes}:{seconds} </h2>
       </div>

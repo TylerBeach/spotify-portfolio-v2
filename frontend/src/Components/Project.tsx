@@ -80,7 +80,10 @@ import ImageModal from './ImageModal';
                 {project.paragraphData && project.paragraphData.map((aParagraph, index) => (
                     <div key={index} className='flex flex-col mb-4'>
                         <h2 className='text-2xl'>{aParagraph.paragraphTitle}</h2>
-                        <p className='SpotifyLightFont'>{aParagraph.paragraphContent}</p>
+                        <p className='SpotifyLightFont'
+                                              dangerouslySetInnerHTML={{ __html: aParagraph.paragraphContent }}
+                                              ></p>
+                        
                     </div>
                 ))}
             </div>

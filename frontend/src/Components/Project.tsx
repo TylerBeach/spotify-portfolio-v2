@@ -86,6 +86,7 @@ import ImageModal from './ImageModal';
             </div>
             
             {/* project images */}
+        {project.demoImages && project.demoImages.length > 0 && 
             <div className='px-4 flex flex-col flex-wrap lg:justify-evenly'>
                 <h2 className='text-2xl'>Demo Images</h2>
                 <div className='flex flex-row'>
@@ -99,7 +100,7 @@ import ImageModal from './ImageModal';
                 ))}
                 </div>
             </div>
-
+        }
 
         </div>
     );

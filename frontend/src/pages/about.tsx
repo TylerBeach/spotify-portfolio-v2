@@ -81,9 +81,9 @@ function About() {
                 width: "100%",
               }}
             ></div>
-            <div className="mt-[-100px] flex flex-col md:flex-row flex-wrap h-fit z-[2] pl-4 gap-y-4 gap-x-4">
-              <div className="flex-[4] w-full h-auto flex flex-col gap-y-2 min-w-[425px]">
-                <h2 className="text-white text-3xl font-SpotifyBold">About</h2>
+            <div className="mt-[-100px] flex flex-col md:flex-row flex-wrap h-fit z-[2] pl-4 gap-y-4 gap-x-4 pb-12">
+              <div className="flex-[1] w-full h-auto flex flex-col gap-y-2 min-w-[400px]">
+              <h2 className="text-white text-2xl">About</h2>
                 {data.about.paragraphs.map((section, index) => (
                   <PersonalPopUp
                     key={index}
@@ -95,17 +95,51 @@ function About() {
                   />
                 ))}
               </div>
-              <div className="flex-[2] flex flex-row gap-x-6">
-                <a href="https://www.linkedin.com/in/tylerbe/" className="flex-1 flex flex-col gap-y-1">
-                  <h2 className="text-white text-2xl">LinkedIn</h2>
-                  <img className="w-[75px] h-[75px] object-cover rounded-full" src={"/images/LinkedIn.png"} alt="Tyler Beach" />
-                </a>
-                <Link href="/resume" className="flex-1 flex flex-col gap-y-1">
-                  <h2 className="text-white text-2xl">Resume</h2>
-                  <img className="w-[75px] h-[75px] object-cover rounded-full" src={"/images/Resume.png"} alt="Tyler Beach" />
-                </Link>
+              <div className="flex-[1] flex flex-wrap md:flex-nowrap flex-row gap-y-6 gap-x-4">
+                
+                {/* important links */}
+                <div className="flex-1 flex flex-col gap-y-4 min-w-[250px]">
+                  <h2 className="text-white text-2xl">Important Links</h2>
+                  <div className="flex flex-col">
+                    
+                    <div className="flex flex-row gap-x-2">
+                      <a href="https://www.linkedin.com/in/tylerbe/" className="">
+                        <img className="w-[75px] h-[75px] object-cover rounded-full" src={"/images/LinkedIn.png"} alt="Tyler Beach" />
+                      </a>
+                      <div className="my-auto">
+                        <h2 className="text-white text-lg font-extrabold SpotifyLightFont">Connect with me</h2>
+                        <h2 className="text-white text-sm brightness-75 SpotifyLightFont">Message me if you think I fit a role you need!</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <Link href="/resume" className="flex flex-col ">
+                    <div className="flex flex-row gap-x-2">
+                      <img className="w-[75px] h-[75px] object-cover rounded-full" src={"/images/Resume.png"} alt="Tyler Beach" />
+                      <div className="my-auto">
+                        <h2 className="text-white text-lg font-extrabold SpotifyLightFont">Check out my resume</h2>
+                        <h2 className="text-white text-sm brightness-75 SpotifyLightFont">Looking for developer roles</h2>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+
+                {/* artist pick */}
+                <div className="flex-1 flex flex-col gap-y-4 min-w-fit">
+                  <h2 className="text-white text-2xl">Tyler's Pick</h2>
+                  <a href="https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk?si=39keDNFUQfSvOt0EV-O08Q" className="flex flex-col w-fit">
+                    <div className="flex flex-row gap-x-2">
+                      <img className="w-[170px] h-[170px] object-cover rounded-md" src={"/images/Swimming.jpg"} alt="Tyler Beach" />
+                    </div>
+                  </a>
+                </div>
+
               </div>
+
             </div>
+            <footer className="px-4 flex flex-col pb-12">
+              <h2 className="text-white text-2xl">Thanks for visiting!</h2>
+              <h2 className="text-white text-lg brightness-75 text-wrap pr-4 SpotifyLightFont">Like the site? Let me know by reaching out <a href="/contact" className="text-blue-400 underline brightness-75 hover:brightness-125">here!</a></h2>
+            </footer>
           </div>
         </div>
       </motion.div>

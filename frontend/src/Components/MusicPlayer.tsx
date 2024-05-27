@@ -39,7 +39,7 @@ function MusicPlayer() {
                 <img  src="/images/Shuffle.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5  object-cover hover:cursor-pointer hidden md:block' />
                 <img  src="/images/Forward.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover rotate-180 hover:cursor-pointer hidden sm:block' />
                 <a className='flex justify-center content-center w-[40px] h-[40px] md:w-[31px] md:h-[31px]  bg-white rounded-full min-w-fit'>
-                  <img  src={playing} alt="play" onClick={playPause} className='p-[10px] md:p-[7px] object-cover hover:cursor-pointer' />
+                  <img  src={playing} alt="play" onClick={playPause} className='p-[10px] md:p-[8px] md:pl-[9px] object-cover hover:cursor-pointer' />
                 </a>
                 <img  src="/images/Forward.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer hidden sm:block' />
                 <img  src="/images/Repeat.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer hidden md:block' />

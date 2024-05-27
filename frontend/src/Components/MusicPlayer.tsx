@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link';
 
@@ -19,6 +19,29 @@ function MusicPlayer() {
     }
   }
 
+  const [value, setValue] = useState<number>(0);
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(Number(event.target.value));
+  };
+  useEffect(() => {
+    const slider = document.getElementById('spotifySlider') as HTMLInputElement;
+    const valuePercentage = (value - Number(slider.min)) / (Number(slider.max) - Number(slider.min)) * 100;
+    slider.style.background = `linear-gradient(to right, #fff 0%, #fff ${valuePercentage}%, #464646 ${valuePercentage}%, #464646 100%)`;
+  }, [value]);
+
+
+  const [volume, setVolume] = useState<number>(0);
+  const handleVolumeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setVolume(Number(event.target.value));
+  };
+  useEffect(() => {
+    const slider = document.getElementById('spotifySliderVolume') as HTMLInputElement;
+    const valuePercentage = (volume - Number(slider.min)) / (Number(slider.max) - Number(slider.min)) * 100;
+    slider.style.background = `linear-gradient(to right, #fff 0%, #fff ${valuePercentage}%, #464646 ${valuePercentage}%, #464646 100%)`;
+  }, [volume]);
+
+
+
   return (
    
 
@@ -33,7 +56,7 @@ function MusicPlayer() {
 
             </div>
         </div>
-        <div className='flex flex-col py-4 gap-y-3 max-w-[800px] pr-4 md:pr-0 justify-center align-middle content-center flex-1 md:min-w-[300px]'>
+        <div className='flex flex-col pt-4 pb-8 gap-y-0 max-w-[800px] pr-4 md:pr-0 justify-center align-middle content-center flex-1 md:min-w-[300px]'>
             {/* Pause/play forward back */}
             <div className='flex flex-row gap-x-4 my-auto justify-center text-white mx-auto'>
                 <img  src="/images/Shuffle.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5  object-cover hover:cursor-pointer hidden md:block' />
@@ -45,11 +68,15 @@ function MusicPlayer() {
                 <img  src="/images/Repeat.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer hidden md:block' />
             </div>
             {/* Song Slider */}
-            <div className='w-full bg-white h-1 my-auto hidden md:block'></div>
+            <div className='w-full h-1 my-auto hidden md:block'>
+              <input type="range" min="1" max="100" className="w-full spotifySlider" id="spotifySlider" value={value} onChange={handleChange} />
+            </div>
         </div>
         {/* volume slider */}
         <div className='flex-1 w-full justify-end my-auto hidden md:flex'>
-          <div className='w-[100px] bg-white h-1 mx-6'></div>
+          <div className='w-[100px] h-1 mx-6'>
+            <input type="range" min="1" max="100" className="w-full spotifySlider" id="spotifySliderVolume" value={volume} onChange={handleVolumeChange} />
+          </div>
         </div>
     </div>
    

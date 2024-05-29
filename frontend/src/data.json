@@ -126,7 +126,7 @@
         {"image": "/images/projectImages/firesafe-three.png", "caption": "test"},
         {"image": "/images/projectImages/firesafe-two.png", "caption": "test"}
       ],
-      "techStack":["Python", "Typescript", "HTML", "CSS", "TensorFlow"],
+      "techStack":["Python", "Typescript", "HTML", "CSS", "Tensorflow"],
       "date": "December 2022"
     },
     {

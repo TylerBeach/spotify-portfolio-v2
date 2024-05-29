@@ -69,7 +69,7 @@ import Image from 'next/image';
                 <div className=' flex flex-col rounded-md w-[600px] h-auto items-top '>
                     <a className='text-2xl'>Link to Repository</a>
                     <a href={project.link ? project.link : "/"}>
-                        <Image className='rounded-sm w-[75px] h-[75px] object-contain' width={75} height={75} src='/images/github.png' alt="Github"/>
+                        <Image className='rounded-sm w-[75px] h-[75px] object-contain' width={75} height={75} src='/images/Github.png' alt="Github"/>
                     </a>
 
                 </div>

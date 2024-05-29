@@ -110,7 +110,7 @@ function TopNavButtons({title, imageURL}:{title: string | null, imageURL: string
           <img
             src="/images/ProfileButtonImage.jpg"
             alt="Profile"
-            className="rounded-full  w-[35px] h-[35px] outline-2 outline-black hover:cursor-pointer"
+            className="rounded-full w-[35px] h-[35px] outline-2 outline-black hover:cursor-pointer"
           />
         </Link>
       </div>
@@ -154,16 +154,16 @@ function TopNavButtons({title, imageURL}:{title: string | null, imageURL: string
             </div>
           </div>
           <ul className="text-white SpotifyLightFont flex flex-col pb-8">
-          {Object.entries(data.navbar).map(([sectionName, items], index) => (
+          {Object.entries(data.navbar).map(([sectionName, items], sectionIndex) => (
             <div
             className="flex flex-col rounded-md w-full "
-            key={index}
+            key={sectionIndex}
             >
             <div className="divider brightness-125 mb-2 mt-2"></div>
               <ul className="flex flex-col pl-1 pr-2">
                 {items.map((item, index) => (
                   <Link key={index} href={item.link} className="flex flex-row gap-x-2 my-auto pl-3 py-2 hover:bg-[#464646]  rounded-md">
-                    <img src={item.icon} alt={item.title} className="w-6 h-6 rounded-full"/>
+                    <img key={index} src={item.icon} alt={item.title} className={`w-6 h-6 ${sectionIndex === 0 ? "rounded-none" : "rounded-full"}`}/>
                     <h2 className="pl-1 text-md">{item.title}</h2>
                   </Link>
                   ))}

@@ -85,7 +85,7 @@ function TopNavButtons({title, imageURL}:{title: string | null, imageURL: string
           alt="Forward"
           className="bg-black rounded-full px-[4px] pt-[5px] w-[30px] h-[30px] -rotate-90 hover:cursor-pointer hidden md:flex"
         />
-        <div className="bg-black w-[30px] h-[30px] rounded-full flex md:hidden z-50">
+        <div className="bg-black w-[40px] h-[40px] rounded-full flex md:hidden z-50">
           <img 
           src="/images/HamburgerMenu.png"
           alt="Menu"
@@ -97,8 +97,8 @@ function TopNavButtons({title, imageURL}:{title: string | null, imageURL: string
           <h1
             className={
               showColor
-                ? "text-2xl pl-2 duration-500"
-                : "text-2xl pl-2 duration-300 opacity-0"
+                ? "text-2xl pl-2 duration-500 flex my-auto pt-0.5"
+                : "text-2xl pl-2 duration-300 flex my-auto pt-0.5 opacity-0"
             }
           >{`${title}`}</h1>
         )}

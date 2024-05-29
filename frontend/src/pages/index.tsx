@@ -11,6 +11,7 @@ import SquareCardContainer from "@/Components/SquareCardContainer";
 import MusicPlayer from "@/Components/MusicPlayer";
 import SquareCardGeneric from "@/Components/SquareCardGeneric";
 import HomePageWideCard from "@/Components/HomePageWideCard";
+
 export default function Home() {
   // left nav  |  banner
   // left nav  |  about me tabs
@@ -21,8 +22,10 @@ export default function Home() {
   const ProjectData = portfolioData; // all in json file
 
   return (
-    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] pb-[90px] w-[100%] max-w-[100%] md:pt-2 md:pl-2 overflow-x-hidden">
-      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2">
+    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh]  w-[100%] max-w-[100%] md:pt-2 md:pl-2 overflow-x-hidden">
+      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2 pr-2">
+        
+        {/* Navbar */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -34,8 +37,10 @@ export default function Home() {
         >
           <Navbar />
         </motion.div>
+
+        {/* Page Content */}
         <motion.div
-          className="h-fit bg-black w-full"
+          className="h-fit bg-black w-full height-minus-musicPlayer"
           initial="hidden"
           animate="visible"
           variants={{
@@ -43,7 +48,7 @@ export default function Home() {
             visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
           }}
         >
-          <div className="flex flex-col h-fit w-full pt-24 gap-y-2 px-2 card_background rounded-lg min-h-[94vh]">
+          <div className="flex flex-col h-full min-h-fit w-full pt-16 md:pt-24 gap-y-2 px-2 card_background rounded-lg height-minus-musicPlayer">
             <TopNavButtons imageURL={null} title={null}/>
             <div className="flex flex-col px-2 rounded-lg gap-y-5">
               <Banner />
@@ -59,19 +64,8 @@ export default function Home() {
             </div>
           </div>
         </motion.div>
-        
-      </div>
-      <motion.div
-      className='z-10'
-      initial="hidden"
-      animate="visible"
-      variants={{
-        hidden: { opacity: 0, },
-        visible: { opacity: 1,   transition: { delay: 0.55 } },
-      }}
-    >
       <MusicPlayer />
-    </motion.div>
+      </div>
     </main>
   );
 }

@@ -40,7 +40,7 @@ const ProjectDetail = () => {
 
   return (
     
-    <div className="flex flex-row gap-x-2 bg-black max-w-[100vw] pb-[90px] min-h-[100vh] max-h-[100vh] md:pl-2 overflow-hidden">
+    <div className="flex flex-row gap-x-2 bg-black max-w-[100vw] min-h-[100vh] max-h-[100vh] md:pl-2 overflow-hidden">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -53,7 +53,7 @@ const ProjectDetail = () => {
         <Navbar />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
        initial="hidden"
        animate="visible"
        variants={{
@@ -61,11 +61,34 @@ const ProjectDetail = () => {
          visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
         }}
         className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full rounded-lg overflow-y-scroll">
-        <TopNavButtons title={project.title} imageURL={project.bannerURL} />
-        <div className="rounded-md card_background h-fit w-full">
-          <ProjectComponent project={project} />
+        <div>
+          <TopNavButtons title={project.title} imageURL={project.bannerURL} />
+          <div className="rounded-md card_background h-fit w-full">
+            <ProjectComponent project={project} />
+          </div>
         </div>
-      </motion.div>
+      </motion.div> */}
+
+
+      <motion.div
+          className="h-fit bg-black w-full height-minus-musicPlayer mt-2 rounded-lg"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 200 },
+            visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
+          }}
+        >
+          <div className="flex flex-col h-full min-h-fit w-full pt-16 md:pt-0 gap-y-2 px-0 overflow-y-scroll card_background rounded-lg height-minus-musicPlayer">
+            <TopNavButtons title={project.title} imageURL={project.bannerURL}/>
+            <div className="flex flex-col px-0 rounded-lg gap-y-5">
+              <ProjectComponent project={project} />
+            </div>
+          </div>
+        </motion.div>
+
+
+      {/* MusicPlayer */}
       <motion.div 
         className='fixed'
         initial="hidden"
@@ -75,7 +98,7 @@ const ProjectDetail = () => {
           visible: { opacity: 1, transition: { delay: 0.55 } },
         }}>
           <MusicPlayer />
-        </motion.div>        
+      </motion.div>        
     </div>
   );
 };

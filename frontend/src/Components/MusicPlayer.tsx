@@ -53,7 +53,7 @@ function MusicPlayer() {
         <div className='flex flex-row gap-x-4 my-auto justify-center text-white mx-auto pt-3 pl-6'>
           <img src="/images/Shuffle.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer hidden sm:block' />
           <img src="/images/Forward.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover rotate-180 hover:cursor-pointer block' />
-          <a className='flex justify-center content-center w-[31px] h-[31px] bg-white rounded-full min-w-fit'>
+          <a className='flex justify-center content-center w-[31px] h-[31px] max-w-[31px] bg-white rounded-full min-w-fit'>
             <img src={playing} alt="play" onClick={playPause} className='p-[7px] md:p-[8px] md:pl-[9px] object-cover hover:cursor-pointer' />
           </a>
           <img src="/images/Forward.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer block' />

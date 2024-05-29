@@ -85,12 +85,13 @@ function TopNavButtons({title, imageURL}:{title: string | null, imageURL: string
           alt="Forward"
           className="bg-black rounded-full px-[4px] pt-[5px] w-[30px] h-[30px] -rotate-90 hover:cursor-pointer hidden md:flex"
         />
-        <div className="bg-black w-[40px] h-[40px] rounded-full flex md:hidden z-50">
+        <div className="bg-black w-[40px] h-[40px] rounded-full flex md:hidden z-50 hover:cursor-pointer"
+          onClick={handleMenuClick}
+          >
           <img 
           src="/images/HamburgerMenu.png"
           alt="Menu"
-          className="w-[18px] h-[14px] mx-auto my-auto hover:cursor-pointer"
-          onClick={handleMenuClick}
+          className="w-[18px] h-[14px] mx-auto my-auto"
           />
         </div>
         {title && (

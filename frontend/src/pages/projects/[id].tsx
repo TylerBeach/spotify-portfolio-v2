@@ -53,23 +53,6 @@ const ProjectDetail = () => {
         <Navbar />
       </motion.div>
 
-      {/* <motion.div
-       initial="hidden"
-       animate="visible"
-       variants={{
-         hidden: { opacity: 0, y: 200 },
-         visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
-        }}
-        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full rounded-lg overflow-y-scroll">
-        <div>
-          <TopNavButtons title={project.title} imageURL={project.bannerURL} />
-          <div className="rounded-md card_background h-fit w-full">
-            <ProjectComponent project={project} />
-          </div>
-        </div>
-      </motion.div> */}
-
-
       <motion.div
           className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full rounded-lg overflow-y-scroll"
           initial="hidden"

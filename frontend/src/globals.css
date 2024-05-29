@@ -156,7 +156,7 @@ html {
 }
 
 .top-buttons-width {
-  width: calc(100vw - 316px);
+  width: calc(100vw - 324px);
 }
 
 .top-buttons-width-full {
@@ -174,8 +174,8 @@ html {
 }
 
 .height-minus-musicPlayer {
-  height: calc(100vh - 98px);
-  min-height: calc(100vh - 98px);
+  height: calc(100vh - 89px);
+  min-height: calc(100vh - 89px);
 }
 
 .height-minus-musicPlayer-full {

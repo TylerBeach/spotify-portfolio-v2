@@ -9,7 +9,9 @@ import GeneralPageHeader from '@/Components/GeneralPageHeader'
 
 function resume() {
   return (
-    <main className="flex flex-row gap-x-2 bg-black max-w-[100vw] pb-[90px] min-h-[100vh] max-h-[100vh] md:pl-2 overflow-hidden">
+    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh]  w-[100%] max-w-[100%] md:pt-2 md:pl-2 overflow-x-hidden">
+            <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2 md:pr-0 rounded-md">
+
       {/* Navbar Container */}
       <motion.div
         initial="hidden"
@@ -23,17 +25,18 @@ function resume() {
         <Navbar />
       </motion.div>
 
+      {/* Page Content Container */}
       <motion.div
-        className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full "
+        className="h-fit bg-black w-full overflow-hidden"
         initial="hidden"
         animate="visible"
         variants={{
           hidden: { opacity: 0, y: 200 },
-          visible: { opacity: 1, y: 0, transition: { delay: 1 } },
+          visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
         }}
-      >
-        <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  height-minus-musicPlayer-full overflow-x-hidden">
-          <TopNavButtons imageURL="/images/Resume.png" title="Resume" />
+        >
+          <div 
+          className="flex flex-col h-fit w-full pb-8 gap-y-2 card_background rounded-lg height-minus-musicPlayer overflow-y-scroll">          <TopNavButtons imageURL="/images/Resume.png" title="Resume" />
           <GeneralPageHeader title="Resume" subHeading="Tyler Beach Resume" imageURL="/images/Resume.png" />
           {/* Content here  */}
           <div className='w-full content-center h-fit mt-[-140px] pb-16 flex flex-col gap-y-2'>
@@ -45,6 +48,7 @@ function resume() {
         </div>
       </motion.div>
       <MusicPlayer />
+      </div>
     </main>
   )
 }

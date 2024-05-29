@@ -26,6 +26,8 @@ export default function HomePageWideCard({imageURL, title, link} : {imageURL: st
               passHref
             >
               <Image
+                width={80}
+                height={80}
                 className="rounded-md rounded-tr-none rounded-br-none w-[80px] h-[80px] min-w-[80px] object-cover "
                 src={imageURL}
                 alt={title}

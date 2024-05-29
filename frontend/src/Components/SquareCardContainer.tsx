@@ -13,7 +13,7 @@ function SquareCardContainer() {
           <h3 className="text-white text-lg SpotifyLightFont"> Show all </h3>
         </Link>
       </div>
-      <div className="flex flex-row flex-wrap gap-x-6 w-[100%] h-min max-h-[288px] overflow-y-hidden">
+      <div className="flex flex-row flex-wrap gap-x-6 w-[100%] h-min max-h-[308px] overflow-y-hidden">
         {ProjectData.projects.map((project, index) => (
           <motion.div
           className="flex-1 sm:flex-none"

@@ -79,7 +79,7 @@ const ProjectDetail = () => {
             visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
           }}
         >
-          <div className="flex flex-col h-full min-h-fit w-full pt-16 md:pt-0 gap-y-2 px-0 overflow-y-scroll card_background rounded-lg height-minus-musicPlayer">
+          <div className="flex flex-col h-full min-h-fit w-full gap-y-2 px-0 overflow-y-scroll card_background rounded-lg height-minus-musicPlayer">
             <TopNavButtons title={project.title} imageURL={project.bannerURL}/>
             <div className="flex flex-col px-0 rounded-lg gap-y-5">
               <ProjectComponent project={project} />

@@ -11,7 +11,7 @@ function SquareCardGeneric({title, caption, imageURL, link, modalEnabled}: { tit
     }
         
     return (
-        <div className="hover-effect card_background p-2.5 gap-y-1 flex flex-col xs:w-full min-w-[140px] md:w-[180px] h-[288px] rounded-md text-white">
+        <div className="hover-effect card_background p-2.5 gap-y-1 flex flex-col max-w-[250px] w-full min-w-[140px] md:w-[180px] h-[310px] rounded-md text-white">
         {modalEnabled ? (
             <div>
                 <ModalImage

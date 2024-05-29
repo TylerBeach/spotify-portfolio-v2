@@ -71,7 +71,7 @@ const ProjectDetail = () => {
 
 
       <motion.div
-          className="h-fit bg-black w-full height-minus-musicPlayer mt-2 rounded-lg"
+          className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full rounded-lg overflow-y-scroll"
           initial="hidden"
           animate="visible"
           variants={{
@@ -79,12 +79,10 @@ const ProjectDetail = () => {
             visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
           }}
         >
-          <div className="flex flex-col h-full min-h-fit w-full gap-y-2 px-0 overflow-y-scroll card_background rounded-lg height-minus-musicPlayer">
             <TopNavButtons title={project.title} imageURL={project.bannerURL}/>
-            <div className="flex flex-col px-0 rounded-lg gap-y-5">
+            <div className="flex flex-col h-fit w-full pt-0 card_background md:rounded-md overflow-y-auto overflow-x-hidden">
               <ProjectComponent project={project} />
             </div>
-          </div>
         </motion.div>
 
 

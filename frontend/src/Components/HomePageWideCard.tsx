@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePageWideCard({imageURL, title, link} : {imageURL: string, title: string, link: string}) {
   return (
@@ -24,7 +25,7 @@ export default function HomePageWideCard({imageURL, title, link} : {imageURL: st
               href={`/${link}`}
               passHref
             >
-              <img
+              <Image
                 className="rounded-md rounded-tr-none rounded-br-none w-[80px] h-[80px] min-w-[80px] object-cover "
                 src={imageURL}
                 alt={title}

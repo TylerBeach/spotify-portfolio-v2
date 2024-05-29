@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
+import Image from 'next/image';
 
 function ImageModal({ imageURL, caption }: { imageURL: string, caption: string }) {
   const [showModal, setShowModal] = useState(false);
@@ -8,7 +9,7 @@ function ImageModal({ imageURL, caption }: { imageURL: string, caption: string }
     <div>
       <div className="hover-effect card_background p-2.5 gap-y-1 flex flex-col w-[180px] h-auto rounded-md text-white">
         <div className='flex flex-col gap-y-1'>
-          <img
+          <Image
             className="w-[100%] h-[160px] rounded-md cursor-pointer"
             src={imageURL}
             alt=""
@@ -49,11 +50,11 @@ function ImageModal({ imageURL, caption }: { imageURL: string, caption: string }
               className="relative w-fit md:w-fit max-w-[90%] card_background z-30 rounded-md p-4"
             >
               {/* Exit Button */}
-              <img src="/images/X.png" onClick={() => setShowModal(false)} className="filter-button absolute top-5 right-5 p-1.5 z-50 w-6 h-6 bg-red-700 rounded-xl cursor-pointer" />
+              <Image alt='X' src="/images/X.png" onClick={() => setShowModal(false)} className="filter-button absolute top-5 right-5 p-1.5 z-50 w-6 h-6 bg-red-700 rounded-xl cursor-pointer" />
 
               {/* Content */}
               <div className="flex flex-col gap-y-2">
-                <img src={imageURL} className="max-h-[80vh] max-w-full object-contain rounded-md" alt="Title" />
+                <Image src={imageURL} className="max-h-[80vh] max-w-full object-contain rounded-md" alt="Title" />
               </div>
             </motion.div>
           </motion.div>

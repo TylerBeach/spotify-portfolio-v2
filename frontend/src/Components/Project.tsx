@@ -8,6 +8,7 @@ import { Project } from "../interfaces/project";
 import ModalImage from "react-modal-image";
 import SquareCardGeneric from './SquareCardGeneric';
 import ImageModal from './ImageModal';
+import Image from 'next/image';
 
   interface ProjectProps {
     project: Project;
@@ -58,7 +59,7 @@ import ImageModal from './ImageModal';
                     {project.techStack && project.techStack.map((techStack, index) => (
                         <div key={index} className='hover-effect2 flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-2 md:pl-6 items-center SpotifyLightFont'>
                             <h2 className='text-gray-400 w-2'>{index+1}</h2>
-                            <img className='rounded-md w-[35px] h-[35px] object-contain m-2 ' src={`/images/techStack/${techStack}.png`} alt="Tech Stack"/>
+                            <Image className='rounded-md w-[35px] h-[35px] object-contain m-2 ' src={`/images/techStack/${techStack}.png`} alt="Tech Stack"/>
                             <h1 className='text-white text-xl SpotifyLightFont'>{techStack}</h1>
                         </div>
                     ))}
@@ -68,7 +69,7 @@ import ImageModal from './ImageModal';
                 <div className=' flex flex-col rounded-md w-[600px] h-auto items-top '>
                     <a className='text-2xl'>Link to Repository</a>
                     <a href={project.link ? project.link : "/"}>
-                        <img className='rounded-sm w-[75px] h-[75px] object-contain' src='/images/github.png' alt="Github"/>
+                        <Image className='rounded-sm w-[75px] h-[75px] object-contain' src='/images/github.png' alt="Github"/>
                     </a>
 
                 </div>

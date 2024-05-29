@@ -31,7 +31,7 @@ export default function search() {
       }}
     >
       <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
-        <TopNavButtons bannerColor="18, 18, 18" project={null} />
+        <TopNavButtons imageURL={null} title={null} />
         <div className='pt-20 md:pt-3 md:z-20'>
             <SearchWebsite />
         </div>

@@ -13,6 +13,9 @@ interface SearchResult {
   matchingSentences: string[];
 }
 
+type NavbarSection = 'sectionOne' | 'Quick Browse' | 'My Links' | 'Spotify Links';
+
+
 export default function SearchWebsite() {
   const [searchData, setSearchData] = useState<string>("")
   const [resultsData, setResultsData] = useState<SearchResult[]>([])
@@ -82,18 +85,17 @@ export default function SearchWebsite() {
         })
       ].filter(result => result.matchingSentences.length > 0)
 
-      const navbarSections = ['sectionOne', 'Quick Browse', 'My Links', 'Spotify Links']
-      const navbarResults: SearchResult[] = navbarSections.flatMap(section => {
-        return Data.navbar[section].map((item: NavbarItem) => {
+      const navbarSections: NavbarSection[] = ['sectionOne', 'Quick Browse', 'My Links', 'Spotify Links'];
+      const navbarResults:any= navbarSections.flatMap((section: NavbarSection) => {
+        return Data.navbar[section].map((item: any) => {
           const matchingSentences = findMatchingSentences(item)
           return {
             type: 'navbar',
             data: item,
             matchingSentences
           }
-        }).filter((result:any) => result.matchingSentences.length > 0)
-      })
-
+        }).filter((result: any) => result.matchingSentences.length > 0)
+      });
       setResultsData([...projectResults, ...aboutResults, ...navbarResults])
     }
 

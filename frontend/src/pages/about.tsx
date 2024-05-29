@@ -115,7 +115,8 @@ function About() {
 
                 {/* Tyler's Pick */}
                 <div className="flex-1 flex flex-col gap-y-4 min-w-[170px]">
-                  <h2 className="text-white text-2xl">Tyler's Pick</h2>
+                  {/* NOTE TO SELF USING SINGLE QUOTES IS BAD IDEA */}
+                  <h2 className="text-white text-2xl">{`Tyler's Pick`}</h2> 
                   <a href="https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk?si=39keDNFUQfSvOt0EV-O08Q" className="flex flex-col w-fit">
                     <div className="flex flex-row gap-x-2">
                       <img className="w-[170px] h-[170px] object-cover rounded-md" src={"/images/Swimming.jpg"} alt="Tyler Beach" />
@@ -127,7 +128,7 @@ function About() {
             </div>
             <footer className="px-4 flex flex-col pb-12">
               <h2 className="text-white text-2xl">Thanks for visiting!</h2>
-              <h2 className="text-white text-lg brightness-75 text-wrap pr-4 SpotifyLightFont">Like the site? Let me know by reaching out <a href="/contact" className="text-blue-400 underline brightness-75 hover:brightness-125">here!</a></h2>
+              <h2 className="text-white text-lg brightness-75 text-wrap pr-4 SpotifyLightFont">Like the site? Let me know by reaching out <Link href="/contact" className="text-blue-400 underline brightness-75 hover:brightness-125">here!</Link></h2>
             </footer>
           </div>
         </div>

@@ -115,6 +115,8 @@ function TopNavButtons({title, imageURL}:{title: string | null, imageURL: string
         </Link>
       </div>
 
+
+      {/* Move this to a different component you bozo */}
       {/* Menu */}
       {showMenu && <div
         onClick={handleMenuClick}

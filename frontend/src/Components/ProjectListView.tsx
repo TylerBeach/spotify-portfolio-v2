@@ -14,14 +14,14 @@ function ProjectListView() {
         project.techStack.includes(selectedTech)
       )
     : data.projects;
-    
-  const technologies = ["Python", "Javascript", "React", "Java"]
+
+  const technologies = ["Python", "Javascript", "Typescript", "Java"];
 
   return (
     <div className='flex flex-col gap-y-4 px-2 md:px-4'>
       <div className='flex flex-col gap-y-4'>
         {/* Filtering Buttons and Logic */}
-        <div className='flex flex-row text-white gap-x-2'>
+        <div className='flex flex-row text-white gap-x-2 scroll-hidden overflow-x-auto'>
             <button onClick={() => handleFilterChange('')} className='rounded-xl w-fit pt-0.5 px-4 h-7 filter-button text-sm SpotifyLightFont '>All</button>
             {technologies.map((tech, index) =>
                 selectedTech === tech ?
@@ -31,34 +31,31 @@ function ProjectListView() {
                 )}    
         </div>
 
-
         <div>
-        {/* Table Explanation */}
-        <div className=' flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-4 items-center SpotifyLightFont'>
-            <h2 className='text-white brightness-50 w-2 text-xs'>#</h2>
-            <div className='flex flex-row flex-1 items-center'>
-                <h2 className='text-white brightness-50 w-[35px] m-2 text-xs'> </h2>
-                <h1 className='flex-1 text-white brightness-50 text-sm pl-1 SpotifyLightFont '>Title</h1>
-            </div>
-            <h3 className='hidden sm:flex  flex-1 text-white brightness-50 text-sm SpotifyLightFont'>Date Created</h3>
-        </div>
+          {/* Table Explanation */}
+          <div className='flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-4 items-center SpotifyLightFont'>
+              <h2 className='text-white brightness-50 w-2 text-xs'>#</h2>
+              <div className='flex flex-row flex-1 items-center'>
+                  <h2 className='text-white brightness-50 w-[35px] m-2 text-xs'> </h2>
+                  <h1 className='flex-1 text-white brightness-50 text-sm pl-1 SpotifyLightFont '>Title</h1>
+              </div>
+              <h3 className='hidden sm:flex flex-1 text-white brightness-50 text-sm SpotifyLightFont'>Date Created</h3>
+          </div>
 
-
-        {/* Divider */}
-        <div className='divider w-full my-2'></div>
-        
-        
-        {/* Project List */}
-        {filteredProjects.map((project, index) => (
-          <Link href={`/projects/${project.id}`} key={index} className='hover-effect flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-4 items-center SpotifyLightFont'>
-            <h2 className='text-white brightness-50 w-2'>{index + 1}</h2>
-            <div className='flex flex-row flex-1 items-center gap-x-1'>
-                <img className=' rounded-sm w-[35px] h-[35px] object-cover m-2' src={project.imageURL} alt="Tech Stack" />
-                <h1 className='flex-1 text-white text-xl SpotifyLightFont text-nowrap'>{project.title}</h1>
-            </div>
-            <h3 className='hidden sm:flex flex-1 text-white text-md brightness-50 SpotifyLightFont'>{project.date}</h3>
-          </Link>
-        ))}
+          {/* Divider */}
+          <div className='divider w-full my-2'></div>
+          
+          {/* Project List */}
+          {filteredProjects.map((project, index) => (
+            <Link href={`/projects/${project.id}`} key={index} className='hover-effect flex flex-row rounded-md w-full h-auto min-w-[350px] gap-x-6 pl-4 items-center SpotifyLightFont'>
+              <h2 className='text-white brightness-50 w-2'>{index + 1}</h2>
+              <div className='flex flex-row flex-1 items-center gap-x-1'>
+                  <img className='rounded-sm w-[35px] h-[35px] object-cover m-2' src={project.imageURL} alt="Tech Stack" />
+                  <h1 className='flex-1 text-white text-xl SpotifyLightFont'>{project.title}</h1>
+              </div>
+              <h3 className='hidden sm:flex flex-1 text-white text-md brightness-50 SpotifyLightFont'>{project.date}</h3>
+            </Link>
+          ))}
         </div>        
       </div>
     </div>

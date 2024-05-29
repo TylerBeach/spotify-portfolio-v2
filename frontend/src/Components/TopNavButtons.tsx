@@ -162,9 +162,9 @@ function TopNavButtons({title, imageURL}:{title: string | null, imageURL: string
             <div className="divider brightness-125 mb-2 mt-2"></div>
               <ul className="flex flex-col pl-1 pr-2">
                 {items.map((item, index) => (
-                  <Link key={index} href={item.link} className="flex flex-row gap-x-2 my-auto pl-3 py-2 hover:bg-[#464646]  rounded-md">
+                  <Link key={index} href={item.link} className="flex flex-row gap-x-2 my-auto h-10 pl-3 py-2 hover:bg-[#464646]  rounded-md">
                     <img key={index} src={item.icon} alt={item.title} className={`w-6 h-6 ${sectionIndex === 0 ? "rounded-none" : "rounded-full"}`}/>
-                    <h2 className="pl-1 text-md">{item.title}</h2>
+                    <h2 className="pl-1 text-md h-6 pt-[1.5px]">{item.title}</h2>
                   </Link>
                   ))}
               </ul>

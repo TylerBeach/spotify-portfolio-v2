@@ -63,7 +63,7 @@ const ProjectDetail = () => {
           }}
         >
             <TopNavButtons title={project.title} imageURL={project.bannerURL}/>
-            <div className="flex flex-col h-fit w-full pt-0 card_background md:rounded-md overflow-y-auto overflow-x-hidden">
+            <div className="flex flex-col h-fit w-full pt-0 card_background md:rounded-md">
               <ProjectComponent project={project} />
             </div>
         </motion.div>

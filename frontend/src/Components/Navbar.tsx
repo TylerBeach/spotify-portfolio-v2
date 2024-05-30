@@ -1,10 +1,10 @@
 import React from "react";
 import NavListSection from "./NavListSection";
-import navbarData from "../navbarData.json";
+import navbarData from "../data.json";
 
 
 function Navbar() {
-  const navbarInfo = navbarData;
+  const navbarInfo = navbarData.navbar;
 
   return (
     <div className="hidden md:flex fixed h-[100vh] w-[300px] max-w-[300px] bg-black text-white flex-col">

@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link';
 
 function MusicPlayer() {
-  const [currentSong, setCurrentSong] = useState("Personal Portfolio");
+  const [currentSong, setCurrentSong] = useState("Personal Portfolio - Spotify Edition");
   const [currentArtist, setCurrentArtist] = useState("Tyler Beach");
-  const [currentAlbumImage, setCurrentAlbumImage] = useState("/images/Banner.png");
+  const [currentAlbumImage, setCurrentAlbumImage] = useState("/images/frogHeadphones.png");
   const [playing, setPlaying] = useState("/images/Play.png");
 
   const playPause = () => {
@@ -43,21 +43,21 @@ function MusicPlayer() {
         {/* Song + Artist + Image */}
         <img src={currentAlbumImage} alt="Album Image" className='w-[50px] h-[50px] my-auto rounded-sm' />
         <div className='flex flex-col justify-center pt-0.5'>
-          <h1 className='SpotifyLightFont text-sm sm:text-base'>{currentSong}</h1>
-          <Link href="/about"><button type="button" className='text-sm'>{currentArtist}</button></Link>
+          <h1 className='SpotifyLightFont text-lg sm:text-sm'>{currentSong}</h1>
+          <Link href="/about"><button type="button" className='text-md'>{currentArtist}</button></Link>
         </div>
       </div>
 
-      <div className='flex flex-col pt-4 pb-8 gap-y-0 max-w-[800px] pr-4 md:pr-0 justify-center align-middle content-center flex-[2] md:min-w-[300px]'>
+      <div className='hidden sm:flex flex-col pt-0 pb-8 gap-y-0 max-w-[800px] pr-4 md:pr-0 justify-center align-middle content-center flex-[2] md:min-w-[300px]'>
         {/* Pause/play forward back */}
         <div className='flex flex-row gap-x-4 my-auto justify-center text-white mx-auto pt-3 pl-6'>
-          <img src="/images/Shuffle.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer hidden sm:block' />
+          <img src="/images/Shuffle.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer hidden sm:block brightness-75' />
           <img src="/images/Forward.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover rotate-180 hover:cursor-pointer block' />
           <a className='flex justify-center content-center w-[31px] h-[31px] max-w-[31px] min-w-[31px] bg-white rounded-full'>
             <img src={playing} alt="play" onClick={playPause} className='p-[7px] md:p-[8px] md:pl-[9px] object-cover hover:cursor-pointer' />
           </a>
           <img src="/images/Forward.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer block' />
-          <img src="/images/Repeat.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer hidden sm:block' />
+          <img src="/images/Repeat.svg" alt="play" className='w-[28px] h-[28px] p-1.5 mt-0.5 object-cover hover:cursor-pointer hidden sm:block brightness-75' />
         </div>
         {/* Song Slider */}
         <div className='w-full h-1 my-auto hidden sm:block max-w-[650px] mx-auto'>

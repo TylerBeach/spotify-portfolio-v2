@@ -64,6 +64,23 @@ html {
 }
 
 
+.horizontalScroller::-webkit-scrollbar {
+  height: 8px;
+
+}
+
+.horizontalScroller::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #b0b0b0;
+  
+}
+
+.horizontalScroller::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #272727;
+}
+
+
 .project_box img {
   scale: 1.0;
   transition: 0.3s ease-out;

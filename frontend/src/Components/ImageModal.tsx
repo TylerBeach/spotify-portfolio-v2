@@ -10,7 +10,7 @@ function ImageModal({ imageURL, caption }: { imageURL: string, caption: string }
       <div className="hover-effect card_background p-2.5 gap-y-1 flex flex-col w-[180px] h-auto rounded-md text-white">
         <div className='flex flex-col gap-y-1'>
           <Image
-            className="w-[100%] h-[160px] rounded-md cursor-pointer"
+            className="w-[160px] h-[160px] rounded-md cursor-pointer"
             width={160}
             height={160}
             src={imageURL}

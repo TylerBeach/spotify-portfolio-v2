@@ -9,7 +9,7 @@ class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-          <title>Tyler's Portfolio</title>
+          <title>{`Tyler's Portfolio`}</title>
           <link rel="icon" href="/images/cuteFrog.png" />
           <meta name="description" content="Tyler Beach Portfolio" />
           <meta name="keywords" content="tyler,tyler beach,developer,software engineer,portfolio,portfolio website" />

@@ -95,8 +95,8 @@
       "bannerURL" : "/images/projectImages/StoryTellerBanner.png",
       "demoImages": [
         {"image": "/images/projectImages/StoryTellerOne.png", "caption": "StoryTeller Home Page" },
-        {"image": "/images/projectImages/StoryTellerTwo.png", "caption": "StoryTeller Home Page" },
-        {"image": "/images/projectImages/StoryTellerThree.jpg", "caption": "StoryTeller Home Page" }
+        {"image": "/images/projectImages/StoryTellerTwo.png", "caption": "Story Prompt Input" },
+        {"image": "/images/projectImages/StoryTellerThree.jpg", "caption": "Generated Story Example" }
       ],
       "techStack":["Javascript", "React", "CSS", "Python", "Flask"],
       "date": "January 2024"

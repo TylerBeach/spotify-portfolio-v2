@@ -6,6 +6,28 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta charSet="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+          <title>Tyler's Portfolio</title>
+          <link rel="icon" href="/images/cuteFrog.png" />
+          <meta name="description" content="Tyler Beach Portfolio" />
+          <meta name="keywords" content="tyler,tyler beach,developer,software engineer,portfolio,portfolio website" />
+          <meta name="author" content="Tyler Beach" />
+
+          <meta property="og:title" content="Tyler Beach Portfolio" />
+          <meta property="og:description" content="Check out the portfolio of Tyler Beach, a software developer and engineer." />
+          <meta property="og:image" content="/images/cuteFrog.png" />
+          <meta property="og:url" content="https://yourportfolio.com" />
+          <meta property="og:type" content="website" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Tyler Beach Portfolio" />
+          <meta name="twitter:description" content="Check out the portfolio of Tyler Beach, a software developer and engineer." />
+          <meta name="twitter:image" content="/images/cuteFrog.png" />
+
+          <meta name="robots" content="index, follow" />
+          <link rel="canonical" href="https://tylerbeach.site" />
         </Head>
         <body>
           <Main />

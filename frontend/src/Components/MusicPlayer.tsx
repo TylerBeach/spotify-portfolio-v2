@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 function MusicPlayer() {
   const [currentSong, setCurrentSong] = useState("Personal Portfolio - Spotify Edition");
@@ -38,7 +39,14 @@ function MusicPlayer() {
   }, [volume]);
 
   return (
-    <div className='h-[90px] bg-black flex flex-row justify-between fixed bottom-0 left-0 right-0 gap-x-4 z-[100] min-w-[100vw] max-w-[100vw] w-[100vw]'>
+    <motion.div 
+    initial="hidden"
+    animate="visible"
+    variants={{
+      hidden: { opacity: 0, },
+      visible: { opacity: 1, transition: { delay: 0.55 } },
+    }}
+    className='h-[90px] bg-black flex flex-row justify-between fixed bottom-0 left-0 right-0 gap-x-4 z-[100] min-w-[100vw] max-w-[100vw] w-[100vw]'>
       <div className='flex flex-row text-white gap-x-3 pl-4 min-w-fit flex-1'>
         {/* Song + Artist + Image */}
         <img src={currentAlbumImage} alt="Album Image" className='w-[50px] h-[50px] my-auto rounded-sm' />
@@ -70,7 +78,7 @@ function MusicPlayer() {
           <input type="range" min="1" max="100" className="w-full spotifySlider" id="spotifySliderVolume" value={volume} onChange={handleVolumeChange} />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

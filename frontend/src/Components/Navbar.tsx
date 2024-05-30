@@ -7,8 +7,8 @@ function Navbar() {
   const navbarInfo = navbarData.navbar;
 
   return (
-    <div className="hidden md:flex fixed h-[100vh] w-[300px] max-w-[300px] bg-black text-white flex-col">
-      <div className="flex flex-col gap-y-2 overflow-y-scroll scroll-hidden height-minus-musicPlayer-full rounded-lg"> {/* dont ask why its 98 px man it just works :( */}
+    <div className="hidden md:flex navbarHeight w-[300px] max-w-[300px] bg-black text-white flex-col">
+      <div className="flex flex-col gap-y-2 h-fit rounded-lg scroll-hidden overflow-y-auto"> {/* dont ask why its 98 px man it just works :( */}
         {Object.entries(navbarInfo).map(([sectionName, items], index) => (
           <div
             className="flex flex-col rounded-md bg-[#121212] p-2 gap-y-3 text-lg pt-2 "

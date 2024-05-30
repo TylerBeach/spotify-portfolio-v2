@@ -40,7 +40,7 @@ const ProjectDetail = () => {
 
   return (
     
-    <div className="flex flex-row gap-x-2 bg-black max-w-[100vw] min-h-[100vh] max-h-[100vh] md:pl-2 overflow-hidden">
+    <div className="flex flex-row gap-x-2 bg-black max-w-[100vw] height-minus-musicPlayer-full max-h-[100vh] md:pl-2 overflow-hidden">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -54,7 +54,7 @@ const ProjectDetail = () => {
       </motion.div>
 
       <motion.div
-          className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full rounded-lg overflow-y-scroll"
+          className="relative mt-0 md:mt-2 h-fit height-minus-musicPlayer w-full md:rounded-lg overflow-y-scroll"
           initial="hidden"
           animate="visible"
           variants={{

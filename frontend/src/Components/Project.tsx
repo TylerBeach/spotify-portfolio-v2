@@ -27,7 +27,7 @@ const ProjectComponent: React.FC<ProjectProps> = ({ project }) => {
     return (
         <div className='card_background text-white rounded-md font-SpotifyMedium h-full pb-10' >
             <div style={{ backgroundImage: `url(${project.bannerURL})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} 
-                className='flex flex-col align-baseline justify-end w-full h-[400px] rounded-t-md'>
+                className='flex flex-col align-baseline justify-end w-full h-[400px] md:rounded-t-md'>
                 <div className='flex flex-row gap-x-4 mb-4'>
                     <div className='flex flex-col justify-center'>
                         <h3 className="text-white text-4xl pl-4 font-bold md:text-7xl"> {project.title} </h3>

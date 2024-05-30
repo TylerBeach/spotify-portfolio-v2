@@ -202,9 +202,12 @@ html {
   }
 }
 
-
-
 .height-minus-musicPlayer-full {
+  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
+}
+
+.navbarHeight {
   height: calc(100vh - 98px);
   min-height: calc(100vh - 98px);
 }

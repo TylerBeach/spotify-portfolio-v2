@@ -16,14 +16,14 @@ class MyDocument extends Document {
           <meta name="author" content="Tyler Beach" />
 
           <meta property="og:title" content="Tyler Beach Portfolio" />
-          <meta property="og:description" content="Check out the portfolio of Tyler Beach, a software developer and engineer." />
+          <meta property="og:description" content="Check out the portfolio of Tyler Beach, a software engineer." />
           <meta property="og:image" content="/images/cuteFrog.png" />
-          <meta property="og:url" content="https://yourportfolio.com" />
+          <meta property="og:url" content="https://tylerbeach.site" />
           <meta property="og:type" content="website" />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Tyler Beach Portfolio" />
-          <meta name="twitter:description" content="Check out the portfolio of Tyler Beach, a software developer and engineer." />
+          <meta name="twitter:description" content="Check out the portfolio of Tyler Beach, a software engineer." />
           <meta name="twitter:image" content="/images/cuteFrog.png" />
 
           <meta name="robots" content="index, follow" />

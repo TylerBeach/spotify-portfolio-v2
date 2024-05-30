@@ -40,7 +40,7 @@ export default function Home() {
 
         {/* Page Content */}
         <motion.div
-          className="h-fit bg-black w-full height-minus-musicPlayer"
+          className="h-fit bg-black w-full height-minus-musicPlayer overflow-hidden"
           initial="hidden"
           animate="visible"
           variants={{
@@ -48,9 +48,9 @@ export default function Home() {
             visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
           }}
         >
-          <div className="flex flex-col h-full min-h-fit w-full pt-16 md:pt-24 pb-8 gap-y-2 px-2 card_background rounded-lg height-minus-musicPlayer overflow-y-scroll">
+          <div className="flex flex-col  w-full pt-16 md:pt-24 pb-8 gap-y-2 px-2 card_background rounded-lg height-minus-musicPlayer overflow-y-scroll overflow-x-hidden">
             <TopNavButtons imageURL={null} title={null}/>
-            <div className="flex flex-col px-2 rounded-lg gap-y-5">
+            <div className="flex flex-col px-2 rounded-lg gap-y-5 h-fit">
               <Banner />
 
               <h2 className="text-white text-4xl font-SpotifyBold">Welcome</h2>

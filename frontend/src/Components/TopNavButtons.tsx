@@ -64,7 +64,7 @@ function TopNavButtons({title, imageURL}:{title: string | null, imageURL: string
 
   return (
     <div
-      className="right-2 duration-700 fixed flex flex-row justify-between items-center top-0 top-buttons-width pl-4 h-auto py-4 pr-4 md:pr-6 text-white md:rounded-tl-md md:top-2 z-[1000]"
+      className="right-0 sm:right-2 duration-700 fixed flex flex-row justify-between items-center top-0 top-buttons-width pl-4 h-auto py-4 pr-4 md:pr-6 text-white md:rounded-tl-md md:top-2 z-[1000]"
       style={{
         backgroundColor: showColor
           ? `rgb(${bannerColour}, 1)`

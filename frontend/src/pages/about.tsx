@@ -54,7 +54,7 @@ function About() {
             hidden: { opacity: 0, y: 200 },
             visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
           }}
-          className="hidden md:flex w-[300px] md:max-w-[300px] md:min-w-[300px] mt-2"
+          className="hidden md:flex w-[300px] md:max-w-[300px] md:min-w-[300px]"
         >
           <Navbar />
         </motion.div>

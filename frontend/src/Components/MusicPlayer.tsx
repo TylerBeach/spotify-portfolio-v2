@@ -37,7 +37,8 @@ function MusicPlayer() {
     const valuePercentage = (volume - Number(slider.min)) / (Number(slider.max) - Number(slider.min)) * 100;
     slider.style.background = `linear-gradient(to right, #fff 0%, #fff ${valuePercentage}%, #464646 ${valuePercentage}%, #464646 100%)`;
   }, [volume]);
-
+ 
+  
   return (
     <motion.div 
     initial="hidden"

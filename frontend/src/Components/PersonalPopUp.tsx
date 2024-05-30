@@ -68,7 +68,7 @@ export default function PersonalPopUp({ title, paragraphContent, image, index, g
               onClick={() => {
                 setShowPopUp(false);
               }}
-              className="fixed top-0 left-0 w-full h-full bg-black opacity-40 z-10"
+              className="fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-black opacity-40 z-10"
             ></div>
 
             {/* Pop Up Content Here */}
@@ -178,7 +178,7 @@ export default function PersonalPopUp({ title, paragraphContent, image, index, g
                     </div>
                   </div>
                   <div className="flex-[3] flex flex-col">
-                  <p
+                    <p
                       className="text-white SpotifyLightFont"
                       dangerouslySetInnerHTML={{ __html: paragraphContent }}
                     ></p>

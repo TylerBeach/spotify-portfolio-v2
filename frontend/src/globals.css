@@ -178,6 +178,15 @@ html {
   min-height: calc(100vh - 98px);
 }
 
+@media screen and (max-width: 768px){
+  .height-minus-musicPlayer {
+    height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px);
+  }
+}
+
+
+
 .height-minus-musicPlayer-full {
   height: calc(100vh - 98px);
   min-height: calc(100vh - 98px);

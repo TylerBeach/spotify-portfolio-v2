@@ -44,7 +44,7 @@ function About() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh]  w-[100%] max-w-[100%] md:pt-2 md:pl-2 overflow-x-hidden">
+    <div className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh] min-w-[300px] w-[100%] max-w-[100vw] md:pt-2 md:pl-2 overflow-x-hidden">
       <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2 md:pr-0 rounded-md">
         {/* Navbar Container */}
         <motion.div
@@ -70,7 +70,7 @@ function About() {
           }}
         >
           <div 
-          className="flex flex-col h-fit w-full pb-8 gap-y-2 card_background rounded-lg height-minus-musicPlayer overflow-y-scroll">
+          className="flex flex-col h-fit w-full pb-2 gap-y-2 card_background rounded-lg height-minus-musicPlayer overflow-y-scroll">
             <TopNavButtons
               imageURL={"/images/profileBanner2.jpg"}
               title="Tyler Beach"

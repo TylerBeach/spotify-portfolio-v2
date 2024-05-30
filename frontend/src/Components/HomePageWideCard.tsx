@@ -21,7 +21,7 @@ export default function HomePageWideCard({imageURL, title, link} : {imageURL: st
             }}
           >
             <Link
-              className="project_box card_background_light flex flex-row rounded-md h-20 w-[100%] lg:w-[100%] lg:max-w-[100%] xl:w-[100%]"
+              className="md:project_box card_background_light flex flex-row rounded-md h-20 w-[100%] lg:w-[100%] lg:max-w-[100%] xl:w-[100%]"
               href={`/${link}`}
               passHref
             >

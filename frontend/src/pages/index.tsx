@@ -22,7 +22,7 @@ export default function Home() {
   const ProjectData = portfolioData; // all in json file
 
   return (
-    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh]  w-[100%] max-w-[100%] md:pt-2 md:pl-2 overflow-x-hidden">
+    <main className="flex flex-col justify-between bg-black max-h-[100vh] height-minus-musicPlayer-full  w-[100%] max-w-[100%] md:pt-2 md:pl-2 overflow-x-hidden">
       <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2 md:pr-0 rounded-md">
         
         {/* Navbar */}

@@ -98,7 +98,7 @@
         {"image": "/images/projectImages/StoryTellerTwo.png", "caption": "Story Prompt Input" },
         {"image": "/images/projectImages/StoryTellerThree.jpg", "caption": "Generated Story Example" }
       ],
-      "techStack":["Javascript", "React", "CSS", "Python", "Flask"],
+      "techStack":["React", "Javascript", "CSS", "Python", "Flask"],
       "date": "January 2024"
     },
     {

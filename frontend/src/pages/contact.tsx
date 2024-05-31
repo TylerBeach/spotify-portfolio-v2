@@ -69,7 +69,7 @@ function About() {
        <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md height-minus-musicPlayer overflow-x-hidden scroll-hidden">
           <TopNavButtons imageURL="/images/ContactMe.png" title="Contact Me" />
           <GeneralPageHeader title="Contact Me" subHeading="Send me an email!" imageURL="/images/ContactMe.png" />
-          <div className="mt-[-170px] flex flex-col pb-[50px]">
+          <div className="mt-[-170px] flex flex-col pb-[90px] md:pb-0">
 
             {/* EmailJS Form */}
             <div className="flex flex-row flex-wrap">

@@ -7,7 +7,7 @@ import SearchWebsite from '@/Components/SearchWebsite'
 
 export default function search() {
   return (
-    <main className="flex flex-row gap-x-2 bg-black max-w-[100vw] pb-[90px] min-h-[100vh] max-h-[100vh] md:pl-2 overflow-hidden">
+    <main className="flex flex-row gap-x-2 bg-black max-w-[100vw] min-h-[100vh] max-h-[100vh] md:pl-2 overflow-hidden">
     {/* Navbar Container */}
     <motion.div
       initial="hidden"
@@ -30,9 +30,9 @@ export default function search() {
         visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
       }}
     >
-      <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  min-h-[100vh] overflow-x-hidden">
+      <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md  height-minus-musicPlayer-full overflow-x-hidden">
         <TopNavButtons imageURL={null} title={null} />
-        <div className='pt-20 md:pt-3 md:z-20'>
+        <div className='pt-20 md:pt-3 md:z-[10000] pb-[90px] md:pb-0 z-[20]'>
             <SearchWebsite />
         </div>
       </div>

@@ -40,7 +40,7 @@ const ProjectDetail = () => {
 
   return (
     
-    <div className="flex flex-row gap-x-2 bg-black max-w-[100vw] height-minus-musicPlayer-full max-h-[100vh] md:pl-2 overflow-hidden">
+    <div className="flex flex-row gap-x-2 bg-black max-w-[100vw] h-[100vh] max-h-[100vh] md:pl-2 overflow-hidden">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -63,7 +63,7 @@ const ProjectDetail = () => {
           }}
         >
             <TopNavButtons title={project.title} imageURL={project.bannerURL}/>
-            <div className="flex flex-col h-fit w-full pt-0 card_background md:rounded-md overflow-hidden">
+            <div className="flex flex-col h-fit w-full pt-0 card_background md:rounded-md overflow-hidden pb-[90px] md:pb-0">
               <ProjectComponent project={project} />
             </div>
         </motion.div>

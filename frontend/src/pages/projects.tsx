@@ -41,7 +41,7 @@ function about() {
         <div className="flex flex-col h-fit w-full pt-0 card_background md:rounded-md height-minus-musicPlayer overflow-y-auto overflow-x-hidden">
           <TopNavButtons imageURL={"/images/ProjectPage.png"} title="Projects" />
           <GeneralPageHeader title="Projects" subHeading="Select one for more details" imageURL="/images/ProjectPage.png" />
-          <div className="mt-[-150px] pb-8">
+          <div className="mt-[-150px] pb-[90px] md:pb-8">
             <ProjectListView />
           </div>
         </div>

@@ -75,7 +75,7 @@ function About() {
               imageURL={"/images/profileBanner2.jpg"}
               title="Tyler Beach"
             />
-            <div className="flex flex-col h-fit w-full pt-0 card_background rounded-lg">
+            <div className="flex flex-col h-fit w-full pt-0 card_background rounded-lg pb-[90px] md:pb-0">
               <div className="rounded-md card_background h-fit w-full">
                 <ProfileTopContainer />
                 <div

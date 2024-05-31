@@ -39,7 +39,7 @@ function resume() {
           className="flex flex-col h-fit w-full pb-8 gap-y-2 card_background rounded-lg height-minus-musicPlayer overflow-y-scroll">          <TopNavButtons imageURL="/images/Resume.png" title="Resume" />
           <GeneralPageHeader title="Resume" subHeading="Tyler Beach Resume" imageURL="/images/Resume.png" />
           {/* Content here  */}
-          <div className='w-full content-center h-fit mt-[-140px] pb-16 flex flex-col gap-y-2'>
+          <div className='w-full content-center h-fit mt-[-140px] pb-[90px] md:pb-0 flex flex-col gap-y-2'>
             <a href="/TylerBeachResume.pdf" download={true} className='mx-auto w-fit'>
               <h2 className='text-white w-fit text-2xl hover:underline'>Download Resume</h2>
             </a>

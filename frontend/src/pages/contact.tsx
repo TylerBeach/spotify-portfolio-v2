@@ -42,7 +42,7 @@ function About() {
   };
 
   return (
-    <main className="flex flex-row gap-x-2 bg-black max-w-[100vw] pb-[90px] max-h-[100vh] md:pl-2 overflow-hidden scroll-hidden">
+    <main className="flex flex-row gap-x-2 bg-black max-w-[100vw] max-h-[100vh] md:pl-2 overflow-hidden scroll-hidden">
       {/* Navbar Container */}
       <motion.div
         initial="hidden"
@@ -66,10 +66,10 @@ function About() {
           visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
         }}
       >
-       <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md height-minus-musicPlayer overflow-x-hidden scroll-hidden">
+       <div className="flex flex-col h-fit w-full pt-0 card_background rounded-md height-minus-musicPlayer-full overflow-x-hidden scroll-hidden pb-[90px] md:pb-0">
           <TopNavButtons imageURL="/images/ContactMe.png" title="Contact Me" />
           <GeneralPageHeader title="Contact Me" subHeading="Send me an email!" imageURL="/images/ContactMe.png" />
-          <div className="mt-[-170px] flex flex-col pb-[90px] md:pb-0">
+          <div className="mt-[-170px] flex flex-col">
 
             {/* EmailJS Form */}
             <div className="flex flex-row flex-wrap">

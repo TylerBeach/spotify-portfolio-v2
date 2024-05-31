@@ -61,7 +61,7 @@ export default function PersonalPopUp({ title, paragraphContent, image, index, g
               hidden: { opacity: 0 },
               visible: { opacity: 1, transition: { delay: 0.1 } },
             }}
-            className="w-[100vw] h-[100vh] z-50 fixed"
+            className="w-[100vw] h-[100vh] z-[50] fixed"
           >
             {/* Blur for the background */}
             <div

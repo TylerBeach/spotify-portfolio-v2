@@ -25,7 +25,7 @@ function SquareCardContainer() {
               visible: {
                 opacity: 1,
                 y: 0,
-                transition: { delay: 1.5 + index * 0.1 },
+                transition: { delay: 0.6 + index * 0.1 },
               },
             }}
           >

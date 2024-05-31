@@ -35,7 +35,7 @@ const ProjectDetail = () => {
   }, [project]);
 
   if (!project) {
-   return (<h2>Page not found!</h2>)
+   return (<h2></h2>)
   }
 
   return (

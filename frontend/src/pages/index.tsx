@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh]  w-[100%] max-w-[100%] md:pt-2 md:pl-2 overflow-x-hidden">
-      <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2 md:pr-0 rounded-md">
+      <div className="flex flex-row w-full  overflow-x-hidden scroll-hidden gap-x-2 md:pr-0 rounded-md">
         
         {/* Navbar */}
         <motion.div
@@ -45,7 +45,7 @@ export default function Home() {
           animate="visible"
           variants={{
             hidden: { opacity: 0, y: 200 },
-            visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
+            visible: { opacity: 1, y: 0, transition: { delay: 0.6 } },
           }}
         >
           <div className="flex flex-col  w-full pt-16 md:pt-24 gap-y-2 px-2 card_background rounded-lg height-minus-musicPlayer overflow-y-scroll overflow-x-hidden pb-[90px] md:pb-0">

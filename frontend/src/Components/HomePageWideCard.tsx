@@ -16,7 +16,7 @@ export default function HomePageWideCard({imageURL, title, link} : {imageURL: st
               visible: {
                 opacity: 1,
                 y: 0,
-                transition: { delay: 1.3 },
+                transition: { delay: 0.6 },
               },
             }}
           >

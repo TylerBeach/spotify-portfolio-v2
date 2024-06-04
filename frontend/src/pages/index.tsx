@@ -48,7 +48,7 @@ export default function Home() {
             visible: { opacity: 1, y: 0, transition: { delay: 0.6 } },
           }}
         >
-          <div className="flex flex-col  w-full pt-16 md:pt-24 gap-y-2 px-2 card_background rounded-lg height-minus-musicPlayer overflow-y-scroll overflow-x-hidden pb-[90px] md:pb-0">
+          <div className="flex flex-col  w-full pt-16 md:pt-24 gap-y-2 px-2 card_background rounded-lg height-minus-musicPlayer overflow-y-auto overflow-x-hidden pb-[90px] md:pb-0">
             <TopNavButtons imageURL={null} title={null}/>
             <div className="flex flex-col px-2 rounded-lg gap-y-5 h-fit">
               <Banner />

@@ -42,7 +42,7 @@ function About() {
   };
 
   return (
-    <main className="flex flex-row gap-x-2 bg-black max-w-[100vw] max-h-[100vh] md:pl-2 overflow-hidden scroll-hidden">
+    <main className="flex flex-row gap-x-2 bg-black max-w-[100vw]  max-h-[100vh] h-[100vh] md:pl-2 overflow-hidden scroll-hidden">
       {/* Navbar Container */}
       <motion.div
         initial="hidden"

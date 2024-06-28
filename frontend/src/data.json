@@ -77,7 +77,7 @@
 }, 
   "projects": [
     {
-      "id": "AlgorithmVisualizer",
+      "id": "AlgorithmTutor",
       "title": "Algorithm Tutor",
       "cardDescription": "Visualize algorithms in action and learn how they work step by step",  
       "paragraphData": [

@@ -54,7 +54,7 @@ export default function Home() {
               <Banner />
 
               <h2 className="text-white text-4xl font-SpotifyBold">Welcome</h2>
-              <div className="w-full grid grid-cols-1 flex-wrap gap-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4">
+              <div className="w-full grid px-2 grid-cols-1 flex-wrap gap-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4">
                 < HomePageWideCard imageURL={"/images/ProfileButtonImage.png"} title={"About Me"} link={"about"} />
                 < HomePageWideCard imageURL={"/images/Projects.png"} title={"Projects"} link={"projects"} />
                 < HomePageWideCard imageURL={"/images/ContactMe.png"} title={"Contact Me"} link={"contact"} />

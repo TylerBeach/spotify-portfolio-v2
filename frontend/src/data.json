@@ -79,7 +79,7 @@
     {
       "id": "AlgorithmTutor",
       "title": "Algorithm Tutor",
-      "cardDescription": "Visualize algorithms in action and learn how they work step by step",  
+      "cardDescription": "An algorithm that allows users to visualize algorithms as they run step by step.",  
       "paragraphData": [
         {
           "paragraphTitle": "What is it?",
@@ -136,6 +136,34 @@
       "date": "January 2024"
     },
     {
+      "id": "EventHorizon",
+      "title": "Event Horizon",
+      "cardDescription": "Android mobile app event manager that allows users to create and manage events",  
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is it?",
+          "paragraphContent": "Event Horizon is an android mobile application that allows users to create and manage events. Users can create events, invite friends, and keep track of upcoming events. The app was created as a final project for CMPUT 301 - Software Engineering at the University of Alberta."
+        },
+        {
+          "paragraphTitle": "How does it work?",
+          "paragraphContent": "Event Horizon uses Firebase to store user data and event information. Users can create events, invite friends, and keep track of upcoming events. The app also uses Google Maps to show the location of the event and allow users to check in to the event. Event Horizon is a great way to keep track of upcoming events and stay connected with friends and family"
+        },
+        {
+          "paragraphTitle": "Software Engineering Design Patterns",
+          "paragraphContent": "Event Horizon uses a variety of software engineering design patterns including the Model-View-Controller (MVC) pattern, the Adapter patterns, and the Singleton pattern for database implementation. These design patterns were taught through the course and were implemented to make the app more efficient and easier to maintain. They were also used to replicate real-world software engineering practices that are used in the industry."
+        }
+      ],
+      "link": "https://github.com/CMPUT301W24T09/fire-and-based",
+      "imageURL" : "/images/projectImages/EventHorizonLogo.jpg",
+      "bannerURL" : "/images/projectImages/EventHorizonBanner.webp",
+      "demoImages": [
+        {"image": "/images/projectImages/EventHorizon.png", "caption" : "Browse events tab" },
+        {"image": "/images/projectImages/EventHorizon2.png", "caption" : "Check in map for an event" }
+      ],
+      "techStack":["Java", "Firebase", "Google Maps", "Github", "Figma"],
+      "date": "April 2024"
+    },
+    {
       "id": "FireSafe",
       "title": "FireSafe",
       "cardDescription": "Forest fire software that uses machine learning to locate secluded locations and homes",  
@@ -188,34 +216,6 @@
       "date": "November 2022"
     },
     {
-      "id": "EventHorizon",
-      "title": "Event Horizon",
-      "cardDescription": "Android mobile app event manager that allows users to create and manage events",  
-      "paragraphData": [
-        {
-          "paragraphTitle": "What is it?",
-          "paragraphContent": "Event Horizon is an android mobile application that allows users to create and manage events. Users can create events, invite friends, and keep track of upcoming events. The app was created as a final project for CMPUT 301 - Software Engineering at the University of Alberta."
-        },
-        {
-          "paragraphTitle": "How does it work?",
-          "paragraphContent": "Event Horizon uses Firebase to store user data and event information. Users can create events, invite friends, and keep track of upcoming events. The app also uses Google Maps to show the location of the event and allow users to check in to the event. Event Horizon is a great way to keep track of upcoming events and stay connected with friends and family"
-        },
-        {
-          "paragraphTitle": "Software Engineering Design Patterns",
-          "paragraphContent": "Event Horizon uses a variety of software engineering design patterns including the Model-View-Controller (MVC) pattern, the Adapter patterns, and the Singleton pattern for database implementation. These design patterns were taught through the course and were implemented to make the app more efficient and easier to maintain. They were also used to replicate real-world software engineering practices that are used in the industry."
-        }
-      ],
-      "link": "https://github.com/CMPUT301W24T09/fire-and-based",
-      "imageURL" : "/images/projectImages/EventHorizonLogo.jpg",
-      "bannerURL" : "/images/projectImages/EventHorizonBanner.webp",
-      "demoImages": [
-        {"image": "/images/projectImages/EventHorizon.png", "caption" : "Browse events tab" },
-        {"image": "/images/projectImages/EventHorizon2.png", "caption" : "Check in map for an event" }
-      ],
-      "techStack":["Java", "Firebase", "Google Maps", "Github", "Figma"],
-      "date": "April 2024"
-    },
-    {
       "id": "TwitterBackend",
       "title": "Twitter Backend",
       "cardDescription": "Twitter backend clone that allows users to create tweets, follow users, and like tweets using SQL",  
@@ -266,7 +266,7 @@
       {
         "title": "Education",
         "image": "/images/Education.png",
-        "paragraphContent": "Tyler is a fourth year student at the University of Alberta studying Computing Science. He has a passion for software development and is always looking for new ways to improve his skills. Tyler is currently looking for a summer internship in software development to further his skills and gain experience in the field."
+        "paragraphContent": "Tyler is a fourth year student at the University of Alberta studying Computing Science. He has a passion for software development and is always looking for new ways to improve his skills. Tyler is currently looking for a fall internship in software development to further his skills and gain experience in the field."
       },
       {
         "title": "Technologies",
@@ -277,7 +277,13 @@
         "title": "Experience",
         "image": "/images/Briefcase.png",
         "paragraphContent": "While Tyler is in the early stages of his career and has yet to gain professional experience in software development, he has been proactive in building a strong foundation through a variety of personal and academic projects. These projects have allowed him to develop practical skills and demonstrate his ability to work with different technologies. For example, he created <a href='/projects/EventHorizon'>Event Horizon</a>, an Android application for event check-ins, leveraging Java and Firebase. He also developed <a href='/projects/StoryTeller'>Story Teller</a>, a web app using React and Flask to generate and narrate children's stories. Tyler is enthusiastic about applying his skills in a professional environment and is actively seeking opportunities to gain industry experience."
+      },
+      {
+        "title": "The Dream",
+        "image": "/images/froggy.jpg",
+        "paragraphContent": "Tyler's dream is to work as a software engineer for Microsoft or Spotify. He is passionate about creating innovative software solutions that have a positive impact on people's lives. Tyler is excited about the opportunity to work with cutting-edge technologies and collaborate with talented professionals to develop world-class software products. He is a dedicated and hardworking individual who is committed to continuous learning and personal growth. Tyler is confident that he has the skills and determination to succeed in a competitive industry and is eager to embark on a rewarding career in software development."
       }
+    
     ],
     "link": "/about"
   }

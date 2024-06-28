@@ -88,6 +88,14 @@
         {
           "paragraphTitle": "What can it do?",
           "paragraphContent": "Algorithm Visualizer allows users to select from a variety of algorithms including sorting algorithms, searching algorithms, and array operatios. Users can see how the algorithms work step by step and learn about the different techniques used to solve problems. The application also includes a step by step code example for the algorithm being visualized. It also has many custom settings such as speed, array size, forward and backward buttons. Users can stop and start the visualization at any time to see how the algorithm works in real time." 
+        },
+        {
+          "paragraphTitle": "How was it built?",
+          "paragraphContent": "Algorithm Visualizer was built using Next.js, a React framework. The application uses Javascript and Tailwind CSS for styling. The algorithms are implemented in Javascript and are visualized using custom animations. The application is hosted on Vercel and is available to users on the web. The project was created as a personal project to help users learn about algorithms in a fun and interactive way. The goal of the project was to create a tool that would make learning about algorithms more accessible and engaging for users."
+        },
+        {
+          "paragraphTitle": "Future Plans",
+          "paragraphContent": "In the future, I plan to add more sorting algorithms and other data structures such as trees and stacks. I also plan to add more custom settings such as color themes and animations. I hope to continue working on the project and add more features over time."
         }
       ],
       "link": "https://algorithm-tutor.vercel.app/",

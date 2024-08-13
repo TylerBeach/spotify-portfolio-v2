@@ -4,6 +4,7 @@ export interface Project {
     cardDescription?: string | null;
     paragraphData?: { paragraphTitle: string; paragraphContent: string }[] | null;
     link?: string | null;
+    hostedLink?: string | null;
     imageURL?: string | undefined;
     bannerURL?: string | undefined;
     demoImages?: { image: string; caption: string;}[] | null;

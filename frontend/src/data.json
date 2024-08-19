@@ -116,11 +116,11 @@
       "bannerURL": "/images/projectImages/MediMinBanner.png",
       "demoImages": [
         {"image": "/images/projectImages/MediMinHomePage.png", "caption": "Home Page"},
-        {"image": "/images/projectImages/MediMinCategoryPage.png", "caption": "Quiz Example"},
-        {"image": "/images/projectImages/MediMinSectionPage.png", "caption": "User Stats"},
-        {"image": "/images/projectImages/MediMinQuizPage.png", "caption": "User Stats"},
-        {"image": "/images/projectImages/MediMinQuizEndPage.png", "caption": "User Stats"},
-        {"image": "/images/projectImages/OurTeam.png", "caption": "User Stats"}
+        {"image": "/images/projectImages/MediMinCategoryPage.png", "caption": "Categories"},
+        {"image": "/images/projectImages/MediMinSectionPage.png", "caption": "Reading Section"},
+        {"image": "/images/projectImages/MediMinQuizPage.png", "caption": "Quiz Preface"},
+        {"image": "/images/projectImages/MediMinQuizEndPage.png", "caption": "Quiz Completion"},
+        {"image": "/images/projectImages/OurTeam.png", "caption": "Our Team"}
 
 
       ],

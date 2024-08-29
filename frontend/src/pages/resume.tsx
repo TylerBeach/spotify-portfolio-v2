@@ -9,7 +9,7 @@ import GeneralPageHeader from '@/Components/GeneralPageHeader'
 
 function resume() {
   return (
-    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh]  w-[100%] max-w-[100%] md:pt-2 md:pl-2 overflow-x-hidden">
+    <main className="flex flex-col justify-between bg-black max-h-[100vh] h-[100vh]  w-[100%] max-w-[100%] md:pt-0 md:pl-2 overflow-x-hidden">
             <div className="flex flex-row w-full z-10 overflow-x-hidden scroll-hidden gap-x-2 md:pr-0 rounded-md">
 
       {/* Navbar Container */}
@@ -27,7 +27,7 @@ function resume() {
 
       {/* Page Content Container */}
       <motion.div
-        className="h-fit bg-black w-full overflow-hidden"
+        className="h-fit bg-black w-full overflow-hidden md:pt-2"
         initial="hidden"
         animate="visible"
         variants={{

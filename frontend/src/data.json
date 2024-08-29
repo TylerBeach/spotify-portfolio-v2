@@ -195,23 +195,30 @@
       "paragraphData": [
         {
           "paragraphTitle": "What is it?",
-          "paragraphContent": "Event Horizon is an android mobile application that allows users to create and manage events. Users can create events, invite friends, and keep track of upcoming events. The app was created as a final project for CMPUT 301 - Software Engineering at the University of Alberta."
+          "paragraphContent": "Event Horizon is a sophisticated Android mobile application designed to simplify the process of event management for users. The app allows users to create, manage, and participate in events with ease, making it a powerful tool for both personal and professional use. Whether it's a small gathering or a large-scale event, users can set up events, invite participants, and manage RSVPs all within the app. Event Horizon was developed as a final project for CMPUT 301 - Software Engineering at the University of Alberta. The project aimed to apply the principles and practices learned throughout the course in a real-world scenario, resulting in an application that not only meets course objectives but also provides practical value to users."
         },
         {
           "paragraphTitle": "How does it work?",
-          "paragraphContent": "Event Horizon uses Firebase to store user data and event information. Users can create events, invite friends, and keep track of upcoming events. The app also uses Google Maps to show the location of the event and allow users to check in to the event. Event Horizon is a great way to keep track of upcoming events and stay connected with friends and family"
+          "paragraphContent": "Event Horizon leverages Firebase as its backend to handle user authentication, store event data, and manage real-time updates. When a user creates an event, the details are securely stored in Firebase, ensuring that all participants have access to the most current information. The app allows users to invite friends through their contact list or by sharing event links, making it easy to gather participants. Additionally, Event Horizon integrates with Google Maps, providing users with a visual representation of event locations. This integration allows users to view the event's location directly within the app, receive directions, and even check in upon arrival. The combination of Firebase and Google Maps makes Event Horizon a robust and user-friendly solution for managing and attending events, ensuring users stay connected and informed."
         },
         {
           "paragraphTitle": "Software Engineering Design Patterns",
-          "paragraphContent": "Event Horizon uses a variety of software engineering design patterns including the Model-View-Controller (MVC) pattern, the Adapter patterns, and the Singleton pattern for database implementation. These design patterns were taught through the course and were implemented to make the app more efficient and easier to maintain. They were also used to replicate real-world software engineering practices that are used in the industry."
+          "paragraphContent": "Event Horizon was meticulously designed using several key software engineering design patterns to ensure the application is efficient, scalable, and maintainable. The Model-View-Controller (MVC) pattern was employed to separate concerns within the app, ensuring that the data (Model), user interface (View), and application logic (Controller) are handled independently. This separation not only makes the app easier to manage and extend but also enhances its testability. The Adapter pattern was utilized to allow the app to interface seamlessly with various APIs, such as Firebase and Google Maps, by converting their data formats into a format the application can easily handle. Furthermore, the Singleton pattern was implemented for managing instances of Firebase, ensuring a single point of access to the database, which enhances performance and reduces the risk of data inconsistencies. These patterns were integral to the development of Event Horizon, allowing the team to apply theoretical knowledge in a practical, real-world project. They also mirror industry practices, providing the team with valuable experience in building scalable and maintainable software."
+        },
+        {
+          "paragraphTitle": "User Experience and Interface Design",
+          "paragraphContent": "Event Horizon was designed with a strong focus on user experience (UX) and interface design. The app's interface was created using Figma, ensuring a clean, intuitive, and accessible design. User flows were carefully planned to minimize friction, making it easy for users to create, manage, and join events. The design was iteratively tested and refined based on user feedback, ensuring that the app meets the needs of a diverse user base. By prioritizing UX, Event Horizon not only provides a functional tool but also an enjoyable and seamless experience for its users."
         }
+        
       ],
+
       "link": "https://github.com/CMPUT301W24T09/fire-and-based",
       "imageURL" : "/images/projectImages/EventHorizonLogo.jpg",
       "bannerURL" : "/images/projectImages/EventHorizonBanner.webp",
       "demoImages": [
         {"image": "/images/projectImages/EventHorizon.png", "caption" : "Browse events tab" },
-        {"image": "/images/projectImages/EventHorizon2.png", "caption" : "Check in map for an event" }
+        {"image": "/images/projectImages/EventHorizon2.png", "caption" : "Check in map for an event" },
+        {"image": "/images/projectImages/EventHorizon3.png", "caption" : "Event QR code interface" }
       ],
       "techStack":["Java", "Firebase", "Google Maps", "Github", "Figma"],
       "date": "April 2024"

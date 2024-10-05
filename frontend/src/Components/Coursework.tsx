@@ -6,7 +6,7 @@ export default function Coursework(): JSX.Element {
             {data.about.courseWork.map((course, index) => (
                 Object.entries(course).map(([key, value]) => (
                 <div key={index} className='flex flex-row text-white SpotifyLightFont text-sm gap-x-2'>
-                    <h2 className='text-nowrap'>{key}</h2>
+                    <h2 className='w-[80px] text-nowrap'>{key}</h2>
                     <h2>{value}</h2>
                 </div>
                 ))

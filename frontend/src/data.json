@@ -310,11 +310,15 @@
       {"CMPUT 201":  "Programming Methodology in C"},
       {"CMPUT 204":  "Algorithms and Data Structures"},
       {"CMPUT 206":  "Digital Image Processing"},
+      {"CMPUT 229":  "Computer Organization and Architecture"},
       {"CMPUT 267":  "Machine Learning"},
       {"CMPUT 272":  "Formal Systems and Logic"},
       {"CMPUT 291":  "File and Database Management"},
       {"CMPUT 301":  "Software Engineering"},
-      {"CMPUT 365":  "Reinforcement Learning"}
+      {"CMPUT 365":  "Reinforcement Learning"},
+      {"CMPUT 404":  "Web Applications and Architecture"},
+      {"CMPUT 455": "Search, Knowledge and Simulation"},
+      {"CMPUT 461": "Intro to Natural Language Processing"}
     ],
     
     "paragraphs": [
@@ -326,7 +330,7 @@
       {
         "title": "Education",
         "image": "/images/Education.png",
-        "paragraphContent": "Tyler is a fourth year student at the University of Alberta studying Computing Science. He has a passion for software development and is always looking for new ways to improve his skills. Tyler is currently looking for a fall internship in software development to further his skills and gain experience in the field."
+        "paragraphContent": "Tyler is a fourth year student at the University of Alberta studying Computing Science. He has a passion for software development and is always looking for new ways to improve his skills. Tyler is currently looking for a winter internship in software development to further his skills and gain experience in the field."
       },
       {
         "title": "Technologies",

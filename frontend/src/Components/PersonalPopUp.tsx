@@ -133,7 +133,7 @@ export default function PersonalPopUp({ title, paragraphContent, image, index, g
                     </div>
                     <div className="w-full flex flex-col gap-y-2">
                       <a
-                        href="www.linkedin.com/tylerbe"
+                        href="https://www.linkedin.com/in/tylerbe/"
                         target="_blank"
                         rel="noreferrer"
                         className="flex flex-row brightness-75 hover:brightness-100 gap-x-1"
@@ -148,7 +148,7 @@ export default function PersonalPopUp({ title, paragraphContent, image, index, g
                         </h2>
                       </a>
                       <a
-                        href="www.github.com/TylerBeach"
+                        href="https://github.com/tylerbeach"
                         target="_blank"
                         rel="noreferrer"
                         className="flex flex-row brightness-75 hover:brightness-100 gap-x-1"

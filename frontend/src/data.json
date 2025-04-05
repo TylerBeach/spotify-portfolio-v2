@@ -320,8 +320,11 @@
       {"CMPUT 272":  "Formal Systems and Logic"},
       {"CMPUT 291":  "File and Database Management"},
       {"CMPUT 301":  "Software Engineering"},
+      {"CMPUT 313":  "Computer Networks"},
       {"CMPUT 365":  "Reinforcement Learning"},
+      {"CMPUT 401":  "Software Engineering II"},
       {"CMPUT 404":  "Web Applications and Architecture"},
+      {"CMPUT 429":  "Computer Organization and Architecture II"},
       {"CMPUT 455": "Search, Knowledge and Simulation"},
       {"CMPUT 461": "Intro to Natural Language Processing"}
     ],
@@ -345,7 +348,7 @@
       {
         "title": "Experience",
         "image": "/images/Briefcase.png",
-        "paragraphContent": "While Tyler is in the early stages of his career and has yet to gain professional experience in software development, he has been proactive in building a strong foundation through a variety of personal and academic projects. These projects have allowed him to develop practical skills and demonstrate his ability to work with different technologies. For example, he created <a href='/projects/EventHorizon'>Event Horizon</a>, an Android application for event check-ins, leveraging Java and Firebase. He also developed <a href='/projects/StoryTeller'>Story Teller</a>, a web app using React and Flask to generate and narrate children's stories. Tyler is enthusiastic about applying his skills in a professional environment and is actively seeking opportunities to gain industry experience."
+        "paragraphContent": "Tyler has gained valuable experience through various internships and projects. He has worked as a software developer intern at QOL MedTech, a medical technology startup focused on improving the quality of life for patients. During his internship, Tyler contributed to the development of a web application that used wearable technology to monitor patients movements and provide feedback. He designed a backend system using AWS RDS and Cognito to manage user data and authentication creating security for patient information. Check out Tyler's projects <a class='underline' href='/projects'>here</a> to see his work and the technologies he has used."
       },
       {
         "title": "The Dream",

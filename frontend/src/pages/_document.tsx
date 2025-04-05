@@ -13,18 +13,18 @@ class MyDocument extends Document {
           <title>{`Tyler's Portfolio`}</title>
           <link rel="icon" href="/images/cuteFrog.png" />
           <meta name="description" content="Tyler Beach Portfolio" />
-          <meta name="keywords" content="tyler,tyler beach,developer,software engineer,portfolio,portfolio website" />
+          <meta name="keywords" content="tyler,tyler beach,developer,software engineer,portfolio,portfolio website,computer science,programming,alberta,edmonton" />
           <meta name="author" content="Tyler Beach" />
 
           <meta property="og:title" content="Tyler Beach Portfolio" />
-          <meta property="og:description" content="Check out the portfolio of Tyler Beach, a software engineer." />
+          <meta property="og:description" content="Check out the portfolio of Tyler Beach, a computer science major at the University of Alberta." />
           <meta property="og:image" content="/images/cuteFrog.png" />
           <meta property="og:url" content="https://tylerbeach.site" />
           <meta property="og:type" content="website" />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Tyler Beach Portfolio" />
-          <meta name="twitter:description" content="Check out the portfolio of Tyler Beach, a software engineer." />
+          <meta name="twitter:description" content="Check out the portfolio of Tyler Beach,  a computer science major at the University of Alberta." />
           <meta name="twitter:image" content="/images/cuteFrog.png" />
 
           <meta name="robots" content="index, follow" />

@@ -26,6 +26,11 @@
       "title": "Contact Me",
       "icon": "/images/ContactMe.png",
       "link": "/contact"
+    },
+    {
+      "title": "The Frog Blog",
+      "icon": "/images/frogblog.jpg",
+      "link": "/blog"
     }
   ],
   "My Links": [

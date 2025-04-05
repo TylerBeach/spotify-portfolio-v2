@@ -58,6 +58,7 @@ export default function Home() {
                 < HomePageWideCard imageURL={"/images/ProfileButtonImage.png"} title={"About Me"} link={"about"} />
                 < HomePageWideCard imageURL={"/images/Projects.png"} title={"Projects"} link={"projects"} />
                 < HomePageWideCard imageURL={"/images/ContactMe.png"} title={"Contact Me"} link={"contact"} />
+                < HomePageWideCard imageURL={"/images/frogblog.jpg"} title={"The Frog Blog"} link={"blog"} />
               </div>
               
               <SquareCardContainer />

@@ -304,3 +304,15 @@ html {
   background: #ffffff;
   cursor: pointer;
 }
+
+
+.blogContent > div > p > img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.blogContent {
+  font-family: 'SpotifyLight', sans-serif;
+  font-weight: 600;
+}

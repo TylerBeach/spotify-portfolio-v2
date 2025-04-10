@@ -12,4 +12,4 @@ Afterwards I have a couple of projects I want to work on, including:
 
 Thanks for reading!
 
-![PCE](https://pbs.twimg.com/media/FvJu_5vWcAM-Er-.jpg)
+![PCE](https://pbs.twimg.com/media/FLK4H02XIAYcjV9?format=jpg&name=4096x4096)

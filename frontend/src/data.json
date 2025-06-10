@@ -84,53 +84,42 @@
     {
       "id": "MediMinutes",
       "title": "MediMinutes",
-      "cardDescription": "Medical quiz application that allows users to test their knowledge on medical topics",
+      "cardDescription": "Medical learning application that allows users to learn and test their knowledge on various medical topics.",
       "paragraphData": [
         {
           "paragraphTitle": "Inspiration",
-          "paragraphContent": "The prospect of creating an educational platform for medical professionals that is not only accessible, but also high quality was of great inspiration to our team. We decided to join MediHacks2024 to create incentives for continuous learning and practice for front-line professionals. As computer science students, we understand the importance of keeping on top of a constantly changing and evolving field. Accessible learning is also an issue our team holds in high regard as some of us are from first-generation immigrant families and faced significant barriers ourselves being the first members of our families to attend post-secondary."
+          "paragraphContent": "The original inspiration for MediMinutes occured during MediHacks 2024 Hackathon, where our team of five students from the University of Alberta set out to create a medical education application. We did a relatively good job given the time constraints but the MediMinutes you see today is a complete overhaul of the original project. I took the original idea and ran with it, creating a fully functional web application to empower users to learn about medical topics and test their knowledge."
         },
         {
           "paragraphTitle": "What it does",
-          "paragraphContent": "Our group made a medical education application that allows users to take lessons on over 200 topics ranging from infectious diseases to environmental health."
+          "paragraphContent": "We have several features such as daily crosswords, 'connections' where you aim to connect the symptoms to a diagnosis, a quiz feature where you can test your knowledge on a specific topic, and a flashcard feature where you can create your own decks or use the ones we have created. The goal of MediMinutes is to provide a platform for users to learn about medical topics in a fun and engaging way. We want to make medical education accessible to everyone, regardless of their background or experience level. We also want to create a community of learners who can share their knowledge and help each other grow."
         },
         {
-          "paragraphTitle": "How we built it",
-          "paragraphContent": "We worked with Next.js, Javascript, and Tailwind-CSS to program the MediMinutes web application, as well as Python for backend scripting and Figma for UI/UX design. We started by creating Python scripts to scrape sites for medical data which we then stored in our Firebase database to allow ease of access from our frontend. We then passed our data to OpenAI's generative text API to generate a bank of questions specific to each topic. This enabled us to make a quiz feature which tests the users' knowledge by pulling 5 random questions from the bank pertaining to each individual topic. Once we had created the framework for a working web application, we did a visual update based on a complete wireframe we had developed in Figma."
-        },
-        {
-          "paragraphTitle": "Challenges we ran into",
-          "paragraphContent": "One of the most significant challenges we encountered was the limited time available to us. With a tight deadline, we had to define a clear vision for the project in order to prioritize tasks and streamline our platform; cutting extra features in order to strengthen core aspects of the application. Incorporating all our ideas proved to be another challenge, as we grappled with balancing creativity and feasibility within our project timeline. Technical challenges also presented themselves throughout the development process. We struggled to find a reliable API to achieve the vision our team had initially. We overcame this challenge by web scraping and processing over 20,000 lines of data from the World Health Organization, ensuring accurate and comprehensive data collection. We also handled smaller issues with coding, design layouts, and user experience optimization, requiring us to adapt and solve problems on the fly."
-        },
-        {
-          "paragraphTitle": "Accomplishments that we're proud of",
-          "paragraphContent": "Despite these challenges, we remained committed to our vision of accessible education. Through perseverance, collaboration, and creative problem-solving, we were able to overcome obstacles and bring our project to fruition. Some of our proudest moments during this project were: Creating an automated web-scraping script to collect data for lessons, Integration of AI tools to generate question banks, and our original hand-designed art sprites, logo, and mascot Frankie the frog."
-        },
-        {
-          "paragraphTitle": "What we learned",
-          "paragraphContent": "Throughout the process of building this project, we delved deep into the annals of medical knowledge, uncovering key insights into public health, and made lasting impacts on the STEM landscape. At every turn, we were continuously inspired by the breadth and depth of medicine."
+          "paragraphTitle": "How it was built",
+          "paragraphContent": "MediMinutes was built using Next.js, a React framework that allows for server-side rendering and static site generation. We used Tailwind CSS for styling, which allowed us to create a responsive and modern design. The backend is powered by AWS RDS, which provides a scalable and reliable database solution. NextAuth was used for authentication, allowing users to sign up and log in securely. Python was used for the web scraping and data processing, which allowed for the collection of data from Harvard Health, the FDA and the World Health Organization. Figma was used for the prototyping of the application, allowing us to create a user-friendly interface and design. The project was hosted on Vercel, which provides a fast and reliable hosting solution for Next.js applications."
         },
         {
           "paragraphTitle": "What's next for MediMinutes",
-          "paragraphContent": "We have several new features planned for MediMinutes: Mobile Application Support, Lesson series specifically focusing on pharmaceutical drugs, Larger courses taught with the assistance of medical professionals in the field. In the very future of MediMinutes we would like to branch out beyond medical-related topics to other STEM fields. We believe it is important to foster connections and collaboration within the STEM ecosystem. To that end, we will explore partnerships with educational institutions, organizations, and industry leaders to amplify the impact of our platform and create opportunities for mentorship, networking, and professional development. We will continually update the website with the thousands of new contributions that are being made by health professionals in STEM fields every day. By providing a dynamic and evolving platform, we hope to inspire future generations and foster a deeper appreciation for medicine and innovation."
+          "paragraphContent": "In the future, I plan to add more games for users to play and learn from. I also plan to add more features such as a forum where users can discuss medical topics and share their knowledge. I want to create a community of learners who can help each other grow and learn. I also plan to add more medical topics and resources to the application, making it a comprehensive platform for medical education. I hope to continue working on MediMinutes and make it the go-to platform for medical education."
         }
       ],
-      "link": "https://github.com/MediHacks24/MediMinutes",
-      "hostedLink": "https://medi-minutes.vercel.app/",
+      "link": null,
+      "hostedLink": "https://mediminutes.ca/",
       "imageURL": "/images/projectImages/quizTimeFrog10.png",
       "bannerURL": "/images/projectImages/MediMinBanner.png",
       "demoImages": [
-        {"image": "/images/projectImages/MediMinHomePage.png", "caption": "Home Page"},
-        {"image": "/images/projectImages/MediMinCategoryPage.png", "caption": "Categories"},
-        {"image": "/images/projectImages/MediMinSectionPage.png", "caption": "Reading Section"},
-        {"image": "/images/projectImages/MediMinQuizPage.png", "caption": "Quiz Preface"},
-        {"image": "/images/projectImages/MediMinQuizEndPage.png", "caption": "Quiz Completion"},
-        {"image": "/images/projectImages/OurTeam.png", "caption": "Our Team"}
+        {"image": "/images/projectImages/MediMinutesHome.png", "caption": "Home Page"},
+        {"image": "/images/projectImages/MediMinutesLogin.png", "caption": "Login"},
+        {"image": "/images/projectImages/MediMinutesLearn.png", "caption": "Learn"},
+        {"image": "/images/projectImages/MediMinutesLeaderboards.png", "caption": "Leaderboards"},
+        {"image": "/images/projectImages/MediMinutesQuiz.png", "caption": "Quiz"},
+        {"image": "/images/projectImages/MediMinutesCrossword.png", "caption": "Crossword"},
+        {"image": "/images/projectImages/MediMinutesConnection.png", "caption": "Connections"}
 
 
       ],
-      "techStack": ["Next.js", "Javascript", "Tailwind", "Python", "Firebase", "Figma"],
-      "date": "July 2024"
+      "techStack": ["Next.js", "Javascript", "Tailwind", "AWS", "Stripe", "Vercel", "Python"],
+      "date": "May 2025"
     },
     {
       "id": "AlgorithmTutor",

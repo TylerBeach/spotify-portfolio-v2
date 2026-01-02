@@ -2,21 +2,36 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import Image from 'next/image';
 
+const isVideo = (url: string) => /\.mp4($|\?)/i.test(url);
+
 function ImageModal({ imageURL, caption }: { imageURL: string, caption: string }) {
   const [showModal, setShowModal] = useState(false);
+
+  const video = isVideo(imageURL);
 
   return (
     <div>
       <div className="hover-effect card_background p-2.5 gap-y-1 flex flex-col w-[180px] h-auto rounded-md text-white">
         <div className='flex flex-col gap-y-1'>
-          <Image
-            className="w-[160px] h-[160px] rounded-md cursor-pointer"
-            width={160}
-            height={160}
-            src={imageURL}
-            alt=""
-            onClick={() => setShowModal(true)}
-          />
+          {video ? (
+            <video
+              className="w-[160px] h-[160px] rounded-md cursor-pointer object-cover"
+              src={imageURL}
+              muted
+              loop
+              playsInline
+              onClick={() => setShowModal(true)}
+            />
+          ) : (
+            <Image
+              className="w-[160px] h-[160px] rounded-md cursor-pointer"
+              width={160}
+              height={160}
+              src={imageURL}
+              alt=""
+              onClick={() => setShowModal(true)}
+            />
+          )}
           {caption && (
             <p className="SpotifyLightFont text-sm brightness-75">
               {caption}
@@ -58,8 +73,17 @@ function ImageModal({ imageURL, caption }: { imageURL: string, caption: string }
 
               {/* Content */}
               <div className="flex flex-col gap-y-2">
-                <img src={imageURL} className="max-h-[80vh] max-w-full object-contain rounded-md" alt="Title" 
-                />
+                {video ? (
+                  <video
+                    className="max-h-[80vh] max-w-full object-contain rounded-md"
+                    src={imageURL}
+                    controls
+                    autoPlay
+                  />
+                ) : (
+                  <img src={imageURL} className="max-h-[80vh] max-w-full object-contain rounded-md" alt="Title" 
+                  />
+                )}
               </div>
             </motion.div>
           </motion.div>

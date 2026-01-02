@@ -117,6 +117,60 @@
 
     },
     {
+      "id": "GraphicsProgramming",
+      "title": "Graphics Programming",
+      "cardDescription": "A 3D Ascii Renderer and Voxel World Engine built from scratch in C++ using SDL2 and Raytracing techniques.",
+      "paragraphData": [
+        {
+          "paragraphTitle": "Learning Graphics Programming",
+          "paragraphContent": "This is a very impromptu sort of project not like anything I have ever done before. After working on MediMinutes for about 2 months I decided to take a deep dive into something I had no experience in and that ended up being graphics programming. My only experience before was CMPUT 206 - Digital Image Processing which taught me the basics of how images are represented in a computer and how to manipulate them but that was not overly useful for learning this project outside of the pixel work with shading. I started from scratch learning about raytracing techniques, 3D rendering concepts, and SDL2 for window management and rendering. One goal that I had for this project was to do the entire thing in Neovim which I did accomplish and I am very proud! I will go through each iteration of the project for you to see how I progressed and learned throughout the project."
+        },
+        {
+          "paragraphTitle": "First Iteration - A Dream of Doom",
+          "paragraphContent": "Every programmer has seen the 'I ported Doom onto my fridge or calculator' videos and that was sort of my inspiration for where I started. I wanted to create a simple ASCII renderer that could render a 3D world using raycasting techniques similar to Wolfenstein 3D and Doom. This is actually maybe the second iteration. I never recorded the very first which was me just playing with a single line of pixels and changing them based on distance. From there I took that 2D grid that I had and added the third dimension creating a simple 3D world that you could navigate around. It was very basic and had terrible performance but it was a start. I used very simple techniques like Ray Marching to determine the distance to the nearest wall and then rendered the pixel of ASCII characters based on that distance."
+        },
+        {
+          "paragraphTitle": "Second Iteration - Improving the Renderer",
+          "paragraphContent": "After completing the first iteration I wanted to improve a few things about it. Firstly I wanted to make it more efficient. The first iteration was terribly slow and every time you moved it felt like you blinked from frame to frame. I implemented a double buffering technique to help with this and it made a huge difference. Another big improvement was adding DDA ( Digital Differential Analyzer ) algorithm for raycasting instead of ray marching. This made the rendering so much faster as we could step through the grid much faster and then backtrack to find the exact distance to the wall allowing us to keep the performance high while still having accurate distance measurements. I also added more features such as better distance, higher resolution, floor + ceiling textures and better feeling movement. Overall this iteration felt pretty good and I think it was a solid improvement over the first."
+        }, 
+        {
+          "paragraphTitle": "Third Iteration - SDL2 Port",
+          "paragraphContent": "The second iteration was fun and all but I wanted to take it to the next level. I decided to port the entire thing over to SDL2 to allow for better graphics rendering and more control over the window. This was a huge undertaking as I had to rewrite a lot of the code to work with SDL2 but it was worth it. I was even able to add a minimap to help with navigation and even added direction indicators on it as well. The performance was also greatly improved and it felt much smoother to navigate around the world."
+        },
+        {
+          "paragraphTitle": "Minecraft from Wish.com",
+          "paragraphContent": "In my deep dive of learning graphics programming I came across a youtube video in my feed called 'I made Minecraft from scratch using C++!' and that really inspired me to try and create a voxel world like Minecraft. Previously I was taking a 2D grid and extruding it into 3D but now I wanted to create a true 3D world made up of voxels. I started by creating a simple voxel world with just a few blocks and then added more features such as distance shading and then created some noise generation to create a more interesting terrain much like Minecraft. This was a huge learning experience for me as I had to learn about 3D math, raytracing techniques, and how to optimize the rendering of a large number of voxels. Overall I am very proud of how far I have come with this project and I am excited to continue learning and improving my graphics programming skills."
+        },
+        {
+          "paragraphTitle": "Minecraft but it kinda looks like Minecraft!?",
+          "paragraphContent" : "Although this next iteration was not an insane addition I did add face shading. This made a huge difference in the look of the voxel world and made it feel much more like Minecraft. The distance shading was cool and all but adding face shading really brought the world to life. It was a simple addition but it made a huge difference in the overall look and feel of the project."
+        },
+        {
+          "paragraphTitle": "Not bad kid",
+          "paragraphContent": "This final iteration was something that I was truly proud of. I had created a voxel world that was able to cast shadows and had both distance and face shading. It was so cool to see a giant pillar of voxels casting a shadow on the ground and seeing the different faces of the voxels being shaded differently based on their orientation to the light source. This iteration included adding a light source that was moveable via the keyboard which allowed for some day and night effects. I added a more extreme noise generation to create taller mountains and deeper valleys. I think this was the best iteration yet and I am very proud of what I have accomplished with this project."
+        },
+        {
+          "paragraphTitle": "What's Next?",
+          "paragraphContent": "I am not entirely sure what is next for this project. I have learned a lot about graphics programming and I am excited to continue learning and improving my skills. I do want to add more features but most importantly I want to add even better performance optimizations. Right now the voxel world is still pretty slow and I want to make it faster. I also want to add more features such as textures, better lighting, and maybe even some basic physics. I want to be able to place different types of voxels and maybe even add some basic interactions with them. Overall I am very excited about the future of this project and I am looking forward to continuing to learn and improve my graphics programming skills. My current goal after graduation in December of 2025 is to create a full blown game engine using C++ and SDL2 so this project is just the beginning of my journey into graphics programming and I am enjoying every step of the way."
+        }
+      ],
+      "link": null,
+      "hostedLink": null,
+      "imageURL": "/images/projectImages/3DRendererIcon.png",
+      "bannerURL": "/images/projectImages/RendererBanner.png",
+      "demoImages": [
+        {"image": "/images/projectImages/ASCIIRenderer.mp4", "caption": "First Iteration Ascii Renderer" },
+        {"image": "/images/projectImages/ASCIIRendererMap.png", "caption": "Example map for the ASCII Renderer" },
+        {"image": "/images/projectImages/ASCIIRenderer2.mp4", "caption": "Second Iteration Ascii Renderer" },
+        {"image": "/images/projectImages/3DRenderer.mp4", "caption": "SDL2 Port of Ascii Renderer" },
+        {"image": "/images/projectImages/VoxelWorldNoShading.png", "caption": "Voxel World distance Shading" },
+        {"image": "/images/projectImages/SimpleVoxelWorldShading.png", "caption": "Voxel World face Shading" },
+        {"image": "/images/projectImages/VoxelWorldRender.png", "caption": "Voxel World with Light Source + Shadow Shading" }
+      ],
+      "techStack": ["C++", "SDL2", "Neovim"],
+      "date": "August 2025"
+    },
+    {
       "id": "MediMinutes",
       "title": "MediMinutes",
       "cardDescription": "Medical learning application that allows users to learn and test their knowledge on various medical topics.",

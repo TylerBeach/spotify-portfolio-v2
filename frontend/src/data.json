@@ -121,6 +121,40 @@
       "techStack": ["Next.js", "Javascript", "Tailwind", "AWS", "Stripe", "Vercel", "Python"],
       "date": "May 2025"
     },
+     {
+      "id": "CourseHelperBot",
+      "title": "Course Bot",
+      "cardDescription": "University of Alberta Course API and Discord bot that helps students find courses and information.",  
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is it?",
+          "paragraphContent": "Course Helper Bot is a University of Alberta Course API and Discord bot that helps students find courses and information about courses. This project was something I wanted to have for my own use because my friends would constantly mention a course they were taking and I would have no idea what the course was about. We would always talk within our discord server about courses and I thought it would be a great idea to make a bot that could help us find courses and information about courses quickly and easily."},
+        {
+          "paragraphTitle": "Current Features",
+            "paragraphContent": "<table style='width: 100%; border-collapse: collapse;'><thead><tr style='background-color: #272727;'><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>Command</th><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>Description</th></tr></thead><tbody><tr><td style='border: 1px solid #ddd; padding: 12px;'>!course &lt;TERM&gt; &lt;DEPARTMENT&gt; &lt;COURSEID&gt;</td><td style='border: 1px solid #ddd; padding: 12px;'>Fetches information on a specific course.</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'>!departments &lt;TERM&gt;</td><td style='border: 1px solid #ddd; padding: 12px;'>Lists all departments offering courses in the given term.</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'>!help</td><td style='border: 1px solid #ddd; padding: 12px;'>Shows help message with all available commands.</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'>!offered &lt;TERM&gt; &lt;DEPARTMENT&gt;</td><td style='border: 1px solid #ddd; padding: 12px;'>Gets all courses offered in that term in that department.</td></tr></tbody></table>"
+        },
+        {
+          "paragraphTitle": "Hosting Infrastructure",
+          "paragraphContent": "The API is created with Javascript and Express and it is hosted on Heroku. The Discord bot was created with Python and Discord.py and is self hosted on my own linux server. The bot uses the API to fetch course information and respond to user commands."
+        },
+        {
+          "paragraphTitle": "How did I get the data?",
+          "paragraphContent": "I created a web scraping script using Python and BeautifulSoup that gathered every single department and then iterated over each course offered in that department and the information about the course. It took about 20 minutes to run start to finish and then it gets stored inside the MongoDB database that the Heroku Express API accesses."
+        },
+        {
+          "paragraphTitle": "Future Plans",
+          "paragraphContent": "This was created as a quick looker upper for courses within discord purley for my convenience and my friends. It would be great if I could create a course scheduler in the future that could help students plan their courses for the semester. I also want to add more commands to the bot such as searching for courses by keywords and filtering courses by various criteria."
+        }
+      ],
+      "link": null,
+      "imageURL" : "/images/projectImages/CourseHelperBotIcon.png",
+      "bannerURL" : "/images/projectImages/CourseHelperBotBanner.png",
+      "demoImages": [
+        {"image": "/images/projectImages/CourseHelperBot.png", "caption": "Course Helper Bot in action" }
+      ],
+      "techStack":[ "Javascript", "ExpressJS", "MongoDB", "Python", "DiscordPY", "Heroku", "Linux"],
+      "date": "August 2024"
+    },
     {
       "id": "AlgorithmTutor",
       "title": "Algorithm Tutor",
@@ -291,6 +325,7 @@
       "techStack":["Python", "SQL"],
       "date": "December 2023"
     }
+   
   ],
   "about": {
     "id": "about",

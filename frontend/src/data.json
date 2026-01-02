@@ -155,6 +155,32 @@
       "techStack":[ "Javascript", "ExpressJS", "MongoDB", "Python", "DiscordPY", "Heroku", "Linux"],
       "date": "August 2024"
     },
+        {
+      "id": "Rizztagram",
+      "title": "Rizztagram",
+      "cardDescription": "CMPUT 404 Term Project - A social media web application clone of Instagram",  
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is it?",
+          "paragraphContent": "Rizztagram is a social media web application clone of Instagram created in CMPUT 404 - Web Applications and Architecture at the University of Alberta. The project was created as a term project for the course and was developed by a team of six students. The goal of the project was to create a web application that mimics the functionality of Instagram, allowing users to create accounts, follow other users, post images, like and comment on posts, and view a feed of posts from users they follow."
+        },
+        {
+          "paragraphTitle": "Distributed System Architecture",
+          "paragraphContent": "Rizztagram was built using a distributed system allowing for the scalablity of nodes. We are very easily able to add another instance of the server and connect it via the Admin panel. Rizztagram was also able to connect to other groups within the course to allow for a widely distributed system. We were able to connect with two other groups within the course to allow for cross server communication and sharing of user data. This allowed for a more robust and scalable system, as users from different servers could interact with each other seamlessly."
+        },
+        {
+          "paragraphTitle": "Software Engineering Practices",
+          "paragraphContent": "Being a group project throughout the term, we implemented several software engineering practices to ensure the success of the project. We used Git for version control, allowing us to collaborate effectively and manage changes to the codebase. We also implemented Agile methodologies, holding regular stand-up meetings and sprint planning sessions to keep the project on track. Code reviews were conducted to ensure code quality and consistency across the team. Additionally, we used JIRA to track tasks and progress, ensuring that everyone was aware of their responsibilities and deadlines."
+        }
+      ],
+      "hostedLink": "https://www.youtube.com/watch?v=d6U3Hyix7g8",
+      "imageURL" : "/images/projectImages/RizztagramIcon.png",
+      "bannerURL" : "/images/projectImages/RizztagramBanner.png",
+      "demoImages": [
+      ],
+      "techStack":[ "Python", "Django", "SQL", "Heroku"],
+      "date": "December 2024"
+    },
     {
       "id": "AlgorithmTutor",
       "title": "Algorithm Tutor",

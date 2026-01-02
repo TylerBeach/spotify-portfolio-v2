@@ -49,7 +49,6 @@
         "title": "Email",
         "icon": "/images/Email.png",
         "link": "mailto:tabeach@ualberta.ca"
-  
       },
       {
         "title": "Resume",
@@ -79,7 +78,7 @@
         "link": "https://open.spotify.com/playlist/5qiAWYzhjGo7Sh1BrLYMxy?si=f53a2a08498f4934"
       }
     ]
-}, 
+  },
   "projects": [
     {
       "id": "GazpreaCompiler",
@@ -88,7 +87,7 @@
       "paragraphData": [
         {
           "paragraphTitle": "CMPUT 415 Compilers",
-          "paragraphContent": "This project was created as part of CMPUT 415 - Compilers at the University of Alberta. The course focuses on the design and implementation of compilers, covering topics such as lexical analysis, parsing, semantic analysis, optimization, and code generation. Over the course of the semester we worked together to create a fully functioning compiler that met all the specifications outlined in the Gazprea language documentation."
+          "paragraphContent": "This project was created as part of CMPUT 415 - Compilers at the University of Alberta. The course focuses on the design and implementation of compilers, covering topics such as lexical analysis, parsing, semantic analysis, optimization, and code generation. Over the course of the semester we worked together to create a fully functioning compiler that met all the specifications outlined in the Gazprea language documentation. Read the <a href='https://cmput415.github.io/415-docs/gazprea/' style='text-decoration: underline; font-weight: 700;'>Gazprea Language Specification</a> for the full requirements."
         },
         {
           "paragraphTitle": "Gazprea Language Overview",
@@ -103,23 +102,39 @@
           "paragraphContent": "Our group 'Gigagaz' ended up placing first overall when ranked among all the other groups in the CMPUT 415 Fall 2025 semester. We were able to be entirely feature complete having a very well rounded and robust compiler. Given this was an extremely complex project to undertake in a single semester I am very proud of what we were able to accomplish as a team. I cannot disclose implementation details due to university policies but you are able to see the entire specification of the Gazprea language and the requirements for the compiler <a href='https://cmput415.github.io/415-docs/gazprea/' style='text-decoration: underline;'>here</a>. Given the length of the specifications you can understand why this project was so complex and why we are so proud of what we were able to achieve."
         }
       ],
-      "hostedLink": null,
+      "hostedLink": "https://cmput415.github.io/415-docs/gazprea/",
       "imageURL": "/images/projectImages/GazpreaLogo.png",
       "bannerURL": "/images/projectImages/GazpreaBanner.png",
       "demoImages": [
-        {"image": "/images/projectImages/GazpreaProgram1.png", "caption": "Gazprea Code Example" },
-        {"image": "/images/projectImages/GazpreaProgram2.png", "caption": "Gazprea Code Example 2" },
-        {"image": "/images/projectImages/GazpreaLLVM.png", "caption": "Generated LLVM Example" },
-        {"image": "/images/projectImages/GazpreaParseTree.svg", "caption": "ANTLR4 Parse Tree (Open Image in new tab)" }
+        {
+          "image": "/images/projectImages/GazpreaProgram1.png",
+          "caption": "Gazprea Code Example"
+        },
+        {
+          "image": "/images/projectImages/GazpreaProgram2.png",
+          "caption": "Gazprea Code Example 2"
+        },
+        {
+          "image": "/images/projectImages/GazpreaLLVM.png",
+          "caption": "Generated LLVM Example"
+        },
+        {
+          "image": "/images/projectImages/GazpreaParseTree.svg",
+          "caption": "ANTLR4 Parse Tree (Open Image in new tab)"
+        }
       ],
-      "techStack": ["C++", "ANTLR4", "MLIR", "LLVM"],
+      "techStack": [
+        "C++",
+        "ANTLR4",
+        "MLIR",
+        "LLVM"
+      ],
       "date": "December 2025"
-
     },
     {
-      "id": "GraphicsProgramming",
-      "title": "Graphics Programming",
-      "cardDescription": "A 3D Ascii Renderer and Voxel World Engine built from scratch in C++ using SDL2 and Raytracing techniques.",
+      "id": "ASCIIVoxelRenderer",
+      "title": "ASCII / Voxel Renderer",
+      "cardDescription": "A 3D Ascii Renderer and Voxel World Engine built from scratch in C++ using terminal and SDL2.",
       "paragraphData": [
         {
           "paragraphTitle": "Learning Graphics Programming",
@@ -132,7 +147,7 @@
         {
           "paragraphTitle": "Second Iteration - Improving the Renderer",
           "paragraphContent": "After completing the first iteration I wanted to improve a few things about it. Firstly I wanted to make it more efficient. The first iteration was terribly slow and every time you moved it felt like you blinked from frame to frame. I implemented a double buffering technique to help with this and it made a huge difference. Another big improvement was adding DDA ( Digital Differential Analyzer ) algorithm for raycasting instead of ray marching. This made the rendering so much faster as we could step through the grid much faster and then backtrack to find the exact distance to the wall allowing us to keep the performance high while still having accurate distance measurements. I also added more features such as better distance, higher resolution, floor + ceiling textures and better feeling movement. Overall this iteration felt pretty good and I think it was a solid improvement over the first."
-        }, 
+        },
         {
           "paragraphTitle": "Third Iteration - SDL2 Port",
           "paragraphContent": "The second iteration was fun and all but I wanted to take it to the next level. I decided to port the entire thing over to SDL2 to allow for better graphics rendering and more control over the window. This was a huge undertaking as I had to rewrite a lot of the code to work with SDL2 but it was worth it. I was even able to add a minimap to help with navigation and even added direction indicators on it as well. The performance was also greatly improved and it felt much smoother to navigate around the world."
@@ -143,7 +158,7 @@
         },
         {
           "paragraphTitle": "Minecraft but it kinda looks like Minecraft!?",
-          "paragraphContent" : "Although this next iteration was not an insane addition I did add face shading. This made a huge difference in the look of the voxel world and made it feel much more like Minecraft. The distance shading was cool and all but adding face shading really brought the world to life. It was a simple addition but it made a huge difference in the overall look and feel of the project."
+          "paragraphContent": "Although this next iteration was not an insane addition I did add face shading. This made a huge difference in the look of the voxel world and made it feel much more like Minecraft. The distance shading was cool and all but adding face shading really brought the world to life. It was a simple addition but it made a huge difference in the overall look and feel of the project."
         },
         {
           "paragraphTitle": "Not bad kid",
@@ -159,15 +174,40 @@
       "imageURL": "/images/projectImages/3DRendererIcon.png",
       "bannerURL": "/images/projectImages/RendererBanner.png",
       "demoImages": [
-        {"image": "/images/projectImages/ASCIIRenderer.mp4", "caption": "First Iteration Ascii Renderer" },
-        {"image": "/images/projectImages/ASCIIRendererMap.png", "caption": "Example map for the ASCII Renderer" },
-        {"image": "/images/projectImages/ASCIIRenderer2.mp4", "caption": "Second Iteration Ascii Renderer" },
-        {"image": "/images/projectImages/3DRenderer.mp4", "caption": "SDL2 Port of Ascii Renderer" },
-        {"image": "/images/projectImages/VoxelWorldNoShading.png", "caption": "Voxel World distance Shading" },
-        {"image": "/images/projectImages/SimpleVoxelWorldShading.png", "caption": "Voxel World face Shading" },
-        {"image": "/images/projectImages/VoxelWorldRender.png", "caption": "Voxel World with Light Source + Shadow Shading" }
+        {
+          "image": "/images/projectImages/ASCIIRenderer.mp4",
+          "caption": "First Iteration Ascii Renderer"
+        },
+        {
+          "image": "/images/projectImages/ASCIIRendererMap.png",
+          "caption": "Example map for the ASCII Renderer"
+        },
+        {
+          "image": "/images/projectImages/ASCIIRenderer2.mp4",
+          "caption": "Second Iteration Ascii Renderer"
+        },
+        {
+          "image": "/images/projectImages/3DRenderer.mp4",
+          "caption": "SDL2 Port of Ascii Renderer"
+        },
+        {
+          "image": "/images/projectImages/VoxelWorldNoShading.png",
+          "caption": "Voxel World distance Shading"
+        },
+        {
+          "image": "/images/projectImages/SimpleVoxelWorldShading.png",
+          "caption": "Voxel World face Shading"
+        },
+        {
+          "image": "/images/projectImages/VoxelWorldRender.png",
+          "caption": "Voxel World with Light Source + Shadow Shading"
+        }
       ],
-      "techStack": ["C++", "SDL2", "Neovim"],
+      "techStack": [
+        "C++",
+        "SDL2",
+        "Neovim"
+      ],
       "date": "August 2025"
     },
     {
@@ -197,57 +237,50 @@
       "imageURL": "/images/projectImages/quizTimeFrog10.png",
       "bannerURL": "/images/projectImages/MediMinBanner.png",
       "demoImages": [
-        {"image": "/images/projectImages/MediMinutesHome.png", "caption": "Home Page"},
-        {"image": "/images/projectImages/MediMinutesLogin.png", "caption": "Login"},
-        {"image": "/images/projectImages/MediMinutesLearn.png", "caption": "Learn"},
-        {"image": "/images/projectImages/MediMinutesLeaderboards.png", "caption": "Leaderboards"},
-        {"image": "/images/projectImages/MediMinutesQuiz.png", "caption": "Quiz"},
-        {"image": "/images/projectImages/MediMinutesCrossword.png", "caption": "Crossword"},
-        {"image": "/images/projectImages/MediMinutesConnection.png", "caption": "Connections"}
-
-
-      ],
-      "techStack": ["Next.js", "Javascript", "Tailwind", "AWS", "Stripe", "Vercel", "Python"],
-      "date": "May 2025"
-    },
-     {
-      "id": "CourseHelperBot",
-      "title": "Course Bot",
-      "cardDescription": "University of Alberta Course API and Discord bot that helps students find courses and information.",  
-      "paragraphData": [
         {
-          "paragraphTitle": "What is it?",
-          "paragraphContent": "Course Helper Bot is a University of Alberta Course API and Discord bot that helps students find courses and information about courses. This project was something I wanted to have for my own use because my friends would constantly mention a course they were taking and I would have no idea what the course was about. We would always talk within our discord server about courses and I thought it would be a great idea to make a bot that could help us find courses and information about courses quickly and easily."},
-        {
-          "paragraphTitle": "Current Features",
-            "paragraphContent": "<table style='width: 100%; border-collapse: collapse;'><thead><tr style='background-color: #272727;'><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>Command</th><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>Description</th></tr></thead><tbody><tr><td style='border: 1px solid #ddd; padding: 12px;'>!course &lt;TERM&gt; &lt;DEPARTMENT&gt; &lt;COURSEID&gt;</td><td style='border: 1px solid #ddd; padding: 12px;'>Fetches information on a specific course.</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'>!departments &lt;TERM&gt;</td><td style='border: 1px solid #ddd; padding: 12px;'>Lists all departments offering courses in the given term.</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'>!help</td><td style='border: 1px solid #ddd; padding: 12px;'>Shows help message with all available commands.</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'>!offered &lt;TERM&gt; &lt;DEPARTMENT&gt;</td><td style='border: 1px solid #ddd; padding: 12px;'>Gets all courses offered in that term in that department.</td></tr></tbody></table>"
+          "image": "/images/projectImages/MediMinutesHome.png",
+          "caption": "Home Page"
         },
         {
-          "paragraphTitle": "Hosting Infrastructure",
-          "paragraphContent": "The API is created with Javascript and Express and it is hosted on Heroku. The Discord bot was created with Python and Discord.py and is self hosted on my own linux server. The bot uses the API to fetch course information and respond to user commands."
+          "image": "/images/projectImages/MediMinutesLogin.png",
+          "caption": "Login"
         },
         {
-          "paragraphTitle": "How did I get the data?",
-          "paragraphContent": "I created a web scraping script using Python and BeautifulSoup that gathered every single department and then iterated over each course offered in that department and the information about the course. It took about 20 minutes to run start to finish and then it gets stored inside the MongoDB database that the Heroku Express API accesses."
+          "image": "/images/projectImages/MediMinutesLearn.png",
+          "caption": "Learn"
         },
         {
-          "paragraphTitle": "Future Plans",
-          "paragraphContent": "This was created as a quick looker upper for courses within discord purley for my convenience and my friends. It would be great if I could create a course scheduler in the future that could help students plan their courses for the semester. I also want to add more commands to the bot such as searching for courses by keywords and filtering courses by various criteria."
+          "image": "/images/projectImages/MediMinutesLeaderboards.png",
+          "caption": "Leaderboards"
+        },
+        {
+          "image": "/images/projectImages/MediMinutesQuiz.png",
+          "caption": "Quiz"
+        },
+        {
+          "image": "/images/projectImages/MediMinutesCrossword.png",
+          "caption": "Crossword"
+        },
+        {
+          "image": "/images/projectImages/MediMinutesConnection.png",
+          "caption": "Connections"
         }
       ],
-      "link": null,
-      "imageURL" : "/images/projectImages/CourseHelperBotIcon.png",
-      "bannerURL" : "/images/projectImages/CourseHelperBotBanner.png",
-      "demoImages": [
-        {"image": "/images/projectImages/CourseHelperBot.png", "caption": "Course Helper Bot in action" }
+      "techStack": [
+        "Next.js",
+        "Javascript",
+        "Tailwind",
+        "AWS",
+        "Stripe",
+        "Vercel",
+        "Python"
       ],
-      "techStack":[ "Javascript", "ExpressJS", "MongoDB", "Python", "DiscordPY", "Heroku", "Linux"],
-      "date": "August 2024"
+      "date": "May 2025"
     },
-        {
+    {
       "id": "Rizztagram",
       "title": "Rizztagram",
-      "cardDescription": "CMPUT 404 Term Project - A social media web application clone of Instagram",  
+      "cardDescription": "CMPUT 404 Term Project - A social media web application clone of Instagram",
       "paragraphData": [
         {
           "paragraphTitle": "What is it?",
@@ -263,17 +296,67 @@
         }
       ],
       "hostedLink": "https://www.youtube.com/watch?v=d6U3Hyix7g8",
-      "imageURL" : "/images/projectImages/RizztagramIcon.png",
-      "bannerURL" : "/images/projectImages/RizztagramBanner.png",
-      "demoImages": [
+      "imageURL": "/images/projectImages/RizztagramIcon.png",
+      "bannerURL": "/images/projectImages/RizztagramBanner.png",
+      "demoImages": [],
+      "techStack": [
+        "Python",
+        "Django",
+        "SQL",
+        "Heroku"
       ],
-      "techStack":[ "Python", "Django", "SQL", "Heroku"],
       "date": "December 2024"
+    },
+    {
+      "id": "CourseHelperBot",
+      "title": "Course Bot",
+      "cardDescription": "University of Alberta Course API and Discord bot that helps students find courses and information.",
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is it?",
+          "paragraphContent": "Course Helper Bot is a University of Alberta Course API and Discord bot that helps students find courses and information about courses. This project was something I wanted to have for my own use because my friends would constantly mention a course they were taking and I would have no idea what the course was about. We would always talk within our discord server about courses and I thought it would be a great idea to make a bot that could help us find courses and information about courses quickly and easily."
+        },
+        {
+          "paragraphTitle": "Current Features",
+          "paragraphContent": "<table style='width: 100%; border-collapse: collapse;'><thead><tr style='background-color: #272727;'><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>Command</th><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>Description</th></tr></thead><tbody><tr><td style='border: 1px solid #ddd; padding: 12px;'>!course &lt;TERM&gt; &lt;DEPARTMENT&gt; &lt;COURSEID&gt;</td><td style='border: 1px solid #ddd; padding: 12px;'>Fetches information on a specific course.</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'>!departments &lt;TERM&gt;</td><td style='border: 1px solid #ddd; padding: 12px;'>Lists all departments offering courses in the given term.</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'>!help</td><td style='border: 1px solid #ddd; padding: 12px;'>Shows help message with all available commands.</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'>!offered &lt;TERM&gt; &lt;DEPARTMENT&gt;</td><td style='border: 1px solid #ddd; padding: 12px;'>Gets all courses offered in that term in that department.</td></tr></tbody></table>"
+        },
+        {
+          "paragraphTitle": "Hosting Infrastructure",
+          "paragraphContent": "The API is created with Javascript and Express and it is hosted on Heroku. The Discord bot was created with Python and Discord.py and is self hosted on my own linux server. The bot uses the API to fetch course information and respond to user commands."
+        },
+        {
+          "paragraphTitle": "How did I get the data?",
+          "paragraphContent": "I created a web scraping script using Python and BeautifulSoup that gathered every single department and then iterated over each course offered in that department and the information about the course. It took about 20 minutes to run start to finish and then it gets stored inside the MongoDB database that the Heroku Express API accesses."
+        },
+        {
+          "paragraphTitle": "Future Plans",
+          "paragraphContent": "This was created as a quick looker upper for courses within discord purley for my convenience and my friends. It would be great if I could create a course scheduler in the future that could help students plan their courses for the semester. I also want to add more commands to the bot such as searching for courses by keywords and filtering courses by various criteria."
+        }
+      ],
+      "link": null,
+      "imageURL": "/images/projectImages/CourseHelperBotIcon.png",
+      "bannerURL": "/images/projectImages/CourseHelperBotBanner.png",
+      "demoImages": [
+        {
+          "image": "/images/projectImages/CourseHelperBot.png",
+          "caption": "Course Helper Bot in action"
+        }
+      ],
+      "techStack": [
+        "Javascript",
+        "ExpressJS",
+        "MongoDB",
+        "Python",
+        "DiscordPY",
+        "Heroku",
+        "Linux"
+      ],
+      "date": "August 2024"
     },
     {
       "id": "AlgorithmTutor",
       "title": "Algorithm Tutor",
-      "cardDescription": "An algorithm that allows users to visualize algorithms as they run step by step.",  
+      "cardDescription": "An algorithm that allows users to visualize algorithms as they run step by step.",
       "paragraphData": [
         {
           "paragraphTitle": "What is it?",
@@ -281,7 +364,7 @@
         },
         {
           "paragraphTitle": "What can it do?",
-          "paragraphContent": "Algorithm Visualizer allows users to select from a variety of algorithms including sorting algorithms, searching algorithms, and array operatios. Users can see how the algorithms work step by step and learn about the different techniques used to solve problems. The application also includes a step by step code example for the algorithm being visualized. It also has many custom settings such as speed, array size, forward and backward buttons. Users can stop and start the visualization at any time to see how the algorithm works in real time." 
+          "paragraphContent": "Algorithm Visualizer allows users to select from a variety of algorithms including sorting algorithms, searching algorithms, and array operatios. Users can see how the algorithms work step by step and learn about the different techniques used to solve problems. The application also includes a step by step code example for the algorithm being visualized. It also has many custom settings such as speed, array size, forward and backward buttons. Users can stop and start the visualization at any time to see how the algorithm works in real time."
         },
         {
           "paragraphTitle": "How was it built?",
@@ -294,47 +377,37 @@
       ],
       "link": null,
       "hostedLink": "https://algorithm-tutor.vercel.app/",
-     
-      "imageURL" : "/images/projectImages/AlgorithmTutor.webp",
-      "bannerURL" : "/images/projectImages/AlgorithmTutorBanner.png",
+      "imageURL": "/images/projectImages/AlgorithmTutor.webp",
+      "bannerURL": "/images/projectImages/AlgorithmTutorBanner.png",
       "demoImages": [
-        {"image": "/images/projectImages/AlgorithmVisualizer2.png", "caption": "Home Page" },
-        {"image": "/images/projectImages/SortingExampleVideo3.gif", "caption": "Sorting Example" },
-        {"image": "/images/projectImages/PathingExampleVideo2.gif", "caption": "Pathfinding Example" },
-        {"image": "/images/projectImages/ArraysExampleVideo2.gif", "caption": "Array Operations" }
-      ],
-      "techStack":["Next.js", "Javascript", "Tailwind"],
-      "date": "June 2024"
-    },
-    {
-      "id": "StoryTeller",
-      "title": "Story Teller",
-      "cardDescription": "An AI powered story generator that creates unique stories with the click of a button.",  
-      "paragraphData": [
         {
-          "paragraphTitle": "What is it?",
-          "paragraphContent": "StoryTeller is a web application that allows users to create stories. Leveraging the power of ai, users can generate unique stories with the click of a button. It was created during Hacked one of the biggest Hackathons in Alberta, Canada at the University of Alberta. Our five person team had a goal to implement as many AI tools as possible to create a unique and fun experience for users. "
+          "image": "/images/projectImages/AlgorithmVisualizer2.png",
+          "caption": "Home Page"
         },
         {
-          "paragraphTitle": "How does it work?",
-          "paragraphContent": "StoryTeller uses openAI's generative text model to generate stories. Users can input a prompt and the model will generate a story based on the prompt. It is also capable of generating images that go along with your story using Stable Diffusion! Not to mention the read along feature that allows you to listen to your story using Eleven Labs Text to Speech!"
+          "image": "/images/projectImages/SortingExampleVideo3.gif",
+          "caption": "Sorting Example"
+        },
+        {
+          "image": "/images/projectImages/PathingExampleVideo2.gif",
+          "caption": "Pathfinding Example"
+        },
+        {
+          "image": "/images/projectImages/ArraysExampleVideo2.gif",
+          "caption": "Array Operations"
         }
       ],
-      "link": "https://github.com/Active-Transport/story-time",
-      "imageURL" : "/images/projectImages/StoryTellerIcon.png",
-      "bannerURL" : "/images/projectImages/StoryTellerBanner.png",
-      "demoImages": [
-        {"image": "/images/projectImages/StoryTellerOne.png", "caption": "StoryTeller Home Page" },
-        {"image": "/images/projectImages/StoryTellerTwo.png", "caption": "Story Prompt Input" },
-        {"image": "/images/projectImages/StoryTellerThree.jpg", "caption": "Generated Story Example" }
+      "techStack": [
+        "Next.js",
+        "Javascript",
+        "Tailwind"
       ],
-      "techStack":["React", "Javascript", "CSS", "Python", "Flask"],
-      "date": "January 2024"
+      "date": "June 2024"
     },
     {
       "id": "EventHorizon",
       "title": "Event Horizon",
-      "cardDescription": "Android mobile app event manager that allows users to create and manage events",  
+      "cardDescription": "Android mobile app event manager that allows users to create and manage events",
       "paragraphData": [
         {
           "paragraphTitle": "What is it?",
@@ -352,24 +425,101 @@
           "paragraphTitle": "User Experience and Interface Design",
           "paragraphContent": "Event Horizon was designed with a strong focus on user experience (UX) and interface design. The app's interface was created using Figma, ensuring a clean, intuitive, and accessible design. User flows were carefully planned to minimize friction, making it easy for users to create, manage, and join events. The design was iteratively tested and refined based on user feedback, ensuring that the app meets the needs of a diverse user base. By prioritizing UX, Event Horizon not only provides a functional tool but also an enjoyable and seamless experience for its users."
         }
-        
       ],
-
       "link": "https://github.com/CMPUT301W24T09/fire-and-based",
-      "imageURL" : "/images/projectImages/EventHorizonLogo.jpg",
-      "bannerURL" : "/images/projectImages/EventHorizonBanner.webp",
+      "imageURL": "/images/projectImages/EventHorizonLogo.jpg",
+      "bannerURL": "/images/projectImages/EventHorizonBanner.webp",
       "demoImages": [
-        {"image": "/images/projectImages/EventHorizon.png", "caption" : "Browse events tab" },
-        {"image": "/images/projectImages/EventHorizon2.png", "caption" : "Check in map for an event" },
-        {"image": "/images/projectImages/EventHorizon3.png", "caption" : "Event QR code interface" }
+        {
+          "image": "/images/projectImages/EventHorizon.png",
+          "caption": "Browse events tab"
+        },
+        {
+          "image": "/images/projectImages/EventHorizon2.png",
+          "caption": "Check in map for an event"
+        },
+        {
+          "image": "/images/projectImages/EventHorizon3.png",
+          "caption": "Event QR code interface"
+        }
       ],
-      "techStack":["Java", "Firebase", "Google Maps", "Github", "Figma"],
+      "techStack": [
+        "Java",
+        "Firebase",
+        "Google Maps",
+        "Github",
+        "Figma"
+      ],
       "date": "April 2024"
+    },
+    {
+      "id": "StoryTeller",
+      "title": "Story Teller",
+      "cardDescription": "An AI powered story generator that creates unique stories with the click of a button.",
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is it?",
+          "paragraphContent": "StoryTeller is a web application that allows users to create stories. Leveraging the power of ai, users can generate unique stories with the click of a button. It was created during Hacked one of the biggest Hackathons in Alberta, Canada at the University of Alberta. Our five person team had a goal to implement as many AI tools as possible to create a unique and fun experience for users. "
+        },
+        {
+          "paragraphTitle": "How does it work?",
+          "paragraphContent": "StoryTeller uses openAI's generative text model to generate stories. Users can input a prompt and the model will generate a story based on the prompt. It is also capable of generating images that go along with your story using Stable Diffusion! Not to mention the read along feature that allows you to listen to your story using Eleven Labs Text to Speech!"
+        }
+      ],
+      "link": "https://github.com/Active-Transport/story-time",
+      "imageURL": "/images/projectImages/StoryTellerIcon.png",
+      "bannerURL": "/images/projectImages/StoryTellerBanner.png",
+      "demoImages": [
+        {
+          "image": "/images/projectImages/StoryTellerOne.png",
+          "caption": "StoryTeller Home Page"
+        },
+        {
+          "image": "/images/projectImages/StoryTellerTwo.png",
+          "caption": "Story Prompt Input"
+        },
+        {
+          "image": "/images/projectImages/StoryTellerThree.jpg",
+          "caption": "Generated Story Example"
+        }
+      ],
+      "techStack": [
+        "React",
+        "Javascript",
+        "CSS",
+        "Python",
+        "Flask"
+      ],
+      "date": "January 2024"
+    },
+     {
+      "id": "TwitterBackend",
+      "title": "Twitter Backend",
+      "cardDescription": "Twitter backend clone that allows users to create tweets, follow users, and like tweets using SQL",
+      "paragraphData": [
+        {
+          "paragraphTitle": "What is it?",
+          "paragraphContent": "Twitter Backend is a backend clone of Twitter that allows users to create tweets, follow users, and like tweets. This was a project for CMPUT 291 - File and Database Management at the University of Alberta with a team of four people working together Our group had to design the database schema given the requirements and then implement it to make a functioning backend."
+        },
+        {
+          "paragraphTitle": "What I learned",
+          "paragraphContent": "I learned about developing a database schema for a project and how to implement it to make a functioning backend. I also learned how relational databases work and how to use SQL to interact with the database. This project was a great learning experience and I am excited to continue learning more about databases and backend development throughout my future career in software developement."
+        }
+      ],
+      "link": "https://github.com/TylerBeach/Twitter-Backend-Clone",
+      "imageURL": "/images/Twitter.png",
+      "bannerURL": "/images/projectImages/TwitterCloneBanner.png",
+      "demoImages": [],
+      "techStack": [
+        "Python",
+        "SQL"
+      ],
+      "date": "December 2023"
     },
     {
       "id": "FireSafe",
       "title": "FireSafe",
-      "cardDescription": "Forest fire software that uses machine learning to locate secluded locations and homes",  
+      "cardDescription": "Forest fire software that uses machine learning to locate secluded locations and homes",
       "paragraphData": [
         {
           "paragraphTitle": "What is FireSafe?",
@@ -385,19 +535,31 @@
         }
       ],
       "link": "https://github.com/TylerBeach/FireSafe",
-      "imageURL" : "/images/projectImages/FireSafeLogo.png",
-      "bannerURL" : "/images/projectImages/FireSafeBanner.png",
+      "imageURL": "/images/projectImages/FireSafeLogo.png",
+      "bannerURL": "/images/projectImages/FireSafeBanner.png",
       "demoImages": [
-        {"image": "/images/projectImages/firesafe-three.png", "caption": "Home Page"},
-        {"image": "/images/projectImages/firesafe-two.png", "caption": "Application Page"}
+        {
+          "image": "/images/projectImages/firesafe-three.png",
+          "caption": "Home Page"
+        },
+        {
+          "image": "/images/projectImages/firesafe-two.png",
+          "caption": "Application Page"
+        }
       ],
-      "techStack":["Python", "Typescript", "HTML", "CSS", "Tensorflow"],
+      "techStack": [
+        "Python",
+        "Typescript",
+        "HTML",
+        "CSS",
+        "Tensorflow"
+      ],
       "date": "December 2022"
     },
     {
       "id": "FroggyJumper",
       "title": "Froggy Jumper",
-      "cardDescription": "2D side scroller game where you play as a frog and jump over snakes to collect flies",  
+      "cardDescription": "2D side scroller game where you play as a frog and jump over snakes to collect flies",
       "paragraphData": [
         {
           "paragraphTitle": "What is Froggy Jumper?",
@@ -409,36 +571,23 @@
         }
       ],
       "link": "https://github.com/TylerBeach/Froggy-Jumper",
-      "imageURL" : "/images/projectImages/FroggyJumperLogo.png",
-      "bannerURL" : "/images/projectImages/FroggyJumperBanner.png",
+      "imageURL": "/images/projectImages/FroggyJumperLogo.png",
+      "bannerURL": "/images/projectImages/FroggyJumperBanner.png",
       "demoImages": [
-        {"image": "/images/projectImages/FroggyJumperGIF.gif", "caption" : "Gameplay" },
-        {"image": "/images/projectImages/FroggyJumperHomeScreen.png", "caption" : "Home screen" }
-      ],
-      "techStack":["Python", "Pygame"],
-      "date": "November 2022"
-    },
-    {
-      "id": "TwitterBackend",
-      "title": "Twitter Backend",
-      "cardDescription": "Twitter backend clone that allows users to create tweets, follow users, and like tweets using SQL",  
-      "paragraphData": [
         {
-          "paragraphTitle": "What is it?",
-          "paragraphContent": "Twitter Backend is a backend clone of Twitter that allows users to create tweets, follow users, and like tweets. This was a project for CMPUT 291 - File and Database Management at the University of Alberta with a team of four people working together Our group had to design the database schema given the requirements and then implement it to make a functioning backend."},
+          "image": "/images/projectImages/FroggyJumperGIF.gif",
+          "caption": "Gameplay"
+        },
         {
-          "paragraphTitle": "What I learned",
-          "paragraphContent": "I learned about developing a database schema for a project and how to implement it to make a functioning backend. I also learned how relational databases work and how to use SQL to interact with the database. This project was a great learning experience and I am excited to continue learning more about databases and backend development throughout my future career in software developement."
+          "image": "/images/projectImages/FroggyJumperHomeScreen.png",
+          "caption": "Home screen"
         }
       ],
-      "link": "https://github.com/TylerBeach/Twitter-Backend-Clone",
-      "imageURL" : "/images/Twitter.png",
-      "bannerURL" : "/images/projectImages/TwitterCloneBanner.png",
-      "demoImages": [
-       
+      "techStack": [
+        "Python",
+        "Pygame"
       ],
-      "techStack":["Python", "SQL"],
-      "date": "December 2023"
+      "date": "November 2022"
     }
    
   ],
@@ -449,27 +598,64 @@
     "bannerURL": "/images/profileBanner2.jpg",
     "title": "About Me",
     "courseWork": [
-      {"CMPUT 174": "Foundations of Computation"},
-      {"CMPUT 175": "Foundations of Computation II"},
-      {"CMPUT 201":  "Programming Methodology in C"},
-      {"CMPUT 204":  "Algorithms and Data Structures"},
-      {"CMPUT 206":  "Digital Image Processing"},
-      {"CMPUT 229":  "Computer Organization and Architecture"},
-      {"CMPUT 267":  "Machine Learning"},
-      {"CMPUT 272":  "Formal Systems and Logic"},
-      {"CMPUT 291":  "File and Database Management"},
-      {"CMPUT 301":  "Software Engineering"},
-      {"CMPUT 313":  "Computer Networks"},
-      {"CMPUT 365":  "Reinforcement Learning"},
-      {"CMPUT 379":  "Operating Systems"},
-      {"CMPUT 401":  "Software Engineering II"},
-      {"CMPUT 404":  "Web Applications and Architecture"},
-      {"CMPUT 415":  "Compiler Design"},
-      {"CMPUT 429":  "Computer Organization and Architecture II"},
-      {"CMPUT 455": "Search, Knowledge and Simulation"},
-      {"CMPUT 461": "Intro to Natural Language Processing"}
+      {
+        "CMPUT 174": "Foundations of Computation"
+      },
+      {
+        "CMPUT 175": "Foundations of Computation II"
+      },
+      {
+        "CMPUT 201": "Programming Methodology in C"
+      },
+      {
+        "CMPUT 204": "Algorithms and Data Structures"
+      },
+      {
+        "CMPUT 206": "Digital Image Processing"
+      },
+      {
+        "CMPUT 229": "Computer Organization and Architecture"
+      },
+      {
+        "CMPUT 267": "Machine Learning"
+      },
+      {
+        "CMPUT 272": "Formal Systems and Logic"
+      },
+      {
+        "CMPUT 291": "File and Database Management"
+      },
+      {
+        "CMPUT 301": "Software Engineering"
+      },
+      {
+        "CMPUT 313": "Computer Networks"
+      },
+      {
+        "CMPUT 365": "Reinforcement Learning"
+      },
+      {
+        "CMPUT 379": "Operating Systems"
+      },
+      {
+        "CMPUT 401": "Software Engineering II"
+      },
+      {
+        "CMPUT 404": "Web Applications and Architecture"
+      },
+      {
+        "CMPUT 415": "Compiler Design"
+      },
+      {
+        "CMPUT 429": "Computer Organization and Architecture II"
+      },
+      {
+        "CMPUT 455": "Search, Knowledge and Simulation"
+      },
+      {
+        "CMPUT 461": "Intro to Natural Language Processing"
+      }
     ],
-    
     "paragraphs": [
       {
         "title": "Background",

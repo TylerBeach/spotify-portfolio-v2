@@ -407,8 +407,10 @@
       {"CMPUT 301":  "Software Engineering"},
       {"CMPUT 313":  "Computer Networks"},
       {"CMPUT 365":  "Reinforcement Learning"},
+      {"CMPUT 379":  "Operating Systems"},
       {"CMPUT 401":  "Software Engineering II"},
       {"CMPUT 404":  "Web Applications and Architecture"},
+      {"CMPUT 415":  "Compiler Design"},
       {"CMPUT 429":  "Computer Organization and Architecture II"},
       {"CMPUT 455": "Search, Knowledge and Simulation"},
       {"CMPUT 461": "Intro to Natural Language Processing"}

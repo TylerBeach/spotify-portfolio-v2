@@ -149,13 +149,13 @@ function About() {
                       {/* NOTE TO SELF USING SINGLE QUOTES IS BAD IDEA */}
                       <h2 className="text-white text-2xl">{`Tyler's Pick`}</h2>
                       <a
-                        href="https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk?si=39keDNFUQfSvOt0EV-O08Q"
+                        href="https://open.spotify.com/album/2ANFIaCb53iam0MBkFFoxY?si=wzXedq6gRUWNAYRK6z_v9A"
                         className="flex flex-col w-fit"
                       >
                         <div className="flex flex-row gap-x-2">
                           <img
                             className="w-[170px] h-[170px] object-cover rounded-md"
-                            src={"/images/Swimming.jpg"}
+                            src={"/images/Balloonerism.png"}
                             alt="Tyler Beach"
                           />
                         </div>

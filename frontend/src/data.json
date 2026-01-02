@@ -420,29 +420,28 @@
       {
         "title": "Background",
         "image": "/images/Goals.png",
-        "paragraphContent": "Tyler Beach is a dedicated and passionate 23-year-old computing science student residing in Edmonton, Canada. Currently in his fourth year at the University of Alberta, Tyler has cultivated a deep interest in software development, with a particular focus on front-end technologies like React. His technical versatility extends to multiple programming languages, including Python, Java, and C, as well as a growing expertise in backend technologies such as Express. Tyler's commitment to continuous learning and personal growth is evident through his proactive involvement in various personal and academic projects. Outside of his academic pursuits, Tyler is known for his love of frogs, which reflects his appreciation for nature and the environment. As he looks forward to starting his professional career, Tyler is eager to leverage his skills and knowledge in a dynamic and challenging work environment."
+        "paragraphContent": "Tyler Beach is a dedicated and passionate 24-year-old graduate from the University of Alberta with a Bachelor of Science in Computing Science. He enjoyed working with low level programming and computer architecture throughout his studies, which has given him a strong foundation in software development. Tyler is also familiar with web developement and has experience working with various web technologies. He is eager to apply his skills and knowledge in a professional setting and is excited about the opportunities that lie ahead in his career."
       },
       {
         "title": "Education",
         "image": "/images/Education.png",
-        "paragraphContent": "Tyler is a fourth year student at the University of Alberta studying Computing Science. He has a passion for software development and is always looking for new ways to improve his skills. Tyler is currently looking for a winter internship in software development to further his skills and gain experience in the field."
+        "paragraphContent": "Tyler is a graduate of the University of Alberta, where he earned his Bachelor of Science in Computing Science. During his time at the university, Tyler took a variety of courses that helped him develop a strong foundation in computer science and software development."
       },
       {
         "title": "Technologies",
         "image": "/images/Technology.png",
-        "paragraphContent": "Tyler has developed a strong proficiency in front-end development, particularly with React. In addition to his expertise in JavaScript, he is skilled in Python, Java, and C, which enables him to approach problems from multiple technical perspectives. He is continuously expanding his knowledge and is currently delving into backend technologies such as Express to evolve into a comprehensive full-stack developer. Tyler's project portfolio includes <a href='/projects/EventHorizon'>Event Horizon</a>, an Android application developed with Java and Firebase; <a href='/projects/StoryTeller'>Story Teller</a>, a React and Flask-based web application for generating and narrating children's stories; and <a href='/projects/FireSafe'>FireSafe</a>, a real-time forest fire alert system built with Python, TypeScript, and TensorFlow. For a detailed overview of his skills and experience, please refer to his <a href='/resume'>resume</a>."
+        "paragraphContent": "Tyler has gained experience in a variety of programming languages and technologies throughout his studies and personal projects. He is proficient in languages such as Python, Java, C++, and JavaScript. Tyler has also worked with web technologies such as Next.js, React, and AWS. Additionally, he has experience with databases such as SQL and MongoDB. Tyler is always eager to learn new technologies and is committed to staying up-to-date with the latest developments in the field of software development."
       },
       {
         "title": "Experience",
         "image": "/images/Briefcase.png",
-        "paragraphContent": "Tyler has gained valuable experience through various internships and projects. He has worked as a software developer intern at QOL MedTech, a medical technology startup focused on improving the quality of life for patients. During his internship, Tyler contributed to the development of a web application that used wearable technology to monitor patients movements and provide feedback. He designed a backend system using AWS RDS and Cognito to manage user data and authentication creating security for patient information. Check out Tyler's projects <a class='underline' href='/projects'>here</a> to see his work and the technologies he has used."
+        "paragraphContent": "Tyler has gained valuable experience through various internships and projects. He has worked as a Software Developer Intern at QOL MedTech, a medical technology startup focused on improving the quality of life for patients. During his internship, Tyler contributed to the development of a web application that used wearable technology to monitor patients movements and provide feedback. He designed a backend system using AWS RDS, EC2 and Cognito to manage user data and authentication creating security for patient information. Check out Tyler's projects <a class='underline' href='/projects'>here</a> to see his work and the technologies he has used."
       },
       {
         "title": "The Dream",
         "image": "/images/froggy.jpg",
         "paragraphContent": "Tyler's dream is to work as a software engineer for Microsoft or Spotify. He is passionate about creating innovative software solutions that have a positive impact on people's lives. Tyler is excited about the opportunity to work with cutting-edge technologies and collaborate with talented professionals to develop world-class software products. He is a dedicated and hardworking individual who is committed to continuous learning and personal growth. Tyler is confident that he has the skills and determination to succeed in a competitive industry and is eager to embark on a rewarding career in software development."
       }
-    
     ],
     "link": "/about"
   }

@@ -316,3 +316,11 @@ html {
   font-family: 'SpotifyLight', sans-serif;
   font-weight: 600;
 }
+
+code {
+  background-color: #383737;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+}

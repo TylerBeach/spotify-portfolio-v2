@@ -82,6 +82,41 @@
 }, 
   "projects": [
     {
+      "id": "GazpreaCompiler",
+      "title": "Gazprea Compiler",
+      "cardDescription": "A Compiler for the Gazprea programming language built using C++, ANTLR4, MLIR and LLVM.",
+      "paragraphData": [
+        {
+          "paragraphTitle": "CMPUT 415 Compilers",
+          "paragraphContent": "This project was created as part of CMPUT 415 - Compilers at the University of Alberta. The course focuses on the design and implementation of compilers, covering topics such as lexical analysis, parsing, semantic analysis, optimization, and code generation. Over the course of the semester we worked together to create a fully functioning compiler that met all the specifications outlined in the Gazprea language documentation."
+        },
+        {
+          "paragraphTitle": "Gazprea Language Overview",
+          "paragraphContent": "Gazprea is a statically typed language derived from work at the IBM Hardware Acceleration Laboratory in Markham, ON. It emphasizes functional programming with controlled side effects. The language distinguishes pure functions (no side effects, usable in expressions) from procedures (allow side effects and I/O, called with <code>call</code>). By default, variables are immutable (<code>const</code>); mutability requires <code>var</code>. Gazprea supports <code>integers</code>, <code>chars</code>, <code>floats</code>, <code>booleans</code>, <code>arrays</code>, <code>matrices</code>, <code>vectors</code>, <code>strings</code>, <code>tuples</code>, and <code>structs</code>, with inferred-size declarations using <code>[*]</code>. Generator expressions like <code>[i in 1..10 | i * i]</code> enable declarative array construction, and the range operator <code>1..10</code> creates integer sequences. The type system includes type inference, type aliases, and automatic promotion. Built-in functions include <code>length()</code>, <code>shape()</code>, <code>reverse()</code>, and <code>format()</code>. Arrays are 1-indexed, and stream I/O uses <code>-></code> and <code><-</code> operators. These features make Gazprea suitable for mathematical and scientific computing while maintaining clear separation between pure computations and side effects."
+        },
+        {
+          "paragraphTitle": "Things I Learned",
+          "paragraphContent": "This was the first time I had worked on anything like this before. Throughout the project I constantly found myself learning new things about C++, MLIR, LLVM and in general how compilers worked. Our group really focused on having clean and maintainable code which was a great learning experience for me. Regular standups and pull request reviews helped keep the project on track and ensured that we were all on the same page. Our team also prioratized testing highly. In total our Compiler was about 31,000 lines of code. By the end of the term had about 32,000 lines of tests to ensure that our compiler met the specifications and worked as intended. Without these large amounts of tests I don't think we would have been able to complete the project successfully."
+        },
+        {
+          "paragraphTitle": "Accomplishments",
+          "paragraphContent": "Our group 'Gigagaz' ended up placing first overall when ranked among all the other groups in the CMPUT 415 Fall 2025 semester. We were able to be entirely feature complete having a very well rounded and robust compiler. Given this was an extremely complex project to undertake in a single semester I am very proud of what we were able to accomplish as a team. I cannot disclose implementation details due to university policies but you are able to see the entire specification of the Gazprea language and the requirements for the compiler <a href='https://cmput415.github.io/415-docs/gazprea/' style='text-decoration: underline;'>here</a>. Given the length of the specifications you can understand why this project was so complex and why we are so proud of what we were able to achieve."
+        }
+      ],
+      "hostedLink": null,
+      "imageURL": "/images/projectImages/GazpreaLogo.png",
+      "bannerURL": "/images/projectImages/GazpreaBanner.png",
+      "demoImages": [
+        {"image": "/images/projectImages/GazpreaProgram1.png", "caption": "Gazprea Code Example" },
+        {"image": "/images/projectImages/GazpreaProgram2.png", "caption": "Gazprea Code Example 2" },
+        {"image": "/images/projectImages/GazpreaLLVM.png", "caption": "Generated LLVM Example" },
+        {"image": "/images/projectImages/GazpreaParseTree.svg", "caption": "ANTLR4 Parse Tree (Open Image in new tab)" }
+      ],
+      "techStack": ["C++", "ANTLR4", "MLIR", "LLVM"],
+      "date": "December 2025"
+
+    },
+    {
       "id": "MediMinutes",
       "title": "MediMinutes",
       "cardDescription": "Medical learning application that allows users to learn and test their knowledge on various medical topics.",

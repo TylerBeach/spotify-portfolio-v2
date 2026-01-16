@@ -15,7 +15,7 @@ function ProjectListView() {
       )
     : data.projects;
 
-  const technologies = ["Python", "Javascript", "Typescript", "Java"];
+  const technologies = ["Javascript", "C++", "Python", "Typescript", "Java"];
 
   return (
     <div className='flex flex-col gap-y-4 px-2 md:px-4'>

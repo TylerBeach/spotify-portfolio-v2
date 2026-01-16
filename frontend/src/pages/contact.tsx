@@ -8,13 +8,10 @@ import GeneralPageHeader from "@/Components/GeneralPageHeader";
 
 function About() {
     const [isSent, setIsSent] = useState(false);
-    // const emailJsUserID = process.env.NEXT_PUBLIC_EMAIL_JS_USER_ID;  // not sure why production doesnt read this will find out eventually 
-    const emailJsUserID = "0anqd659HZYlc3mZ5"
-
-
+    const emailJsUserID = process.env.NEXT_PUBLIC_EMAIL_JS_USER_ID;
 
     if (!emailJsUserID) {
-        console.error('The EMAIL_JS_USER_ID environment variable is not set in your .env.local file');
+        console.error('The NEXT_PUBLIC_EMAIL_JS_USER_ID environment variable is not set in your .env.local file');
     }
   
   // send form through EmailJS

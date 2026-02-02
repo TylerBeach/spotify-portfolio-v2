@@ -81,6 +81,39 @@
   },
   "projects": [
     {
+      "id": "GravitySimulator",
+      "title": "Gravity Simulator",
+      "cardDescription": "A real-time gravity simulation using C++ and SDL2 that visualizes gravitational interactions between celestial bodies.",
+      "paragraphData": [
+        {
+          "paragraphTitle": "The Breakdown",
+          "paragraphContent": "The simulator itself is quite simple in its design. It uses Newton's law of universal gravitation to calculate the forces between each pair of bodies in the simulation. The bodies are represented as circles on the screen, and their positions and velocities are updated in real-time based on the calculated forces. The equation used to calculate the gravitational force between two bodies is F = G * (m1 * m2) / r^2, where F is the force between the bodies, G is the gravitational constant, m1 and m2 are the masses of the bodies, and r is the distance between them. The center object as a very large mass relative to the other bodies to simulate a star. The two planets have smaller masses and revolve around the star due to the gravitational pull. The foreign object has a small mass and is affected by the gravitational forces of both the star and the planets, resulting in a complex trajectory. In the Demo video at 37 seconds we can see the comet get quite close to the red planet before being slingshotted out of the system entirely. As we know the distance between two objects has a huge effect on the gravitational force between them, this is why the comet speeds up so much as it gets closer to the red planet and gets flung out of the system."
+        },
+        {
+          "paragraphTitle": "Challenges Faced",
+          "paragraphContent": "One of the main challenges I faced was getting the scale of the simulation right. Since I could not use realistic distances and masses due to the limitations of the screen size and the precision of floating-point numbers, I had to experiment with different values to find a balance that looked good visually while still being accurate enough to demonstrate the principles of gravity. Each mass is able to be given a distance from the center object, an initial velocity, mass, radius and degree of angle from the center object. This allows for a wide variety of simulations to be created."
+        },
+        {
+          "paragraphTitle": "Future Improvements",
+          "paragraphContent": "I do not plan to update this project further as it was a little weekend project for me. However, if I were to continue working on it, I would consider adding more features such as the ability to add and remove bodies during the simulation, or the ability to save and load simulations."
+        }
+      ],
+      "hostedLink": null,
+      "imageURL": "/images/projectImages/GravitySimIcon.png",
+      "bannerURL": "/images/projectImages/GravitySimBanner.png",
+      "demoImages": [
+        {
+          "image": "/images/projectImages/GravitySimDemo.mp4",
+          "caption": "2 Body Solar System with Foreign Object"
+        }
+      ],
+      "techStack": [
+        "C++",
+        "SDL2"
+      ],
+      "date": "January 2026"
+    },
+    {
       "id": "GazpreaCompiler",
       "title": "Gazprea Compiler",
       "cardDescription": "A Compiler for the Gazprea programming language built using C++, ANTLR4, MLIR and LLVM.",
